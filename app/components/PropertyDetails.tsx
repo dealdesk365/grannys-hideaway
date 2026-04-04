@@ -3,14 +3,14 @@ const amenities = [
   { icon: "📶", label: "WiFi (Granny got an upgrade)" },
   { icon: "🧺", label: "Washer / Dryer" },
   { icon: "🍳", label: "Full Kitchen" },
-  { icon: "🛁", label: "1 Full Bathroom" },
+  { icon: "🛁", label: "Updated full bathroom with tub/shower combo — Even Granny needed one upgrade." },
   { icon: "🌲", label: "Total Privacy — No Neighbors" },
 ];
 
 const bedrooms = [
   { icon: "🛏️", label: "Queen Bedroom #1", sub: "Downstairs — cozy & classic" },
   { icon: "🛏️", label: "Queen Bedroom #2", sub: "Downstairs — green shag vibes" },
-  { icon: "🛗", label: "Twin Loft (×3 beds)", sub: "Upstairs loft — perfect for the crew" },
+  { icon: "🛗", label: "Twin Loft (×3 beds)", sub: "Upstairs loft — classic wood paneling keeping the full Granny vibe from top to bottom." },
 ];
 
 export default function PropertyDetails() {

@@ -231,7 +231,7 @@ export default function HouseRules() {
             <p className="text-sm leading-relaxed" style={{ opacity: 0.9 }}>
               All guests are required to purchase damage protection through{" "}
               <strong>Safely.com</strong> at the time of booking. It covers accidents — because
-              even the most careful guests sometimes meet their match in a shag carpet.
+              Granny didn&apos;t survive this long by leaving things to chance.
             </p>
           </div>
           <div
@@ -254,7 +254,7 @@ export default function HouseRules() {
         >
           <p className="font-display text-3xl sm:text-4xl mb-3">👀 The Granny Rule</p>
           <p className="font-accent text-xl italic">
-            &ldquo;Granny&apos;s watching. Behave.&rdquo;
+            &ldquo;Treat it like Grandma&apos;s house. Because it is.&rdquo;
           </p>
         </div>
       </div>
