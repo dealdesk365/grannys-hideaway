@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer
@@ -17,19 +19,41 @@ export default function Footer() {
         >
           Mancelona, MI — Northern Michigan
         </p>
-        <div
-          className="flex flex-wrap gap-4 justify-center font-accent text-base"
-          style={{ color: "#1A1A1A" }}
+        <a
+          href="mailto:grannyshideaway@gmail.com"
+          className="font-accent underline underline-offset-4 hover:opacity-70 transition-opacity"
+          style={{ color: "#1A1A1A", fontSize: "1.05rem" }}
         >
-          <a
-            href="mailto:grannyshideaway@gmail.com"
-            className="underline underline-offset-4 hover:opacity-70 transition-opacity"
-          >
-            grannyshideaway@gmail.com
-          </a>
-          <span>·</span>
-          <span>grannyshideaway.com</span>
+          grannyshideaway@gmail.com
+        </a>
+
+        {/* Page links */}
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "0.5rem 1.5rem",
+            justifyContent: "center",
+          }}
+          className="font-accent"
+        >
+          {[
+            ["Home", "/"],
+            ["The Hideaway", "/the-hideaway"],
+            ["FAQ", "/faq"],
+            ["House Rules", "/rules"],
+            ["Reviews", "/reviews"],
+          ].map(([label, href]) => (
+            <Link
+              key={label}
+              href={href}
+              style={{ color: "#1A1A1A", textDecoration: "underline", fontSize: "1rem" }}
+            >
+              {label}
+            </Link>
+          ))}
         </div>
+
         <div
           className="w-full border-t border-black/20 pt-5 flex flex-col sm:flex-row justify-between items-center gap-2 text-sm"
           style={{ color: "#1A1A1A", opacity: 0.65 }}
