@@ -16,14 +16,14 @@ export default function Navbar() {
         zIndex: 100,
       }}
     >
-      <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 1.25rem" }}>
-        {/* Main bar */}
+      <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 1rem" }}>
+        {/* Main bar — wordmark + desktop nav + hamburger */}
         <div
           style={{
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
-            height: "64px",
+            height: "56px",
           }}
         >
           {/* Wordmark */}
@@ -33,22 +33,16 @@ export default function Navbar() {
             style={{
               color: "#1A1A1A",
               textDecoration: "none",
-              fontSize: "1.5rem",
+              fontSize: "clamp(1.1rem, 4vw, 1.5rem)",
               lineHeight: 1,
+              whiteSpace: "nowrap",
             }}
           >
             Granny&apos;s Hideaway
           </Link>
 
-          {/* Desktop nav — hidden on mobile */}
-          <nav
-            style={{
-              display: "flex",
-              gap: "1.75rem",
-              alignItems: "center",
-            }}
-            className="hidden sm:flex"
-          >
+          {/* Desktop nav — Tailwind controls display; NO inline display property */}
+          <nav className="hidden sm:flex" style={{ gap: "1.75rem", alignItems: "center" }}>
             <Link
               href="/the-hideaway"
               className="font-accent transition-colors"
@@ -82,25 +76,25 @@ export default function Navbar() {
                 padding: "0.45rem 1.25rem",
                 borderRadius: "9999px",
                 border: "2px solid #1A1A1A",
+                whiteSpace: "nowrap",
               }}
             >
               Book Now
             </a>
           </nav>
 
-          {/* Hamburger — visible on mobile */}
+          {/* Hamburger — Tailwind controls display; NO inline display property */}
           <button
             onClick={() => setOpen(!open)}
             aria-label="Toggle navigation menu"
+            aria-expanded={open}
             className="sm:hidden"
             style={{
               background: "none",
               border: "none",
               cursor: "pointer",
               padding: "0.5rem",
-              display: "flex",
-              flexDirection: "column",
-              gap: "5px",
+              flexShrink: 0,
             }}
           >
             <span
@@ -119,6 +113,7 @@ export default function Navbar() {
                 width: "26px",
                 height: "2px",
                 backgroundColor: "#1A1A1A",
+                marginTop: "5px",
                 opacity: open ? 0 : 1,
                 transition: "opacity 0.2s",
               }}
@@ -129,6 +124,7 @@ export default function Navbar() {
                 width: "26px",
                 height: "2px",
                 backgroundColor: "#1A1A1A",
+                marginTop: "5px",
                 transition: "transform 0.2s",
                 transform: open ? "rotate(-45deg) translate(5px, -5px)" : "none",
               }}
@@ -136,16 +132,17 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile dropdown menu */}
+        {/* Mobile dropdown — only rendered when open, only visible below sm */}
         {open && (
           <div
+            className="sm:hidden"
             style={{
               display: "flex",
               flexDirection: "column",
               gap: "0.25rem",
+              paddingTop: "0.75rem",
               paddingBottom: "1rem",
               borderTop: "1px solid #D4A017",
-              paddingTop: "0.75rem",
             }}
           >
             <Link
@@ -154,7 +151,7 @@ export default function Navbar() {
               style={{
                 color: "#1A1A1A",
                 textDecoration: "none",
-                fontSize: "1.15rem",
+                fontSize: "1.1rem",
                 padding: "0.5rem 0",
               }}
               onClick={() => setOpen(false)}
@@ -167,7 +164,7 @@ export default function Navbar() {
               style={{
                 color: "#1A1A1A",
                 textDecoration: "none",
-                fontSize: "1.15rem",
+                fontSize: "1.1rem",
                 padding: "0.5rem 0",
               }}
               onClick={() => setOpen(false)}
@@ -180,7 +177,7 @@ export default function Navbar() {
               style={{
                 color: "#1A1A1A",
                 textDecoration: "none",
-                fontSize: "1.15rem",
+                fontSize: "1.1rem",
                 padding: "0.5rem 0",
               }}
               onClick={() => setOpen(false)}
@@ -191,10 +188,11 @@ export default function Navbar() {
               href="/#contact"
               className="font-accent"
               style={{
+                display: "block",
                 backgroundColor: "#D4A017",
                 color: "#1A1A1A",
                 textDecoration: "none",
-                fontSize: "1.15rem",
+                fontSize: "1.1rem",
                 fontWeight: 700,
                 padding: "0.6rem 1.25rem",
                 borderRadius: "9999px",
