@@ -71,10 +71,64 @@ export default function Vibe() {
           ))}
         </div>
 
+        {/* Stairs callout */}
+        <div
+          className="mt-6 rounded-2xl p-6 flex items-start gap-4"
+          style={{ backgroundColor: "#C85A1E", color: "#FAF3E0" }}
+        >
+          <span className="text-3xl mt-0.5">⚠️</span>
+          <div>
+            <p className="font-display text-xl mb-1">Mind the Stairs</p>
+            <p className="text-base leading-relaxed" style={{ opacity: 0.92 }}>
+              The upstairs loft is accessed via original 1974 chalet stairs — narrow, steep,
+              and full of character. Hold the rail. Granny insists.
+            </p>
+          </div>
+        </div>
+
+        {/* Granny Touches */}
+        <div
+          className="mt-6 rounded-2xl p-7"
+          style={{ backgroundColor: "#D4A017", color: "#1A1A1A" }}
+        >
+          <p className="font-display text-2xl mb-4 text-center">🍬 Little Granny Touches</p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex-1 flex flex-col gap-3">
+              <div className="flex items-start gap-3">
+                <span className="text-2xl">🍬</span>
+                <p className="font-accent text-base leading-relaxed">
+                  Bit O Honeys &amp; Werther&apos;s Originals waiting for you on arrival —
+                  because Granny doesn&apos;t let guests go hungry.
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-2xl">📖</span>
+                <p className="font-accent text-base leading-relaxed">
+                  Sign Granny&apos;s Guest Book before you go. She actually reads it.
+                </p>
+              </div>
+            </div>
+            <div className="flex-1 flex flex-col gap-3">
+              <div
+                className="rounded-xl px-4 py-3 font-accent text-sm italic"
+                style={{ backgroundColor: "rgba(0,0,0,0.1)" }}
+              >
+                📌 &ldquo;68° is plenty warm. Granny has quilts.&rdquo;
+              </div>
+              <div
+                className="rounded-xl px-4 py-3 font-accent text-sm italic"
+                style={{ backgroundColor: "rgba(0,0,0,0.1)" }}
+              >
+                📌 &ldquo;Check the burn ban. Granny didn&apos;t raise a fool.&rdquo;
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Seclusion callout */}
         <div
-          className="mt-10 rounded-2xl p-8 text-center"
-          style={{ backgroundColor: "#D4A017", color: "#1A1A1A" }}
+          className="mt-6 rounded-2xl p-8 text-center"
+          style={{ backgroundColor: "#FAF3E0", color: "#1A1A1A" }}
         >
           <p className="font-display text-2xl sm:text-3xl mb-2">
             🌲 Total Seclusion. Zero Neighbors.
