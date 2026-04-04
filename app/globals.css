@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Boogaloo&family=Lato:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --harvest-gold: #D4A017;
+  --burnt-orange: #C85A1E;
+  --avocado-green: #7B9A3A;
+  --retro-teal: #2A9D8F;
+  --warm-cream: #FAF3E0;
+  --near-black: #1A1A1A;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--warm-cream);
+  color: var(--near-black);
+  font-family: 'Lato', sans-serif;
+}
+
+.font-display {
+  font-family: 'Righteous', sans-serif;
+}
+
+.font-accent {
+  font-family: 'Boogaloo', sans-serif;
+}
