@@ -81,7 +81,7 @@ export default function PropertySnapshot() {
             className="font-accent text-xl"
             style={{ color: "#1A1A1A", opacity: 0.75 }}
           >
-            From <strong>$325/night</strong> · 2-Night Minimum · Opening Summer 2026
+            From <strong>$325/night</strong> · 2-Night Minimum · Now Booking from June 15
           </p>
         </div>
       </div>
