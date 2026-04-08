@@ -3,7 +3,7 @@
 import { useState, useCallback } from "react";
 import { DayPicker, DateRange } from "react-day-picker";
 import "react-day-picker/style.css";
-import { format, differenceInCalendarDays, isBefore, isWithinInterval, startOfDay } from "date-fns";
+import { format, differenceInCalendarDays, isBefore } from "date-fns";
 
 // ─── Pricing helpers ───────────────────────────────────────────────────────────
 function getNightlyRate(checkIn: Date): number {
@@ -24,18 +24,11 @@ function calcPricing(checkIn: Date, checkOut: Date, guests: number) {
 }
 
 // ─── Blocked dates ─────────────────────────────────────────────────────────────
-// June 1–14 2026 blocked
-const BLOCKED_RANGES = [
-  { from: new Date(2026, 5, 1), to: new Date(2026, 5, 14) }, // June 1–14 2026
-];
+// Nothing available before June 15, 2026
+const FIRST_AVAILABLE = new Date(2026, 5, 15); // June 15, 2026
 
 function isDateBlocked(date: Date): boolean {
-  const today = startOfDay(new Date());
-  if (isBefore(date, today)) return true;
-  for (const range of BLOCKED_RANGES) {
-    if (isWithinInterval(date, { start: range.from, end: range.to })) return true;
-  }
-  return false;
+  return isBefore(date, FIRST_AVAILABLE);
 }
 
 // ─── Waiver sections ───────────────────────────────────────────────────────────
@@ -207,7 +200,7 @@ export default function BookPage() {
               className="rounded-xl p-4 mb-6 font-accent text-sm"
               style={{ backgroundColor: "#FFF8E7", border: "2px solid #D4A017", color: "#1A1A1A" }}
             >
-              📅 <strong>Availability note:</strong> June 1–14, 2026 are not available. Bookings open from June 15 onward. 2-night minimum required.
+              📅 <strong>Availability note:</strong> Now booking from June 15, 2026 onward. 2-night minimum required.
             </div>
 
             {/* Date Picker */}
