@@ -1,26 +1,47 @@
 import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
+import { supabase } from "@/lib/supabase";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2026-03-25.dahlia",
 });
 
-const NIGHTLY_RATE = 275;
-const CLEANING_FEE = 125;
+const PRICING_DEFAULTS = {
+  nightly_rate: 275,
+  cleaning_fee: 125,
+  extra_guest_fee: 35,
+  extra_guest_threshold: 7,
+  min_nights: 2,
+};
+
+async function fetchPricing() {
+  try {
+    const { data, error } = await supabase
+      .from("pricing")
+      .select("*")
+      .eq("id", 1)
+      .single();
+    if (error || !data) return PRICING_DEFAULTS;
+    return data;
+  } catch {
+    return PRICING_DEFAULTS;
+  }
+}
 
 function calculatePricing(
   checkIn: Date,
   checkOut: Date,
-  guests: number
+  guests: number,
+  pricing: typeof PRICING_DEFAULTS
 ): { nights: number; nightlyRate: number; baseTotal: number; extraGuestFee: number; totalAmount: number; depositAmount: number } {
   const msPerDay = 1000 * 60 * 60 * 24;
   const nights = Math.round((checkOut.getTime() - checkIn.getTime()) / msPerDay);
-  const baseTotal = nights * NIGHTLY_RATE;
-  const extraGuests = Math.max(0, guests - 7);
-  const extraGuestFee = extraGuests * 35 * nights;
-  const totalAmount = baseTotal + extraGuestFee + CLEANING_FEE;
+  const baseTotal = nights * pricing.nightly_rate;
+  const extraGuests = Math.max(0, guests - pricing.extra_guest_threshold);
+  const extraGuestFee = extraGuests * pricing.extra_guest_fee * nights;
+  const totalAmount = baseTotal + extraGuestFee + pricing.cleaning_fee;
   const depositAmount = Math.round(totalAmount / 2);
-  return { nights, nightlyRate: NIGHTLY_RATE, baseTotal, extraGuestFee, totalAmount, depositAmount };
+  return { nights, nightlyRate: pricing.nightly_rate, baseTotal, extraGuestFee, totalAmount, depositAmount };
 }
 
 export async function POST(req: NextRequest) {
@@ -44,14 +65,18 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Invalid dates" }, { status: 400 });
     }
 
+    // Fetch pricing from DB (with fallback)
+    const pricing = await fetchPricing();
+
     const { nights, nightlyRate, extraGuestFee, totalAmount, depositAmount } = calculatePricing(
       checkInDate,
       checkOutDate,
-      guestCount
+      guestCount,
+      pricing
     );
 
-    if (nights < 2) {
-      return NextResponse.json({ error: "Minimum stay is 2 nights" }, { status: 400 });
+    if (nights < pricing.min_nights) {
+      return NextResponse.json({ error: `Minimum stay is ${pricing.min_nights} nights` }, { status: 400 });
     }
 
     if (guestCount < 1 || guestCount > 9) {
@@ -75,7 +100,7 @@ export async function POST(req: NextRequest) {
             unit_amount: depositAmount * 100, // in cents
             product_data: {
               name: itemDescription,
-              description: `$${nightlyRate}/night × ${nights} nights + $${CLEANING_FEE} cleaning fee${extraGuestFee > 0 ? ` + $${extraGuestFee} extra guest fee` : ""}. Total: $${totalAmount}. Remaining 50% ($${totalAmount - depositAmount}) due 30 days before arrival.`,
+              description: `$${nightlyRate}/night × ${nights} nights + $${pricing.cleaning_fee} cleaning fee${extraGuestFee > 0 ? ` + $${extraGuestFee} extra guest fee` : ""}. Total: $${totalAmount}. Remaining 50% ($${totalAmount - depositAmount}) due 30 days before arrival.`,
             },
           },
           quantity: 1,

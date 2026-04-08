@@ -1,22 +1,27 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { DayPicker, DateRange } from "react-day-picker";
 import "react-day-picker/style.css";
 import { format, differenceInCalendarDays, isBefore } from "date-fns";
 
 // ─── Pricing helpers ───────────────────────────────────────────────────────────
-const NIGHTLY_RATE = 275;
-const CLEANING_FEE = 125;
+interface PricingConfig {
+  nightlyRate: number;
+  cleaningFee: number;
+  extraGuestFee: number;
+  extraGuestThreshold: number;
+  minNights: number;
+}
 
-function calcPricing(checkIn: Date, checkOut: Date, guests: number) {
+function calcPricing(checkIn: Date, checkOut: Date, guests: number, config: PricingConfig) {
   const nights = differenceInCalendarDays(checkOut, checkIn);
-  const baseTotal = nights * NIGHTLY_RATE;
-  const extraGuests = Math.max(0, guests - 7);
-  const extraGuestFee = extraGuests * 35 * nights;
-  const totalAmount = baseTotal + extraGuestFee + CLEANING_FEE;
+  const baseTotal = nights * config.nightlyRate;
+  const extraGuests = Math.max(0, guests - config.extraGuestThreshold);
+  const extraGuestFee = extraGuests * config.extraGuestFee * nights;
+  const totalAmount = baseTotal + extraGuestFee + config.cleaningFee;
   const depositAmount = Math.round(totalAmount / 2);
-  return { nights, nightlyRate: NIGHTLY_RATE, baseTotal, extraGuestFee, totalAmount, depositAmount };
+  return { nights, nightlyRate: config.nightlyRate, baseTotal, extraGuestFee, totalAmount, depositAmount };
 }
 
 // ─── Blocked dates ─────────────────────────────────────────────────────────────
@@ -114,19 +119,43 @@ export default function BookPage() {
   const [waiverSignature, setWaiverSignature] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [pricingConfig, setPricingConfig] = useState<PricingConfig | null>(null);
+  const [pricingLoading, setPricingLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("/api/pricing")
+      .then((r) => r.json())
+      .then((data) => {
+        setPricingConfig({
+          nightlyRate: data.nightly_rate,
+          cleaningFee: data.cleaning_fee,
+          extraGuestFee: data.extra_guest_fee,
+          extraGuestThreshold: data.extra_guest_threshold,
+          minNights: data.min_nights,
+        });
+        setPricingLoading(false);
+      })
+      .catch(() => {
+        // Fall back to defaults
+        setPricingConfig({ nightlyRate: 275, cleaningFee: 125, extraGuestFee: 35, extraGuestThreshold: 7, minNights: 2 });
+        setPricingLoading(false);
+      });
+  }, []);
 
   const checkIn = range?.from;
   const checkOut = range?.to;
 
+  const minNights = pricingConfig?.minNights ?? 2;
+
   const pricing =
-    checkIn && checkOut && differenceInCalendarDays(checkOut, checkIn) >= 2
-      ? calcPricing(checkIn, checkOut, guests)
+    pricingConfig && checkIn && checkOut && differenceInCalendarDays(checkOut, checkIn) >= minNights
+      ? calcPricing(checkIn, checkOut, guests, pricingConfig)
       : null;
 
   const canProceedToDates =
     checkIn &&
     checkOut &&
-    differenceInCalendarDays(checkOut, checkIn) >= 2;
+    differenceInCalendarDays(checkOut, checkIn) >= minNights;
 
   const canSubmit = waiverAgreed && waiverSignature.trim().length > 2;
 
@@ -162,6 +191,14 @@ export default function BookPage() {
     }
   }, [checkIn, checkOut, guests, waiverAgreed, waiverSignature, pricing]);
 
+  if (pricingLoading) {
+    return (
+      <main style={{ backgroundColor: "#FAF3E0", minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <p className="font-accent text-lg" style={{ color: "#666" }}>Loading…</p>
+      </main>
+    );
+  }
+
   return (
     <main style={{ backgroundColor: "#FAF3E0", minHeight: "100vh" }}>
       {/* Page Header */}
@@ -196,7 +233,7 @@ export default function BookPage() {
               className="rounded-xl p-4 mb-6 font-accent text-sm"
               style={{ backgroundColor: "#FFF8E7", border: "2px solid #D4A017", color: "#1A1A1A" }}
             >
-              📅 <strong>Availability note:</strong> Now booking from June 15, 2026 onward. 2-night minimum required.
+              📅 <strong>Availability note:</strong> Now booking from June 15, 2026 onward. {minNights}-night minimum required.
             </div>
 
             {/* Date Picker */}
@@ -222,12 +259,12 @@ export default function BookPage() {
                   }}
                 />
               </div>
-              {checkIn && checkOut && differenceInCalendarDays(checkOut, checkIn) < 2 && (
+              {checkIn && checkOut && differenceInCalendarDays(checkOut, checkIn) < minNights && (
                 <p className="text-center mt-2 font-accent" style={{ color: "#C85A1E" }}>
-                  Minimum stay is 2 nights. Please select a longer range.
+                  Minimum stay is {minNights} nights. Please select a longer range.
                 </p>
               )}
-              {checkIn && checkOut && differenceInCalendarDays(checkOut, checkIn) >= 2 && (
+              {checkIn && checkOut && differenceInCalendarDays(checkOut, checkIn) >= minNights && (
                 <p className="text-center mt-2 font-accent" style={{ color: "#2A9D8F" }}>
                   ✓ {format(checkIn, "MMM d")} → {format(checkOut, "MMM d, yyyy")} ({differenceInCalendarDays(checkOut, checkIn)} nights)
                 </p>
@@ -266,9 +303,9 @@ export default function BookPage() {
                   Max 9 guests
                 </span>
               </div>
-              {guests > 7 && (
+              {pricingConfig && guests > pricingConfig.extraGuestThreshold && (
                 <p className="mt-2 font-accent text-sm" style={{ color: "#2A9D8F" }}>
-                  Extra guest fee: ${guests - 7} additional guest{guests - 7 > 1 ? "s" : ""} × $35/night
+                  Extra guest fee: ${guests - pricingConfig.extraGuestThreshold} additional guest{guests - pricingConfig.extraGuestThreshold > 1 ? "s" : ""} × ${pricingConfig.extraGuestFee}/night
                 </p>
               )}
             </div>
@@ -287,13 +324,13 @@ export default function BookPage() {
                     label={`$${pricing.nightlyRate}/night × ${pricing.nights} nights`}
                     value={`$${pricing.baseTotal}`}
                   />
-                  {pricing.extraGuestFee > 0 && (
+                  {pricing.extraGuestFee > 0 && pricingConfig && (
                     <PriceLine
-                      label={`Extra guest fee (${guests - 7} guest${guests - 7 > 1 ? "s" : ""} × $35 × ${pricing.nights} nights)`}
+                      label={`Extra guest fee (${guests - pricingConfig.extraGuestThreshold} guest${guests - pricingConfig.extraGuestThreshold > 1 ? "s" : ""} × $${pricingConfig.extraGuestFee} × ${pricing.nights} nights)`}
                       value={`$${pricing.extraGuestFee}`}
                     />
                   )}
-                  <PriceLine label="Cleaning fee" value={`$${CLEANING_FEE}`} />
+                  <PriceLine label="Cleaning fee" value={`$${pricingConfig?.cleaningFee ?? 125}`} />
                   <div style={{ borderTop: "2px solid #D4A017", paddingTop: "0.75rem", marginTop: "0.75rem" }}>
                     <PriceLine label="Total stay" value={`$${pricing.totalAmount}`} bold />
                     <PriceLine
