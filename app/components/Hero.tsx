@@ -1,10 +1,9 @@
 "use client";
 
+import { useRouter } from "next/navigation";
+
 export default function Hero() {
-  const scrollToContact = () => {
-    const el = document.getElementById("contact");
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  };
+  const router = useRouter();
 
   return (
     <section
@@ -16,14 +15,6 @@ export default function Hero() {
         backgroundPosition: "center",
       }}
     >
-      {/* Coming Soon Badge */}
-      <div
-        className="inline-block px-5 py-2 rounded-full text-sm font-accent tracking-widest uppercase mb-6"
-        style={{ backgroundColor: "#D4A017", color: "#1A1A1A" }}
-      >
-        ✦ Coming Summer 2026 ✦
-      </div>
-
       {/* Wordmark */}
       <h1
         className="font-display text-6xl sm:text-7xl md:text-8xl mb-4 leading-tight"
@@ -50,7 +41,7 @@ export default function Hero() {
 
       {/* CTA */}
       <button
-        onClick={scrollToContact}
+        onClick={() => router.push("/book")}
         className="font-accent text-lg px-8 py-4 rounded-full border-4 transition-all duration-200 hover:scale-105 active:scale-95"
         style={{
           backgroundColor: "#2A9D8F",
@@ -59,7 +50,7 @@ export default function Hero() {
           boxShadow: "0 4px 20px rgba(42,157,143,0.4)",
         }}
       >
-        Get Notified When We Open ↓
+        Book Your Stay →
       </button>
 
       {/* Scroll hint */}

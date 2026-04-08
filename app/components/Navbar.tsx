@@ -64,8 +64,8 @@ export default function Navbar() {
             >
               House Rules
             </Link>
-            <a
-              href="/#contact"
+            <Link
+              href="/book"
               className="font-accent transition-all hover:scale-105 active:scale-95"
               style={{
                 backgroundColor: "#D4A017",
@@ -80,7 +80,7 @@ export default function Navbar() {
               }}
             >
               Book Now
-            </a>
+            </Link>
           </nav>
 
           {/* Hamburger — Tailwind controls display; NO inline display property */}
@@ -184,8 +184,8 @@ export default function Navbar() {
             >
               House Rules
             </Link>
-            <a
-              href="/#contact"
+            <Link
+              href="/book"
               className="font-accent"
               style={{
                 display: "block",
@@ -203,7 +203,7 @@ export default function Navbar() {
               onClick={() => setOpen(false)}
             >
               Book Now
-            </a>
+            </Link>
           </div>
         )}
       </div>
