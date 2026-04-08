@@ -6,21 +6,17 @@ import "react-day-picker/style.css";
 import { format, differenceInCalendarDays, isBefore } from "date-fns";
 
 // ─── Pricing helpers ───────────────────────────────────────────────────────────
-function getNightlyRate(checkIn: Date): number {
-  const month = checkIn.getMonth() + 1;
-  if (month >= 6 && month <= 8) return 325;
-  return 275;
-}
+const NIGHTLY_RATE = 275;
+const CLEANING_FEE = 125;
 
 function calcPricing(checkIn: Date, checkOut: Date, guests: number) {
   const nights = differenceInCalendarDays(checkOut, checkIn);
-  const nightlyRate = getNightlyRate(checkIn);
-  const baseTotal = nights * nightlyRate;
+  const baseTotal = nights * NIGHTLY_RATE;
   const extraGuests = Math.max(0, guests - 7);
   const extraGuestFee = extraGuests * 35 * nights;
-  const totalAmount = baseTotal + extraGuestFee;
+  const totalAmount = baseTotal + extraGuestFee + CLEANING_FEE;
   const depositAmount = Math.round(totalAmount / 2);
-  return { nights, nightlyRate, baseTotal, extraGuestFee, totalAmount, depositAmount };
+  return { nights, nightlyRate: NIGHTLY_RATE, baseTotal, extraGuestFee, totalAmount, depositAmount };
 }
 
 // ─── Blocked dates ─────────────────────────────────────────────────────────────
@@ -297,6 +293,7 @@ export default function BookPage() {
                       value={`$${pricing.extraGuestFee}`}
                     />
                   )}
+                  <PriceLine label="Cleaning fee" value={`$${CLEANING_FEE}`} />
                   <div style={{ borderTop: "2px solid #D4A017", paddingTop: "0.75rem", marginTop: "0.75rem" }}>
                     <PriceLine label="Total stay" value={`$${pricing.totalAmount}`} bold />
                     <PriceLine

@@ -5,13 +5,8 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2026-03-25.dahlia",
 });
 
-function getNightlyRate(checkIn: Date): number {
-  const month = checkIn.getMonth() + 1; // 1-indexed
-  // Peak: June (6), July (7), August (8)
-  if (month >= 6 && month <= 8) return 325;
-  // Shoulder: everything else (holidays TBD — using $325 as default)
-  return 275;
-}
+const NIGHTLY_RATE = 275;
+const CLEANING_FEE = 125;
 
 function calculatePricing(
   checkIn: Date,
@@ -20,13 +15,12 @@ function calculatePricing(
 ): { nights: number; nightlyRate: number; baseTotal: number; extraGuestFee: number; totalAmount: number; depositAmount: number } {
   const msPerDay = 1000 * 60 * 60 * 24;
   const nights = Math.round((checkOut.getTime() - checkIn.getTime()) / msPerDay);
-  const nightlyRate = getNightlyRate(checkIn);
-  const baseTotal = nights * nightlyRate;
+  const baseTotal = nights * NIGHTLY_RATE;
   const extraGuests = Math.max(0, guests - 7);
   const extraGuestFee = extraGuests * 35 * nights;
-  const totalAmount = baseTotal + extraGuestFee;
+  const totalAmount = baseTotal + extraGuestFee + CLEANING_FEE;
   const depositAmount = Math.round(totalAmount / 2);
-  return { nights, nightlyRate, baseTotal, extraGuestFee, totalAmount, depositAmount };
+  return { nights, nightlyRate: NIGHTLY_RATE, baseTotal, extraGuestFee, totalAmount, depositAmount };
 }
 
 export async function POST(req: NextRequest) {
@@ -81,7 +75,7 @@ export async function POST(req: NextRequest) {
             unit_amount: depositAmount * 100, // in cents
             product_data: {
               name: itemDescription,
-              description: `Nightly rate: $${nightlyRate}/night × ${nights} nights${extraGuestFee > 0 ? ` + $${extraGuestFee} extra guest fee` : ""}. Total stay: $${totalAmount}. Remaining 50% ($${totalAmount - depositAmount}) due 30 days before arrival.`,
+              description: `$${nightlyRate}/night × ${nights} nights + $${CLEANING_FEE} cleaning fee${extraGuestFee > 0 ? ` + $${extraGuestFee} extra guest fee` : ""}. Total: $${totalAmount}. Remaining 50% ($${totalAmount - depositAmount}) due 30 days before arrival.`,
             },
           },
           quantity: 1,
