@@ -65,6 +65,13 @@ export default function Navbar() {
               House Rules
             </Link>
             <Link
+              href="/blog"
+              className="font-accent transition-colors"
+              style={{ color: "#1A1A1A", textDecoration: "none", fontSize: "1.05rem" }}
+            >
+              Blog
+            </Link>
+            <Link
               href="/book"
               className="font-accent transition-all hover:scale-105 active:scale-95"
               style={{
@@ -183,6 +190,19 @@ export default function Navbar() {
               onClick={() => setOpen(false)}
             >
               House Rules
+            </Link>
+            <Link
+              href="/blog"
+              className="font-accent"
+              style={{
+                color: "#1A1A1A",
+                textDecoration: "none",
+                fontSize: "1.1rem",
+                padding: "0.5rem 0",
+              }}
+              onClick={() => setOpen(false)}
+            >
+              Blog
             </Link>
             <Link
               href="/book"
