@@ -30,20 +30,23 @@ type ActiveTab = "pricing" | "blocked" | "calendar";
 
 // ─── Main component ────────────────────────────────────────────────────────────
 export default function AdminPage() {
-  const [password, setPassword] = useState("");
-  const [authed, setAuthed] = useState(false);
+  const [password, setPassword] = useState(() => {
+    if (typeof window !== "undefined") {
+      return sessionStorage.getItem("admin_password") || "";
+    }
+    return "";
+  });
+  const [authed, setAuthed] = useState(() => {
+    if (typeof window !== "undefined") {
+      return !!sessionStorage.getItem("admin_password");
+    }
+    return false;
+  });
   const [authError, setAuthError] = useState("");
   const [authChecking, setAuthChecking] = useState(false);
   const [activeTab, setActiveTab] = useState<ActiveTab>("pricing");
 
-  // Restore session on load
-  useEffect(() => {
-    const saved = sessionStorage.getItem("admin_password");
-    if (saved) {
-      setPassword(saved);
-      setAuthed(true);
-    }
-  }, []);
+  // Session already restored via useState initializers above
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
