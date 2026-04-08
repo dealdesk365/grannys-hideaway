@@ -17,6 +17,7 @@ export async function GET(req: NextRequest) {
     .order("from_date", { ascending: true });
 
   if (error) {
+    console.error("[blocked-dates GET]", error);
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
 

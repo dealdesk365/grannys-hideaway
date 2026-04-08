@@ -53,13 +53,12 @@ export default function AdminPage() {
     setAuthChecking(true);
     setAuthError("");
     try {
-      const res = await fetch("/api/admin/pricing", {
+      const res = await fetch("/api/admin/auth", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Authorization: password,
         },
-        body: JSON.stringify({ nightly_rate: 0, cleaning_fee: 0, extra_guest_fee: 0, extra_guest_threshold: 0, min_nights: 0 }),
       });
       if (res.status === 401) {
         setAuthError("Wrong password. Try again.");
