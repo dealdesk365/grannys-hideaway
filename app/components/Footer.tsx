@@ -60,6 +60,13 @@ export default function Footer() {
         >
           <p>© 2026 Granny&apos;s Hideaway. All rights reserved.</p>
           <p className="font-accent">Stuck in time. Perfectly on purpose. 🟠📺</p>
+          <Link
+            href="/admin"
+            className="font-accent hover:opacity-100 transition-opacity"
+            style={{ color: "#1A1A1A", opacity: 0.4, fontSize: "0.8rem" }}
+          >
+            Host Login
+          </Link>
         </div>
       </div>
     </footer>
