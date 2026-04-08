@@ -14,34 +14,80 @@ const PRICING_DEFAULTS = {
   min_nights: 2,
 };
 
-async function fetchPricing() {
+interface CustomPricingRange {
+  id: string;
+  label: string;
+  from_date: string;
+  to_date: string;
+  nightly_rate: number;
+}
+
+async function fetchPricingWithCustom() {
   try {
-    const { data, error } = await supabase
-      .from("pricing")
-      .select("*")
-      .eq("id", 1)
-      .single();
-    if (error || !data) return PRICING_DEFAULTS;
-    return data;
+    const [pricingResult, customResult] = await Promise.all([
+      supabase.from("pricing").select("*").eq("id", 1).single(),
+      supabase
+        .from("custom_pricing")
+        .select("id, label, from_date, to_date, nightly_rate")
+        .order("from_date", { ascending: true }),
+    ]);
+    const base = pricingResult.error || !pricingResult.data ? PRICING_DEFAULTS : pricingResult.data;
+    const customPricing: CustomPricingRange[] = customResult.error ? [] : (customResult.data ?? []);
+    return { base, customPricing };
   } catch {
-    return PRICING_DEFAULTS;
+    return { base: PRICING_DEFAULTS, customPricing: [] };
   }
 }
 
-function calculatePricing(
+/** Returns the nightly rate for a specific date (ISO yyyy-mm-dd) given custom pricing ranges */
+function getEffectiveRate(
+  dateStr: string,
+  customPricing: CustomPricingRange[],
+  baseRate: number
+): { rate: number; label?: string } {
+  for (const range of customPricing) {
+    if (dateStr >= range.from_date && dateStr <= range.to_date) {
+      return { rate: range.nightly_rate, label: range.label };
+    }
+  }
+  return { rate: baseRate };
+}
+
+/** Format a Date to yyyy-mm-dd in local time */
+function toDateStr(d: Date): string {
+  return d.toISOString().slice(0, 10);
+}
+
+function calculatePricingPerNight(
   checkIn: Date,
   checkOut: Date,
   guests: number,
-  pricing: typeof PRICING_DEFAULTS
-): { nights: number; nightlyRate: number; baseTotal: number; extraGuestFee: number; totalAmount: number; depositAmount: number } {
+  base: typeof PRICING_DEFAULTS,
+  customPricing: CustomPricingRange[]
+) {
   const msPerDay = 1000 * 60 * 60 * 24;
   const nights = Math.round((checkOut.getTime() - checkIn.getTime()) / msPerDay);
-  const baseTotal = nights * pricing.nightly_rate;
-  const extraGuests = Math.max(0, guests - pricing.extra_guest_threshold);
-  const extraGuestFee = extraGuests * pricing.extra_guest_fee * nights;
-  const totalAmount = baseTotal + extraGuestFee + pricing.cleaning_fee;
+
+  // Iterate each night
+  const nightBreakdown: Array<{ dateStr: string; rate: number; label?: string }> = [];
+  for (let i = 0; i < nights; i++) {
+    const nightDate = new Date(checkIn.getTime() + i * msPerDay);
+    const dateStr = toDateStr(nightDate);
+    const { rate, label } = getEffectiveRate(dateStr, customPricing, base.nightly_rate);
+    nightBreakdown.push({ dateStr, rate, label });
+  }
+
+  const baseTotal = nightBreakdown.reduce((sum, n) => sum + n.rate, 0);
+  const extraGuests = Math.max(0, guests - base.extra_guest_threshold);
+  const extraGuestFee = extraGuests * base.extra_guest_fee * nights;
+  const totalAmount = baseTotal + extraGuestFee + base.cleaning_fee;
   const depositAmount = Math.round(totalAmount / 2);
-  return { nights, nightlyRate: pricing.nightly_rate, baseTotal, extraGuestFee, totalAmount, depositAmount };
+
+  // Count custom-rate nights for description
+  const customNights = nightBreakdown.filter((n) => n.label);
+  const baseNights = nights - customNights.length;
+
+  return { nights, baseTotal, extraGuestFee, totalAmount, depositAmount, nightBreakdown, baseNights, customNights };
 }
 
 export async function POST(req: NextRequest) {
@@ -65,18 +111,13 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Invalid dates" }, { status: 400 });
     }
 
-    // Fetch pricing from DB (with fallback)
-    const pricing = await fetchPricing();
+    const { base, customPricing } = await fetchPricingWithCustom();
 
-    const { nights, nightlyRate, extraGuestFee, totalAmount, depositAmount } = calculatePricing(
-      checkInDate,
-      checkOutDate,
-      guestCount,
-      pricing
-    );
+    const { nights, baseTotal, extraGuestFee, totalAmount, depositAmount, customNights } =
+      calculatePricingPerNight(checkInDate, checkOutDate, guestCount, base, customPricing);
 
-    if (nights < pricing.min_nights) {
-      return NextResponse.json({ error: `Minimum stay is ${pricing.min_nights} nights` }, { status: 400 });
+    if (nights < base.min_nights) {
+      return NextResponse.json({ error: `Minimum stay is ${base.min_nights} nights` }, { status: 400 });
     }
 
     if (guestCount < 1 || guestCount > 9) {
@@ -88,6 +129,18 @@ export async function POST(req: NextRequest) {
 
     const itemDescription = `Granny's Hideaway — ${checkInFormatted}–${checkOutFormatted} (${nights} nights, ${guestCount} guests) — 50% Deposit`;
 
+    // Build a description that shows custom pricing if applicable
+    let pricingDesc = `$${baseTotal} accommodation`;
+    if (customNights.length > 0) {
+      const uniqueLabels = Array.from(new Set(customNights.map((n) => n.label).filter(Boolean)));
+      pricingDesc += ` (includes ${customNights.length} holiday-rate night${customNights.length > 1 ? "s" : ""}: ${uniqueLabels.join(", ")})`;
+    }
+    pricingDesc += ` + $${base.cleaning_fee} cleaning fee`;
+    if (extraGuestFee > 0) {
+      pricingDesc += ` + $${extraGuestFee} extra guest fee`;
+    }
+    pricingDesc += `. Total: $${totalAmount}. Remaining 50% ($${totalAmount - depositAmount}) due 30 days before arrival.`;
+
     const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
     const session = await stripe.checkout.sessions.create({
@@ -97,10 +150,10 @@ export async function POST(req: NextRequest) {
         {
           price_data: {
             currency: "usd",
-            unit_amount: depositAmount * 100, // in cents
+            unit_amount: depositAmount * 100,
             product_data: {
               name: itemDescription,
-              description: `$${nightlyRate}/night × ${nights} nights + $${pricing.cleaning_fee} cleaning fee${extraGuestFee > 0 ? ` + $${extraGuestFee} extra guest fee` : ""}. Total: $${totalAmount}. Remaining 50% ($${totalAmount - depositAmount}) due 30 days before arrival.`,
+              description: pricingDesc,
             },
           },
           quantity: 1,

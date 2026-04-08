@@ -6,22 +6,79 @@ import "react-day-picker/style.css";
 import { format, differenceInCalendarDays, isBefore } from "date-fns";
 
 // ─── Pricing helpers ───────────────────────────────────────────────────────────
+interface CustomPricingRange {
+  id: string;
+  label: string;
+  from_date: string;
+  to_date: string;
+  nightly_rate: number;
+}
+
 interface PricingConfig {
   nightlyRate: number;
   cleaningFee: number;
   extraGuestFee: number;
   extraGuestThreshold: number;
   minNights: number;
+  customPricing: CustomPricingRange[];
+}
+
+/** Format a Date to yyyy-mm-dd */
+function toDateStr(d: Date): string {
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const day = String(d.getDate()).padStart(2, "0");
+  return `${y}-${m}-${day}`;
+}
+
+/** Returns the effective nightly rate for a given date */
+function getEffectiveRate(
+  date: Date,
+  customPricing: CustomPricingRange[],
+  baseRate: number
+): { rate: number; label?: string } {
+  const dateStr = toDateStr(date);
+  for (const range of customPricing) {
+    if (dateStr >= range.from_date && dateStr <= range.to_date) {
+      return { rate: range.nightly_rate, label: range.label };
+    }
+  }
+  return { rate: baseRate };
 }
 
 function calcPricing(checkIn: Date, checkOut: Date, guests: number, config: PricingConfig) {
   const nights = differenceInCalendarDays(checkOut, checkIn);
-  const baseTotal = nights * config.nightlyRate;
+  const msPerDay = 1000 * 60 * 60 * 24;
+
+  // Per-night breakdown
+  let baseTotal = 0;
+  let customNightCount = 0;
+  const customLabels = new Set<string>();
+
+  for (let i = 0; i < nights; i++) {
+    const nightDate = new Date(checkIn.getTime() + i * msPerDay);
+    const { rate, label } = getEffectiveRate(nightDate, config.customPricing, config.nightlyRate);
+    baseTotal += rate;
+    if (label) {
+      customNightCount++;
+      customLabels.add(label);
+    }
+  }
+
   const extraGuests = Math.max(0, guests - config.extraGuestThreshold);
   const extraGuestFee = extraGuests * config.extraGuestFee * nights;
   const totalAmount = baseTotal + extraGuestFee + config.cleaningFee;
   const depositAmount = Math.round(totalAmount / 2);
-  return { nights, nightlyRate: config.nightlyRate, baseTotal, extraGuestFee, totalAmount, depositAmount };
+  return {
+    nights,
+    nightlyRate: config.nightlyRate,
+    baseTotal,
+    extraGuestFee,
+    totalAmount,
+    depositAmount,
+    customNightCount,
+    customLabels: Array.from(customLabels),
+  };
 }
 
 // ─── Blocked dates ─────────────────────────────────────────────────────────────
@@ -132,12 +189,13 @@ export default function BookPage() {
           extraGuestFee: data.extra_guest_fee,
           extraGuestThreshold: data.extra_guest_threshold,
           minNights: data.min_nights,
+          customPricing: Array.isArray(data.custom_pricing) ? data.custom_pricing : [],
         });
         setPricingLoading(false);
       })
       .catch(() => {
         // Fall back to defaults
-        setPricingConfig({ nightlyRate: 275, cleaningFee: 125, extraGuestFee: 35, extraGuestThreshold: 7, minNights: 2 });
+        setPricingConfig({ nightlyRate: 275, cleaningFee: 125, extraGuestFee: 35, extraGuestThreshold: 7, minNights: 2, customPricing: [] });
         setPricingLoading(false);
       });
   }, []);
@@ -321,9 +379,18 @@ export default function BookPage() {
                 </h2>
                 <div className="space-y-2">
                   <PriceLine
-                    label={`$${pricing.nightlyRate}/night × ${pricing.nights} nights`}
+                    label={
+                      pricing.customNightCount > 0
+                        ? `Accommodation (${pricing.nights} nights, mixed rates)`
+                        : `$${pricing.nightlyRate}/night × ${pricing.nights} nights`
+                    }
                     value={`$${pricing.baseTotal}`}
                   />
+                  {pricing.customNightCount > 0 && (
+                    <p className="font-accent text-xs" style={{ color: "#D4A017", marginTop: "-4px" }}>
+                      ✦ Holiday rate applies to {pricing.customNightCount} night{pricing.customNightCount > 1 ? "s" : ""}{pricing.customLabels.length > 0 ? ` (${pricing.customLabels.join(", ")})` : ""}
+                    </p>
+                  )}
                   {pricing.extraGuestFee > 0 && pricingConfig && (
                     <PriceLine
                       label={`Extra guest fee (${guests - pricingConfig.extraGuestThreshold} guest${guests - pricingConfig.extraGuestThreshold > 1 ? "s" : ""} × $${pricingConfig.extraGuestFee} × ${pricing.nights} nights)`}
