@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { supabaseAdmin } from "@/lib/supabase";
+import { getSupabaseAdmin } from "@/lib/supabase";
 
 function checkAuth(req: NextRequest): boolean {
   const auth = req.headers.get("Authorization");
@@ -11,7 +11,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  const { data, error } = await supabaseAdmin
+  const { data, error } = await getSupabaseAdmin()
     .from("custom_pricing")
     .select("*")
     .order("from_date", { ascending: true });
@@ -41,7 +41,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "label, from_date, to_date, and nightly_rate are required" }, { status: 400 });
   }
 
-  const { data, error } = await supabaseAdmin
+  const { data, error } = await getSupabaseAdmin()
     .from("custom_pricing")
     .insert({ label, from_date, to_date, nightly_rate: Number(nightly_rate) })
     .select()
@@ -72,7 +72,7 @@ export async function PUT(req: NextRequest) {
     return NextResponse.json({ error: "id is required" }, { status: 400 });
   }
 
-  const { data, error } = await supabaseAdmin
+  const { data, error } = await getSupabaseAdmin()
     .from("custom_pricing")
     .update({ label, from_date, to_date, nightly_rate: Number(nightly_rate) })
     .eq("id", id)
@@ -104,7 +104,7 @@ export async function DELETE(req: NextRequest) {
     return NextResponse.json({ error: "id is required" }, { status: 400 });
   }
 
-  const { error } = await supabaseAdmin
+  const { error } = await getSupabaseAdmin()
     .from("custom_pricing")
     .delete()
     .eq("id", id);

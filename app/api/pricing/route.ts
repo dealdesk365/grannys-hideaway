@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { supabase } from "@/lib/supabase";
+import { getSupabase } from "@/lib/supabase";
 
 const DEFAULTS = {
   nightly_rate: 275,
@@ -12,8 +12,8 @@ const DEFAULTS = {
 export async function GET() {
   try {
     const [pricingResult, customPricingResult] = await Promise.all([
-      supabase.from("pricing").select("*").eq("id", 1).single(),
-      supabase
+      getSupabase().from("pricing").select("*").eq("id", 1).single(),
+      getSupabase()
         .from("custom_pricing")
         .select("id, label, from_date, to_date, nightly_rate")
         .order("from_date", { ascending: true }),

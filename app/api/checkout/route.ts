@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
-import { supabase } from "@/lib/supabase";
+import { getSupabase } from "@/lib/supabase";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2026-03-25.dahlia",
@@ -25,8 +25,8 @@ interface CustomPricingRange {
 async function fetchPricingWithCustom() {
   try {
     const [pricingResult, customResult] = await Promise.all([
-      supabase.from("pricing").select("*").eq("id", 1).single(),
-      supabase
+      getSupabase().from("pricing").select("*").eq("id", 1).single(),
+      getSupabase()
         .from("custom_pricing")
         .select("id, label, from_date, to_date, nightly_rate")
         .order("from_date", { ascending: true }),
