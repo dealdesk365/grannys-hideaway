@@ -31,6 +31,8 @@ The combination of rolling terrain, thick forests, and a climate that delivers l
 
 **Michaywe Pines** has been a local favorite for decades. It's a classic northern Michigan layout — tree-lined, well-maintained, and priced to be accessible without sacrificing quality. Great for getting in an extra round without breaking the bank.
 
+**Lakes of the North Golf Course** deserves a special mention for Granny's Hideaway guests — it's the closest course to the property, literally just minutes away. A well-maintained 18-hole course with a friendly local atmosphere and great value. It's the perfect "roll out of bed and play a quick round" option before heading to one of the bigger resort courses later in the day.
+
 **Tips for Planning Your Golf Trip**
 
 Book early. Peak season (late June through August) fills up fast, especially for tee times at Treetops. If you can swing a September trip, conditions are still excellent and the fall foliage adds an unforgettable backdrop to every round.
