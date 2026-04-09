@@ -31,7 +31,7 @@ The combination of rolling terrain, thick forests, and a climate that delivers l
 
 **Michaywe Pines** has been a local favorite for decades. It's a classic northern Michigan layout — tree-lined, well-maintained, and priced to be accessible without sacrificing quality. Great for getting in an extra round without breaking the bank.
 
-**Lakes of the North Golf Course** deserves a special mention for Granny's Hideaway guests — it's the closest course to the property, literally just minutes away. A well-maintained 18-hole course with a friendly local atmosphere and great value. It's the perfect "roll out of bed and play a quick round" option before heading to one of the bigger resort courses later in the day.
+**Lakes of the North Golf Course** deserves a special mention for Granny's Hideaway guests — it's the closest course to the property, literally just minutes away, and it's an official part of the Gaylord Golf Mecca. Located at 8151 Pineview Drive in Mancelona, it's a well-maintained course with a friendly local atmosphere and great value. It's the perfect "roll out of bed and play a quick round" option before heading to one of the bigger resort courses later in the day. Call ahead at (231) 585-6800 or check their packages and specials online.
 
 **Tips for Planning Your Golf Trip**
 
