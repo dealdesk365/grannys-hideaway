@@ -87,7 +87,7 @@ Torch Lake is about **30–40 minutes** from Granny's Hideaway, making it an eas
 
 **Trail Access from the Property**
 
-Granny's Hideaway sits in the Lakes of the North area, which connects directly to northern Michigan's extensive DNR trail network. Depending on conditions and the time of year, you can access ORV and snowmobile trails without even loading your machines onto a trailer. That's rare — and it's one of the biggest reasons outdoor enthusiasts keep coming back to this area.
+Granny's Hideaway sits near the Lakes of the North community, which puts you within easy reach of northern Michigan's extensive DNR trail network. Depending on conditions and the time of year, you can access ORV and snowmobile trails without a long drive. That kind of proximity is rare — and it's one of the biggest reasons outdoor enthusiasts keep coming back to this area.
 
 **ORV Season (Spring through Fall)**
 
