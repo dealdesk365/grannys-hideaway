@@ -107,7 +107,7 @@ The best conditions typically hit between **Christmas and early March**. Snowfal
 
 **What to Bring**
 
-For ORV trips: helmet (required), eye protection, layers for variable weather, a basic tool kit, and a trail map downloaded offline. Cell service can be spotty in deep woods.
+For ORV trips: eye protection, layers for variable weather, a basic tool kit, and a trail map downloaded offline. Cell service can be spotty in deep woods. Helmets are recommended but not required for riders 16 and older in Michigan.
 
 For snowmobiling: full snow gear (bib, jacket, boots, gloves), helmet with a heated visor if possible, a balaclava, and hand warmers as backup. Fuel up before hitting the trails — remote trail areas don't always have nearby stations.
 
