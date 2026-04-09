@@ -103,7 +103,7 @@ If you're riding in Michigan, you need an ORV license for your machine plus a tr
 
 When the snow flies up north — and it does, reliably — this area transforms into snowmobile paradise. The **Antrim County** trail system connects into the statewide **Michigan Snowmobile Trail Network**, giving you hundreds of miles of groomed trail access from one starting point.
 
-The best conditions typically hit between **Christmas and early March**. Snowfall in this part of Michigan is no joke — Mancelona sits in a lake-effect snow zone and regularly sees 150–200+ inches per season, with intense winters like 2024-2025 topping 240 inches. The DNR grooms major corridors regularly, and mid-winter conditions are typically excellent. Trail conditions are updated daily at the Michigan DNR website and apps like **TrailLink** and **Snotel**.
+The best conditions typically run from **Christmas through early March**.  Snowfall in this part of Michigan is no joke — Mancelona sits in a lake-effect snow zone and regularly sees 150–200+ inches per season, with intense winters like 2024-2025 topping 240 inches. The DNR grooms major corridors regularly, and mid-winter conditions are typically excellent. Trail conditions are updated daily at the Michigan DNR website and apps like **TrailLink** and **Snotel**.
 
 **What to Bring**
 
