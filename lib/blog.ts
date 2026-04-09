@@ -91,7 +91,7 @@ Granny's Hideaway sits near the Lakes of the North community, which puts you wit
 
 **ORV Season (Spring through Fall)**
 
-Michigan's ORV season typically runs from the moment the ground firms up in spring through late fall. The trail systems near Mancelona and the Antrim/Charlevoix county area offer a mix of terrain — wooded two-tracks, open meadow sections, and more technical wooded trails for those who want a challenge.
+Michigan's ORV season runs from the moment the ground firms up in spring through late fall — but ask any local and they'll tell you **spring and fall are the sweet spot for SxS riding**. The trails are less crowded, temps are perfect, and the scenery is stunning. Summer up here is for the lake. The trail systems near Mancelona and the Antrim/Charlevoix county area offer a mix of terrain — wooded two-tracks, open meadow sections, and more technical wooded trails for those who want a challenge.
 
 ORV access in the Jordan River State Forest and surrounding Antrim County DNR land is area-specific — some roads and trails are open to ORVs, others are not. Always check the current Antrim County DNR Forest Roads Map and posted signage before riding. Trail conditions and permitted routes can be found on the **Michigan DNR ORV Trail Finder** at michigan.gov/dnr. **Polaris Ride Command** is the app most local riders use for navigation and trail maps.
 
