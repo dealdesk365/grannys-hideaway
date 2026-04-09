@@ -43,7 +43,7 @@ Stay flexible — many courses offer twilight rates that are significantly disco
 
 **Granny's Hideaway: Your Perfect Base Camp**
 
-Granny's Hideaway is located just 20 minutes from downtown Gaylord, which puts you within striking distance of virtually every major course in the area. You'll wake up in a cozy, fully-equipped cabin in the woods, load your clubs, and be on the first tee before the dew burns off. After a long day on the links, come back to a private hot tub, a full kitchen for meal prep, and room for the whole crew. It's exactly what a golf trip should be — great courses by day, great company by night.`,
+Granny's Hideaway is located just 20 minutes from downtown Gaylord, which puts you within striking distance of virtually every major course in the area. You'll wake up in a cozy, fully-equipped cabin in the woods, load your clubs, and be on the first tee before the dew burns off. After a long day on the links, come back to a fully-equipped cabin, a full kitchen for meal prep, and room for the whole crew. It's exactly what a golf trip should be — great courses by day, great company by night.`,
   },
   {
     slug: "torch-lake-michigan-travel-guide",
@@ -221,7 +221,7 @@ The color changes fastest in areas with elevation changes and mixed hardwood spe
 
 **Early morning is magic.** Mist in the valleys, low light through golden leaves, no crowds. Set an alarm at least once.
 
-**Stay at Granny's for shoulder season value.** Fall is one of the best times to visit northern Michigan — the summer crowds have thinned, the weather is crisp and comfortable, and the landscape is stunning. Granny's Hideaway offers fall shoulder season pricing from **$275/night**, making a 3–4 night leaf-peeping trip genuinely affordable. A long October weekend in northern Michigan, surrounded by fall color with a hot tub waiting at the end of the day — it's hard to beat.`,
+**Stay at Granny's for shoulder season value.** Fall is one of the best times to visit northern Michigan — the summer crowds have thinned, the weather is crisp and comfortable, and the landscape is stunning. Granny's Hideaway offers fall shoulder season pricing from **$275/night**, making a 3–4 night leaf-peeping trip genuinely affordable. A long October weekend in northern Michigan, surrounded by fall color with a cozy retro cabin waiting at the end of the day — it's hard to beat.`,
   },
 ];
 
