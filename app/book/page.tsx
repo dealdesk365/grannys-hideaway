@@ -302,7 +302,7 @@ export default function BookPage() {
               <h2 className="font-display text-2xl mb-4" style={{ color: "#1A1A1A" }}>
                 Select Your Dates
               </h2>
-              <div className="flex justify-center overflow-x-auto">
+              <div className="w-full flex justify-center overflow-x-auto">
                 <DayPicker
                   mode="range"
                   selected={range}
@@ -310,8 +310,10 @@ export default function BookPage() {
                   disabled={isDateBlocked}
                   numberOfMonths={1}
                   fromDate={new Date()}
-                  style={{ fontFamily: "inherit" }}
+                  style={{ fontFamily: "inherit", maxWidth: "100%", margin: "0 auto" }}
                   styles={{
+                    months: { maxWidth: "100%" },
+                    month: { maxWidth: "100%" },
                     day_selected: { backgroundColor: "#2A9D8F", color: "#fff" },
                     day_range_middle: { backgroundColor: "#d4f0ed", color: "#1A1A1A" },
                   }}
