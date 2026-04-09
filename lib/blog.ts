@@ -109,7 +109,7 @@ The best conditions typically run from **Christmas through early March**.  Snowf
 
 For ORV trips: eye protection, layers for variable weather, a basic tool kit, and a trail map downloaded offline. Cell service can be spotty in deep woods. Helmets are recommended but not required for riders 16 and older in Michigan.
 
-For snowmobiling: full snow gear (bib, jacket, boots, gloves), helmet with a heated visor if possible, a balaclava, and hand warmers as backup. Fuel up before hitting the trails — remote trail areas don't always have nearby stations.
+For snowmobiling: full snow gear (bib, jacket, boots, gloves), helmet (required by Michigan law), a heated visor is highly recommended, a balaclava, and hand warmers as backup. Fuel up before hitting the trails — remote trail areas don't always have nearby stations.
 
 Whether it's summer dust or winter powder, the trails near Granny's Hideaway deliver the kind of access that makes the whole trip.`,
   },
