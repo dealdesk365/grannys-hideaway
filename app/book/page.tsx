@@ -461,7 +461,7 @@ export default function BookPage() {
                 Guest Liability Waiver & Rental Agreement
               </h2>
               <p className="font-accent text-sm mb-1" style={{ color: "#666" }}>
-                9856 Wyndwood Dr, Mancelona, MI 49659
+                Mancelona, MI 49659
               </p>
               <p className="font-accent text-sm mb-4" style={{ color: "#C85A1E" }}>
                 Please read the entire agreement before signing.
