@@ -93,7 +93,7 @@ Granny's Hideaway sits near the Lakes of the North community, which puts you wit
 
 Michigan's ORV season typically runs from the moment the ground firms up in spring through late fall. The trail systems near Mancelona and the Antrim/Charlevoix county area offer a mix of terrain — wooded two-tracks, open meadow sections, and more technical wooded trails for those who want a challenge.
 
-The **Jordan River State Forest** and surrounding DNR land provide tens of thousands of acres of trail access. Trail conditions and current status can be found on the **Michigan DNR ORV Trail Finder** at michigan.gov/dnr.
+ORV access in the Jordan River State Forest and surrounding Antrim County DNR land is area-specific — some roads and trails are open to ORVs, others are not. Always check the current Antrim County DNR Forest Roads Map and posted signage before riding. Trail conditions and permitted routes can be found on the **Michigan DNR ORV Trail Finder** at michigan.gov/dnr.
 
 **Michigan ORV Permit Requirements**
 
