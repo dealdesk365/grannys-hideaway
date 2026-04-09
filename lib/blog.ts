@@ -164,11 +164,11 @@ Whether it's summer dust or winter powder, the trails near Granny's Hideaway del
 
 **Local Food and Drink**
 
-**18. Elk & Oryx (Gaylord)** — Upscale dining in an unexpected location. Great local ingredients, solid wine list.
+**18. Bennethum's Northern Inn (Mancelona)** — A local favorite for classic American comfort food. Great atmosphere, friendly service, and exactly the kind of place you'd hope to find in a small northern Michigan town.
 
-**19. Big Buck Brewery** — Northern Michigan's original brewpub. Burgers, craft beer, and a rustic vibe.
+**19. Big Buck Brewery (Gaylord)** — Northern Michigan's original brewpub. Burgers, craft beer, and a rustic vibe that fits the area perfectly.
 
-**20. The Gobbler** — A Gaylord institution. Stick to the classics.
+**20. Casa Nueva (Mancelona)** — Solid Mexican food right in Mancelona. Locals love it and the prices are great. A go-to after a long day on the trails.
 
 **21. Pick up pasties** — The UP influence means good pasties are not far. Try them from a local shop — they're hearty, portable, and perfect trail food.
 
