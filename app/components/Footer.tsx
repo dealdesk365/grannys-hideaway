@@ -43,6 +43,8 @@ export default function Footer() {
             ["FAQ", "/faq"],
             ["House Rules", "/rules"],
             ["Reviews", "/reviews"],
+            ["Blog", "/blog"],
+            ["Book Now", "/book"],
           ].map(([label, href]) => (
             <Link
               key={label}
