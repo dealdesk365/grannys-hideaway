@@ -54,6 +54,39 @@ export default function Footer() {
           ))}
         </div>
 
+        {/* SEO landing page links */}
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "0.4rem 1.2rem",
+            justifyContent: "center",
+            marginTop: "0.75rem",
+          }}
+          className="font-accent"
+        >
+          {[
+            ["Northern Michigan Cabin Rental", "/northern-michigan-cabin-rental"],
+            ["Vintage Cabin Rental Michigan", "/vintage-cabin-rental-michigan"],
+            ["Bellaire Michigan Cabin", "/bellaire-michigan-cabin-rental"],
+            ["Snowmobile Cabin Rental", "/snowmobile-cabin-rental-michigan"],
+            ["SxS & UTV Cabin Rental", "/sxs-utv-cabin-rental-michigan"],
+            ["Torch Lake Area Cabin", "/torch-lake-area-cabin"],
+            ["Antrim County Cabin", "/antrim-county-cabin-rental"],
+            ["Fall Colors Cabin", "/fall-colors-cabin-michigan"],
+            ["Deward Tract Cabin", "/deward-tract-cabin-rental"],
+            ["Mancelona Vacation Rental", "/mancelona-vacation-rental"],
+          ].map(([label, href]) => (
+            <Link
+              key={label}
+              href={href}
+              style={{ color: "#1A1A1A", textDecoration: "underline", fontSize: "0.8rem", opacity: 0.65 }}
+            >
+              {label}
+            </Link>
+          ))}
+        </div>
+
         <div
           className="w-full border-t border-black/20 pt-5 flex flex-col sm:flex-row justify-between items-center gap-2 text-sm"
           style={{ color: "#1A1A1A", opacity: 0.65 }}
