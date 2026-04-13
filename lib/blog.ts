@@ -9,6 +9,51 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "spring-fishing-northern-michigan-mancelona",
+    title: "Spring Fishing in Northern Michigan: Trout, Bass & the Best Spots Near Mancelona",
+    excerpt:
+      "The ice is off the lakes, the trout streams are running cold and clear, and northern Michigan is waking up. Spring is one of the best-kept secrets for fishing in Antrim County — here's where to go and what to expect.",
+    date: "April 13, 2026",
+    readTime: "6 min read",
+    content: `There's a certain magic to northern Michigan in April and May. The snowmobiles are put away, the tourists haven't arrived yet, and the lakes and streams are coming back to life. For anglers, spring is arguably the best time to visit — the fish are hungry, the crowds are thin, and the scenery is stunning in that raw, just-waking-up kind of way.
+
+If you're planning a spring fishing trip and looking for a home base, Granny's Hideaway in Mancelona puts you right in the middle of some of the finest fishing country in the Lower Peninsula.
+
+**Trout Season Opens Late April**
+
+Michigan's Lower Peninsula trout season traditionally opens on the last Saturday of April, and the rivers and streams of Antrim County are worth circling on the calendar. The **Intermediate River** runs right through the Mancelona area and offers brown and brook trout fishing in a beautiful, wooded setting. It's not a trophy river — it's the kind of place where you wade in with waders and a cup of coffee and just enjoy being outside.
+
+The **Jordan River** is about 25 miles to the west, and it's one of Michigan's designated Natural Rivers. It's a beautiful blue-ribbon trout stream that flows cold and clear through the Jordan River Valley. The Jordan Valley Pathway area gives you access to the river through state land, so you can fish without worrying about private property. Brown trout are the main target here — they can be finicky, but landing one on a dry fly in that setting is worth whatever it takes.
+
+The **Pigeon River Country State Forest**, about 45 minutes east near Vanderbilt, is another excellent destination for serious trout anglers. The Pigeon River itself holds wild brown and brook trout, and the area has a real sense of wilderness — elk country, big timber, minimal pressure.
+
+**Bass and Panfish on the Local Lakes**
+
+Walleye season typically opens in early May on inland lakes, and bass season follows shortly after. The **Chain O' Lakes** in Antrim County — including Torch Lake, Elk Lake, Skegemog Lake, and others — is a world-class multi-species fishery. Largemouth and smallmouth bass are both well-represented, and the walleye fishing on Torch Lake in particular has a devoted local following.
+
+**Intermediate Lake**, just a few miles from the cabin, is a quieter option that's great for bass, bluegill, and crappie. Spring crappie fishing can be exceptional — they move shallow to spawn in May, and once you find the right structure, you can fill a bucket pretty quickly.
+
+For walleye, **Torch Lake** and **Elk Lake** are your best bets in the area. Early morning trolling with crawler harnesses or casting jigs near points and drop-offs can produce excellent results, especially in May and early June before the water warms up too much.
+
+**What You'll Need**
+
+A Michigan fishing license is required for anyone 17 and older. You can purchase one online at michigan.gov/dnr or at any local sporting goods store. Mancelona has a couple of options for last-minute gear and bait — ask around locally, the old-timers know where the fish are biting.
+
+For trout streams: waders are your friend. Water temps in April can be in the 40s, and even in May the streams run cold. A light fly rod or ultralight spinning setup with 4-6 lb monofilament is ideal for most streams in the area. Dry flies, nymphs, and small spinners (Panther Martins are a local favorite) all work well.
+
+For lakes: a medium-action spinning rod with 8-10 lb braid and a fluorocarbon leader covers most situations. Bring soft plastics for bass, crankbaits for walleye, and a slip bobber rig for panfish and you'll be covered.
+
+**The Quiet Season Is the Best Season**
+
+There's something special about fishing northern Michigan in the spring before the summer crowds arrive. The campgrounds aren't full, the boat launches aren't backed up, and the towns have a relaxed, unhurried feel that gets harder to find as the weather warms. You get the place at its most genuine.
+
+At Granny's Hideaway, you're perfectly positioned for it. The cabin is cozy and fully-equipped — a warm place to come back to after a cold morning on the water, with a full kitchen to cook whatever you catch. Grandma Viola used to fish the local lakes herself. She would have approved.
+
+**Ready to Plan Your Spring Fishing Trip?**
+
+Granny's Hideaway is available to book right now at [grannyshideaway.com/book](https://grannyshideaway.com/book). The cabin sleeps up to 6, so bring the whole crew — the more rods in the water, the better the chances.`,
+  },
+  {
     slug: "best-golf-courses-near-gaylord-michigan",
     title: "The Best Golf Courses Near Gaylord, MI — Michigan's Golf Mecca",
     excerpt:
