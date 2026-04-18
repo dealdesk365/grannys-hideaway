@@ -24,14 +24,14 @@ const bedrooms = [
   {
     icon: "🛏️",
     title: "Queen Bedroom #2",
-    desc: "Downstairs. Green shag vibes. Viola had opinions about carpet — all of them correct.",
+    desc: "Downstairs. Blue and orange carpet vibes. Viola had opinions about carpet — all of them correct.",
     bg: "#7B9A3A",
     color: "#FAF3E0",
   },
   {
     icon: "🛗",
     title: "Twin Loft — 3 Beds",
-    desc: "Upstairs loft. Classic wood paneling keeping the full Granny vibe from top to bottom. Perfect for the kids, or anyone young at heart.",
+    desc: "Upstairs loft. Three twin beds and a treeline view that Granny never got tired of. Perfect for the kids, or anyone young at heart.",
     bg: "#2A9D8F",
     color: "#FAF3E0",
   },
@@ -140,12 +140,11 @@ export default function TheHideawayPage() {
               <em>never stopped being retro</em>. Every corner is a love letter to the era.
             </p>
             <p>
-              The bedrooms got blue and green shag — because even Viola knew you couldn&apos;t
+              The bedrooms got blue and orange carpet — because even Viola knew you couldn&apos;t
               sleep <em>ON</em> orange. But the living room? That was <strong>hers.</strong>
             </p>
             <p>
-              Up in the loft: wood paneling from floor to ceiling, three twin beds, and a
-              view of the treeline that Granny never got tired of.
+              Up in the loft: three twin beds and a view of the treeline that Granny never got tired of.
             </p>
           </div>
         </div>
