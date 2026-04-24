@@ -45,7 +45,7 @@ You pull in, cut the engine, and it gets very quiet. That's northern Michigan do
 
 The cabin sleeps up to six, so you can bring the family or a group of friends. There's a full kitchen, comfortable beds, and outdoor space to just sit and be in the woods for a while. In the summer, the porch is where everyone ends up.
 
-You're close to everything worth doing in this part of northern Michigan — fishing the Intermediate River, riding the ORV trails, hitting the golf courses near Gaylord, chasing fall color down the back roads. But the cabin itself is its own thing. Some people barely leave.
+You're close to everything worth doing in this part of northern Michigan — fishing the Manistee River, riding the ORV trails, hitting the golf courses near Gaylord, chasing fall color down the back roads. But the cabin itself is its own thing. Some people barely leave.
 
 **A Few Things Viola Would Want You to Know**
 
@@ -74,7 +74,7 @@ If you're planning a spring fishing trip and looking for a home base, Granny's H
 
 **Trout Season Opens Late April**
 
-Michigan's Lower Peninsula trout season traditionally opens on the last Saturday of April, and the rivers and streams of Antrim County are worth circling on the calendar. The **Intermediate River** runs right through the Mancelona area and offers brown and brook trout fishing in a beautiful, wooded setting. It's not a trophy river — it's the kind of place where you wade in with waders and a cup of coffee and just enjoy being outside.
+Michigan's Lower Peninsula trout season traditionally opens on the last Saturday of April, and the rivers and streams of Antrim County are worth circling on the calendar. The **Manistee River** is one of Michigan's premier trout streams and is within easy reach of the cabin — offering brown and brook trout fishing in a beautiful, wooded setting. It's the kind of place where you wade in with waders and a cup of coffee and just enjoy being outside.
 
 The **Jordan River** is about 25 miles to the west, and it's one of Michigan's designated Natural Rivers. It's a beautiful blue-ribbon trout stream that flows cold and clear through the Jordan River Valley. The Jordan Valley Pathway area gives you access to the river through state land, so you can fish without worrying about private property. Brown trout are the main target here — they can be finicky, but landing one on a dry fly in that setting is worth whatever it takes.
 
