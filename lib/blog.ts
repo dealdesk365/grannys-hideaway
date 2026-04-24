@@ -37,7 +37,7 @@ So that's what we're doing. Keeping it alive.
 
 We've kept it as close to the original as we can. The vintage interior is intact — not because we couldn't update it, but because we don't want to. The orange carpet and avocado green and harvest gold aren't retro-chic affectation. That's just what it looks like. It looked like that when Viola bought it, and it still does. There's something grounding about a place that hasn't tried to reinvent itself.
 
-Her quilts are still on the beds. Her percolator is still in the kitchen (we added a drip machine too, don't worry). The cabin still smells faintly like pine and old wood and something warm, especially in the evening when the fire's going.
+Her quilts are still on the beds. Her percolator is still in the kitchen (we added a drip machine too, don't worry). The cabin still smells faintly like pine and old wood and something warm.
 
 **What a Stay Is Like**
 

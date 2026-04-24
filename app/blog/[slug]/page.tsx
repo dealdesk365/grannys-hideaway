@@ -34,8 +34,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 function renderContent(content: string) {
   const paragraphs = content.split("\n\n");
   return paragraphs.map((para, i) => {
-    // Replace **text** with <strong>text</strong>
-    const html = para.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+    // Replace **text** with <strong>text</strong> and [text](url) with <a> tags
+    const html = para
+      .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+      .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, '<a href="$2" style="color:#1a3d2b;font-weight:600;">$1</a>');
     return (
       <p
         key={i}
