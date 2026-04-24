@@ -17,7 +17,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "5 min read",
     content: `Most vacation rentals are just houses. They come with a welcome binder, a ring doorbell, and a generic wall hanging that says something about the beach. Granny's Hideaway is not that.
 
-This cabin was built in the early 1970s by a woman named Viola — our grandmother. She picked the lot herself, on a quiet stretch of wooded land in Mancelona, Michigan, not far from the Lakes of the North community. She had it built the way she wanted it: a proper little chalet, solid and warm, with a steep roofline to shed the snow and a wood-burning stove to take the chill off the long winters. She decorated it herself. The orange carpet. The harvest gold fixtures. The hand-sewn quilts on the beds. Every detail was hers.
+This cabin was built in the early 1970s by a woman named Viola — our grandmother. She picked the lot herself, on a quiet stretch of wooded land in Mancelona, Michigan, not far from the Lakes of the North community. She had it built the way she wanted it: a proper little chalet, solid and warm, with a steep roofline to shed the snow, built for the long northern Michigan winters. She decorated it herself. The orange carpet. The harvest gold fixtures. The hand-sewn quilts on the beds. Every detail was hers.
 
 For decades, it was just the family cabin. The place you drove north to on a Friday after work, crammed into the car with fishing rods and grocery bags. The place where the kids ran outside until dark, where someone always burned the marshmallows, where Grandma Vi had the percolator going before anyone else was awake.
 
@@ -41,7 +41,7 @@ Her quilts are still on the beds. Her percolator is still in the kitchen (we add
 
 **What a Stay Is Like**
 
-You pull in off the gravel road, cut the engine, and it gets very quiet. That's northern Michigan doing its thing — the kind of quiet that takes a minute to adjust to if you've been in the city. Good quiet. The kind that slows your breathing down.
+You pull in, cut the engine, and it gets very quiet. That's northern Michigan doing its thing — the kind of quiet that takes a minute to adjust to if you've been in the city. Good quiet. The kind that slows your breathing down.
 
 The cabin sleeps up to six, so you can bring the family or a group of friends. There's a full kitchen, comfortable beds, and outdoor space to just sit and be in the woods for a while. In the summer, the porch is where everyone ends up.
 
