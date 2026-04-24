@@ -296,17 +296,27 @@ function BlockedDatesTab({ password }: { password: string }) {
   const [newTo, setNewTo] = useState("");
   const [adding, setAdding] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [fetchError, setFetchError] = useState<string | null>(null);
 
   const fetchRows = useCallback(async () => {
     setLoading(true);
+    setFetchError(null);
     try {
       const res = await fetch("/api/admin/blocked-dates", {
         headers: { Authorization: password },
       });
-      const data = await res.json();
-      setRows(Array.isArray(data) ? data : []);
-    } catch {
-      // ignore
+      if (!res.ok) {
+        let msg = `Error ${res.status}`;
+        try { const d = await res.json(); msg = (d as { error?: string }).error || msg; } catch { /* non-JSON */ }
+        setFetchError(msg);
+        setRows([]);
+      } else {
+        const data = await res.json();
+        setRows(Array.isArray(data) ? data : []);
+      }
+    } catch (err) {
+      setFetchError(err instanceof Error ? err.message : "Network error loading blocked dates");
+      setRows([]);
     }
     setLoading(false);
   }, [password]);
@@ -323,15 +333,16 @@ function BlockedDatesTab({ password }: { password: string }) {
         headers: { "Content-Type": "application/json", Authorization: password },
         body: JSON.stringify({ label: newLabel || null, from_date: newFrom, to_date: newTo }),
       });
-      const data = await res.json();
+      let data: { error?: string } = {};
+      try { data = await res.json(); } catch { /* non-JSON body */ }
       if (!res.ok) {
-        setError(data.error || "Failed to add.");
+        setError(data.error || `Error ${res.status}`);
       } else {
         setNewLabel(""); setNewFrom(""); setNewTo("");
         await fetchRows();
       }
-    } catch {
-      setError("Network error.");
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Network error.");
     }
     setAdding(false);
   };
@@ -357,9 +368,18 @@ function BlockedDatesTab({ password }: { password: string }) {
     >
       <h2 className="font-display text-2xl mb-6" style={{ color: "#1A1A1A" }}>Blocked Date Ranges</h2>
 
+      {fetchError && (
+        <div
+          className="rounded-xl p-3 mb-4 font-accent text-sm"
+          style={{ backgroundColor: "#FEE2E2", border: "2px solid #C85A1E", color: "#C85A1E" }}
+        >
+          Failed to load: {fetchError}
+        </div>
+      )}
+
       {loading ? (
         <p className="font-accent text-sm mb-6" style={{ color: "#666" }}>Loading…</p>
-      ) : rows.length === 0 ? (
+      ) : rows.length === 0 && !fetchError ? (
         <p className="font-accent text-sm mb-6" style={{ color: "#666" }}>No blocked dates.</p>
       ) : (
         <div className="mb-6">

@@ -9,6 +9,59 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "grandma-viola-story-grannys-hideaway-cabin",
+    title: "The Woman Behind the Cabin: Remembering Grandma Viola",
+    excerpt:
+      "Before Granny's Hideaway was a rental, it was just Grandma Viola's place — a little chalet she built in the woods of Mancelona in the early 1970s, where summers smelled like pine and percolated coffee. Here's the story.",
+    date: "April 24, 2026",
+    readTime: "5 min read",
+    content: `Most vacation rentals are just houses. They come with a welcome binder, a ring doorbell, and a generic wall hanging that says something about the beach. Granny's Hideaway is not that.
+
+This cabin was built in the early 1970s by a woman named Viola — our grandmother. She picked the lot herself, on a quiet stretch of wooded land in Mancelona, Michigan, not far from the Lakes of the North community. She had it built the way she wanted it: a proper little chalet, solid and warm, with a steep roofline to shed the snow and a big fireplace for the long winters. She decorated it herself. The orange carpet. The harvest gold fixtures. The hand-sewn quilts on the beds. Every detail was hers.
+
+For decades, it was just the family cabin. The place you drove north to on a Friday after work, crammed into the car with fishing rods and grocery bags. The place where the kids ran outside until dark, where someone always burned the marshmallows, where Grandma Vi had the percolator going before anyone else was awake.
+
+**Who Was Viola?**
+
+She was a northern Michigan woman through and through — practical, warm, a little stubborn in the best way. She knew the local lakes and which ones were worth fishing. She could stretch a pot of soup into three meals. She kept the cabin immaculate and took pride in it, not because guests were coming, but because that's just how she was.
+
+She passed away a few years ago, and the cabin passed to the family. For a while, we weren't sure what to do with it. Selling it felt wrong. Letting it sit empty felt wrong too.
+
+So we opened it up.
+
+**Why We're Sharing It**
+
+We didn't decide to rent Granny's Hideaway because we were looking for a business. We decided to rent it because it felt like the right way to honor what she built. She loved that place, and she loved having people there. It never felt more alive than when it was full — people at the table, something on the stove, the TV on in the background with the bunny ear antenna doing its best.
+
+So that's what we're doing. Keeping it alive.
+
+We've kept it as close to the original as we can. The vintage interior is intact — not because we couldn't update it, but because we don't want to. The orange carpet and avocado green and harvest gold aren't retro-chic affectation. That's just what it looks like. It looked like that when Viola bought it, and it still does. There's something grounding about a place that hasn't tried to reinvent itself.
+
+Her quilts are still on the beds. Her percolator is still in the kitchen (we added a drip machine too, don't worry). The cabin still smells faintly like pine and old wood and something warm, especially in the evening when the fire's going.
+
+**What a Stay Is Like**
+
+You pull in off the gravel road, cut the engine, and it gets very quiet. That's northern Michigan doing its thing — the kind of quiet that takes a minute to adjust to if you've been in the city. Good quiet. The kind that slows your breathing down.
+
+The cabin sleeps up to six, so you can bring the family or a group of friends. There's a full kitchen, a wood-burning fireplace, comfortable beds, and outdoor space to just sit and be in the woods for a while. In the summer, the porch is where everyone ends up. In the winter, it's the fireplace.
+
+You're close to everything worth doing in this part of northern Michigan — fishing the Intermediate River, riding the ORV trails, hitting the golf courses near Gaylord, chasing fall color down the back roads. But the cabin itself is its own thing. Some people barely leave.
+
+**A Few Things Viola Would Want You to Know**
+
+She'd want you to leave it the way you found it — she was particular about that. She'd want you to use the fireplace, because a cabin without a fire going is just a house. She'd want you to look up at night, because the stars up there are extraordinary and most people forget to look.
+
+And she'd want you to actually rest. Not fill every hour with activity. Sit on the porch. Read a book. Let the north woods do what they do.
+
+That was always the point.
+
+**Come Stay at Granny's Hideaway**
+
+If you're looking for a northern Michigan cabin rental that has a little more to it than just a place to sleep — something with actual history, actual character, actual warmth — we think you'll feel it the moment you walk in.
+
+Bookings are open now at [grannyshideaway.com/book](https://grannyshideaway.com/book). We'd love to have you. Viola would too.`,
+  },
+  {
     slug: "spring-fishing-northern-michigan-mancelona",
     title: "Spring Fishing in Northern Michigan: Trout, Bass & the Best Spots Near Mancelona",
     excerpt:

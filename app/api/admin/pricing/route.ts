@@ -1,9 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getSupabaseAdmin } from "@/lib/supabase";
+import { supabaseAdmin } from "@/lib/supabase";
 
 function checkAuth(req: NextRequest): boolean {
   const auth = req.headers.get("Authorization");
-  return auth === process.env.ADMIN_PASSWORD;
+  const expected = process.env.ADMIN_PASSWORD;
+  if (!expected) {
+    console.error("[admin/pricing] ADMIN_PASSWORD env var is not set");
+    return false;
+  }
+  return auth === expected;
 }
 
 export async function POST(req: NextRequest) {
@@ -28,23 +33,32 @@ export async function POST(req: NextRequest) {
     }
   }
 
-  const { data, error } = await getSupabaseAdmin()
-    .from("pricing")
-    .upsert({
-      id: 1,
-      nightly_rate,
-      cleaning_fee,
-      extra_guest_fee,
-      extra_guest_threshold,
-      min_nights,
-      updated_at: new Date().toISOString(),
-    })
-    .select()
-    .single();
+  try {
+    const { data, error } = await supabaseAdmin
+      .from("pricing")
+      .upsert({
+        id: 1,
+        nightly_rate,
+        cleaning_fee,
+        extra_guest_fee,
+        extra_guest_threshold,
+        min_nights,
+        updated_at: new Date().toISOString(),
+      })
+      .select()
+      .single();
 
-  if (error) {
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    if (error) {
+      console.error("[admin/pricing] POST Supabase error:", error);
+      return NextResponse.json({ error: error.message }, { status: 500 });
+    }
+
+    return NextResponse.json({ success: true, pricing: data });
+  } catch (err) {
+    console.error("[admin/pricing] POST unexpected error:", err);
+    return NextResponse.json(
+      { error: err instanceof Error ? err.message : "Internal server error" },
+      { status: 500 }
+    );
   }
-
-  return NextResponse.json({ success: true, pricing: data });
 }

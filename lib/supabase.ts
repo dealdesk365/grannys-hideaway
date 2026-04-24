@@ -1,17 +1,41 @@
-import { createClient } from '@supabase/supabase-js';
+import { createClient, SupabaseClient } from '@supabase/supabase-js';
 
-// Public client (anon key) — safe for client-side
-export function getSupabase() {
-  return createClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-  );
+let _supabase: SupabaseClient | null = null;
+let _supabaseAdmin: SupabaseClient | null = null;
+
+export function getSupabase(): SupabaseClient {
+  if (!_supabase) {
+    const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+    const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+    if (!url || !key) {
+      throw new Error(
+        `[supabase] Missing env vars:${!url ? ' NEXT_PUBLIC_SUPABASE_URL' : ''}${!key ? ' NEXT_PUBLIC_SUPABASE_ANON_KEY' : ''}`
+      );
+    }
+    _supabase = createClient(url, key);
+  }
+  return _supabase;
 }
 
-// Admin client (service role) — server-side only
-export function getSupabaseAdmin() {
-  return createClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.SUPABASE_SERVICE_ROLE_KEY!
-  );
+export function getSupabaseAdmin(): SupabaseClient {
+  if (!_supabaseAdmin) {
+    const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+    const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+    if (!url || !key) {
+      throw new Error(
+        `[supabase] Missing admin env vars:${!url ? ' NEXT_PUBLIC_SUPABASE_URL' : ''}${!key ? ' SUPABASE_SERVICE_ROLE_KEY' : ''}`
+      );
+    }
+    _supabaseAdmin = createClient(url, key);
+  }
+  return _supabaseAdmin;
 }
+
+export const supabase = {
+  from: (table: string) => getSupabase().from(table),
+  auth: { getUser: () => getSupabase().auth.getUser() }
+};
+
+export const supabaseAdmin = {
+  from: (table: string) => getSupabaseAdmin().from(table),
+};
