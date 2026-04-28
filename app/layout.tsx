@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 export const metadata: Metadata = {
   title: "Granny's Hideaway | Retro Chalet Rental in Mancelona, Northern Michigan",
   description:
-    "Book Granny's Hideaway — a one-of-a-kind retro chalet in Mancelona, MI. $275/night. Your base camp for Gaylord golf, Torch Lake, Mackinac Bridge, snowmobiling, and ORV trails. Now booking from June 15.",
+    "Book Granny's Hideaway — Grandma Viola's retro cabin in Mancelona, MI. $275/night. Your base camp for Gaylord golf, Torch Lake, Mackinac Bridge, snowmobiling, and ORV trails. Now booking from June 15.",
   keywords: [
     "Lakes of the North cabin rental",
     "LOTN vacation rental",
