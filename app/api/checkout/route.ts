@@ -158,6 +158,17 @@ export async function POST(req: NextRequest) {
           },
           quantity: 1,
         },
+        {
+          price_data: {
+            currency: "usd",
+            unit_amount: 20000, // $200 refundable damage deposit
+            product_data: {
+              name: "Refundable Damage Deposit",
+              description: "Fully refunded within 3 business days after checkout if no damage.",
+            },
+          },
+          quantity: 1,
+        },
       ],
       success_url: `${siteUrl}/book/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${siteUrl}/book`,
@@ -170,6 +181,7 @@ export async function POST(req: NextRequest) {
         nights: String(nights),
         totalAmount: String(totalAmount),
         depositAmount: String(depositAmount),
+        damageDeposit: "200",
       },
     });
 

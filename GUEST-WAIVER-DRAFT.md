@@ -38,10 +38,12 @@ Guest agrees that total occupancy will not exceed the number declared at booking
 - Exterior cameras monitor property occupancy
 - Undisclosed additional guests constitute a material breach of this agreement
 
-### 5. DAMAGE & INSURANCE
-- Guest is required to purchase damage protection through Safely.com at time of booking
-- Guest is financially responsible for any damage beyond normal wear and tear not covered by Safely.com protection
-- Guest authorizes charges to the payment method on file for damages not covered by Safely.com
+### 5. DAMAGE DEPOSIT
+- A refundable damage deposit of $200 is collected at the time of booking
+- The deposit will be refunded within 3 business days after checkout, provided the property is returned in the same condition as received, subject to normal wear and tear
+- Guest is financially responsible for any damage beyond normal wear and tear exceeding the deposit amount
+- Granny's Hideaway reserves the right to withhold part or all of the damage deposit to cover documented damage, excessive cleaning, or violations of House Rules
+- Guest authorizes charges to the payment method on file for damages exceeding the deposit amount
 
 ### 6. CANCELLATION POLICY
 | Cancellation Timing | Refund |

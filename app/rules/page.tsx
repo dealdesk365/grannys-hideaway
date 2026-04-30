@@ -350,9 +350,9 @@ export default function RulesPage() {
                 🛡️ Guest Damage Protection
               </p>
               <p className="font-accent" style={{ opacity: 0.9, lineHeight: 1.65 }}>
-                All guests are required to purchase damage protection through{" "}
-                <strong>Safely.com</strong> at the time of booking. It covers accidents —
-                because Granny didn&apos;t survive this long by leaving things to chance.
+                A <strong>$200 refundable damage deposit</strong> is collected at booking and
+                returned within 3 business days after checkout — as long as Granny&apos;s place
+                is treated with respect. Accidents happen; destruction doesn&apos;t.
               </p>
             </div>
             <div
