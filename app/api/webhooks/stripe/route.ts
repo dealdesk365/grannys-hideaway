@@ -83,6 +83,7 @@ async function handleCheckoutCompleted(session: Stripe.Checkout.Session) {
   const { error: insertError } = await supabase.from("bookings").insert({
     stripe_session_id: session.id,
     guest_name: guestName,
+    guest_email: session.customer_details?.email ?? null,
     check_in: checkIn,
     check_out: checkOut,
     guests: guestCount,

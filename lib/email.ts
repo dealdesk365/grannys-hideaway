@@ -209,6 +209,111 @@ function buildOwnerEmail(data: BookingEmailData): string {
 </html>`;
 }
 
+export async function sendCheckinCode(data: {
+  guestName: string;
+  guestEmail: string;
+  checkIn: string;
+  checkOut: string;
+  guests: number;
+  lockboxCode: string;
+}): Promise<void> {
+  const resend = getResend();
+  const checkInFormatted = formatDate(data.checkIn);
+  const checkOutFormatted = formatDate(data.checkOut);
+
+  const html = `
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head>
+<body style="margin:0;padding:0;background:#f5f0e6;font-family:Georgia,serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f5f0e6;padding:32px 16px;">
+    <tr><td align="center">
+      <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
+
+        <tr><td style="background:#1A1A1A;border-radius:12px 12px 0 0;padding:32px;text-align:center;">
+          <p style="margin:0;font-size:2rem;color:#D4A017;">🏡</p>
+          <h1 style="margin:8px 0 4px;color:#D4A017;font-size:1.6rem;font-family:Georgia,serif;">Today's the Day!</h1>
+          <p style="margin:0;color:#FAF3E0;font-size:1rem;">Your Granny's Hideaway Check-In</p>
+        </td></tr>
+
+        <tr><td style="background:#FAF3E0;padding:32px;">
+          <p style="margin:0 0 16px;font-size:1.1rem;color:#1A1A1A;">Hi ${data.guestName},</p>
+          <p style="margin:0;color:#3a3a3a;line-height:1.7;">You're officially checking in today! Here's everything you need to get inside and get settled.</p>
+        </td></tr>
+
+        <tr><td style="background:#C85A1E;padding:28px 32px;">
+          <h2 style="margin:0 0 8px;color:#FAF3E0;font-size:1rem;letter-spacing:.05em;text-transform:uppercase;">🔑 Your Lockbox Code</h2>
+          <p style="margin:0 0 16px;color:#FAF3E0;font-size:3rem;font-weight:bold;letter-spacing:.3em;font-family:monospace;">${data.lockboxCode}</p>
+          <p style="margin:0;color:#FAF3E0;font-size:.9rem;line-height:1.6;">
+            The lockbox is on the front door. Enter the code, grab the key, unlock the door — 
+            <strong>then put the key back in the lockbox and lock it.</strong> 
+            Granny's lost enough keys to fill a bucket. Don't be that guest. 😄
+          </p>
+        </td></tr>
+
+        <tr><td style="background:#1A1A1A;padding:28px 32px;">
+          <h2 style="margin:0 0 16px;color:#D4A017;font-size:1rem;letter-spacing:.05em;text-transform:uppercase;">📋 Check-In Details</h2>
+          <table width="100%" cellpadding="0" cellspacing="0">
+            <tr><td style="color:#aaa;padding:6px 0;font-size:.9rem;">Check-In</td><td style="color:#FAF3E0;padding:6px 0;font-size:.9rem;text-align:right;">${checkInFormatted} at 4:00 PM</td></tr>
+            <tr><td style="color:#aaa;padding:6px 0;font-size:.9rem;">Check-Out</td><td style="color:#FAF3E0;padding:6px 0;font-size:.9rem;text-align:right;">${checkOutFormatted} at 11:00 AM</td></tr>
+            <tr><td style="color:#aaa;padding:6px 0;font-size:.9rem;">Guests</td><td style="color:#FAF3E0;padding:6px 0;font-size:.9rem;text-align:right;">${data.guests}</td></tr>
+            <tr><td style="color:#aaa;padding:6px 0;font-size:.9rem;">Address</td><td style="color:#FAF3E0;padding:6px 0;font-size:.9rem;text-align:right;">9856 Wyndwood Dr, Mancelona, MI</td></tr>
+          </table>
+        </td></tr>
+
+        <tr><td style="background:#2a2a2a;padding:28px 32px;">
+          <h2 style="margin:0 0 16px;color:#D4A017;font-size:1rem;letter-spacing:.05em;text-transform:uppercase;">🏁 Checkout Reminders (11:00 AM)</h2>
+          <table width="100%" cellpadding="0" cellspacing="0">
+            ${[
+              ["🔥", "Extinguish fire pit with hose — must be cold to the touch before leaving"],
+              ["🛏️", "Leave used beds unmade so we know what to wash"],
+              ["🍽️", "Wash all dishes and put away — you're the dishwasher at Granny's"],
+              ["🗑️", "Empty all interior trash into outdoor bins"],
+              ["🚛", "Leaving Tue evening or Wed morning? Roll the bin to the road"],
+              ["🔑", "Return key to lockbox and lock it"],
+              ["🔒", "Lock all windows and doors"],
+            ].map(([icon, rule]) => `
+            <tr>
+              <td style="padding:5px 8px 5px 0;font-size:1rem;width:28px;vertical-align:top;">${icon}</td>
+              <td style="padding:5px 0;color:#ccc;font-size:.88rem;line-height:1.5;">${rule}</td>
+            </tr>`).join("")}
+          </table>
+        </td></tr>
+
+        <tr><td style="background:#7B9A3A;padding:24px 32px;">
+          <p style="margin:0;color:#FAF3E0;font-size:.95rem;line-height:1.7;">
+            <strong>Questions during your stay?</strong> Reply to this email or reach us at 
+            <a href="mailto:bookings@grannyshideaway.com" style="color:#FAF3E0;">bookings@grannyshideaway.com</a>. 
+            We hope you love it as much as Granny does. 🏡
+          </p>
+        </td></tr>
+
+        <tr><td style="background:#1A1A1A;border-radius:0 0 12px 12px;padding:20px 32px;text-align:center;">
+          <p style="margin:0;color:#aaa;font-size:.8rem;">
+            Granny's Hideaway · Mancelona, MI · 
+            <a href="https://grannyshideaway.com" style="color:#aaa;">grannyshideaway.com</a>
+          </p>
+        </td></tr>
+
+      </table>
+    </td></tr>
+  </table>
+</body>
+</html>`;
+
+  const { error } = await resend.emails.send({
+    from: FROM,
+    to: [data.guestEmail],
+    subject: `Your Check-In Code is Ready — Granny's Hideaway`,
+    html,
+  });
+
+  if (error) {
+    console.error("[email] Check-in code send failed:", error);
+    throw error;
+  }
+}
+
 export async function sendBookingConfirmation(data: BookingEmailData): Promise<void> {
   const subject = `Booking Confirmed — Granny's Hideaway · ${formatDate(data.checkIn)}`;
   const ownerSubject = `New Booking: ${data.guestName} · ${data.checkIn} – ${data.checkOut}`;

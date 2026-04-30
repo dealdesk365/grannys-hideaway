@@ -94,16 +94,24 @@ const ruleGroups = [
     rules: ["Firearms allowed — bring at your own risk, follow all Michigan laws"],
   },
   {
-    category: "🗑️ Trash",
-    bg: "#D4A017",
-    color: "#1A1A1A",
-    rules: ["Please empty all interior trash and place in exterior bins before checkout"],
-  },
-  {
     category: "🔑 Door Code",
     bg: "#2A9D8F",
     color: "#FAF3E0",
-    rules: ["Lockbox door code sent via email day of arrival only"],
+    rules: ["Lockbox door code sent via email on the morning of your arrival. Grab the key, unlock the door — then put the key back in the lockbox and lock it."],
+  },
+  {
+    category: "🏁 Checkout by 11:00 AM",
+    bg: "#D4A017",
+    color: "#1A1A1A",
+    rules: [
+      "🔥 Extinguish fire pit with hose — must be cold to the touch before leaving",
+      "🛏️ Leave used beds unmade so we know what to wash",
+      "🍽️ Wash all dishes and put away — you're the dishwasher at Granny's",
+      "🗑️ Empty all interior trash into outdoor bins",
+      "🚛 Leaving Tuesday evening or Wednesday morning? Roll the bin to the road (trash day!)",
+      "🔑 Return key to lockbox and lock it",
+      "🔒 Lock all windows and doors",
+    ],
   },
   {
     category: "📅 Date Changes",
