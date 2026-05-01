@@ -9,6 +9,57 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "memorial-day-weekend-northern-michigan",
+    title: "The Perfect Memorial Day Weekend in Northern Michigan",
+    excerpt:
+      "Memorial Day weekend is the unofficial start of northern Michigan's summer season — and if you haven't been up here for it yet, you're missing something special. Here's how to spend it right.",
+    date: "May 1, 2026",
+    readTime: "5 min read",
+    content: `Memorial Day weekend is the moment northern Michigan exhales. The ice is long gone, the trees are fully leafed out, the days are long, and the whole region shifts into summer mode almost overnight. Locals call it the first real weekend of the season — and they're not wrong.
+
+If you're looking for a northern Michigan cabin rental for Memorial Day 2026, here's what to expect, what to do, and why the Mancelona area is one of the best places to spend it.
+
+**What Northern Michigan Looks Like in Late May**
+
+Late May in Antrim County is one of the most underrated times to visit. The trees are that intense, electric green you only get for a few weeks in spring. The lakes haven't warmed enough for serious swimming yet, but they're gorgeous — clear and glassy in the early morning. Wildflowers are everywhere. The air still has a cool edge to it at night, which makes for excellent sleeping.
+
+The summer crowds haven't fully arrived yet. Torch Lake and Elk Lake are busy on Memorial Day weekend itself, but they're nothing like July. You can still find a spot on the water, still get a table at a restaurant, still feel like you have the north to yourself for stretches of the day.
+
+**What to Do Over Memorial Day Weekend**
+
+**Get on the water.** Even if the lake is a little cool for swimming, it's perfect for kayaking, paddleboarding, or just taking a pontoon out and floating. Torch Lake in late May is stunning — the water is crystal clear before the summer algae settles in, and the turquoise color is at its most vivid. Rent a boat from a marina near Elk Rapids or bring your own.
+
+**Fish.** The trout opener happened in late April, and by Memorial Day the rivers are fishing beautifully. The Jordan River and the upper Manistee are both excellent. Walleye season on inland lakes is also in full swing — Elk Lake and Torch Lake hold good populations. You've got the whole weekend to find your spot.
+
+**Hit the trails.** ORV and SxS season is well underway by Memorial Day. The DNR trail system near Mancelona and the Jordan River State Forest is dry and rideable. It's one of the best weekends of the year for a trail ride — long days, comfortable temps, and just enough leaf coverage to keep the two-tracks shaded.
+
+**Explore Mancelona and the surrounding towns.** Bellaire, Elk Rapids, and Kalkaska all have their own character and worth a cruise through. Pick up provisions at a local shop, grab lunch somewhere that isn't a chain, and drive the back roads slowly. Memorial Day weekend in small-town northern Michigan has a celebratory, unhurried feel that's hard to find anywhere else.
+
+**Grill something.** This sounds obvious, but a long weekend at a northern Michigan cabin with a grill and no real agenda is legitimately one of the great pleasures in life. Buy your meat from a local butcher, grab some sweet corn if it's out yet, and spend a Friday evening doing nothing but that.
+
+**What to Pack**
+
+Layers. Always layers up north. Memorial Day weekend can be 75 and sunny on Saturday and 48 and rainy on Monday — sometimes in the same day. Pack a light jacket, a heavier fleece, and rain gear. You won't need all of it, but you'll be glad you have it.
+
+If you're fishing: don't forget your Michigan fishing license. You can buy online at michigan.gov/dnr before you leave home.
+
+If you're riding: the trails near Mancelona require a Michigan ORV permit and trail sticker. Grab those online or at a local outfitter.
+
+Sunscreen. You're outside all day. The northern Michigan sun is deceptive — you don't feel it until you're already cooked.
+
+**Why Granny's Hideaway Is Right for This Weekend**
+
+The cabin sleeps six, which makes it perfect for a group trip — a few couples, a family with older kids, a crew of fishing buddies or trail riders. The full kitchen means you're not eating out for every meal. The outdoor space is made for a weekend like this.
+
+Grandma Viola built this place in the early 1970s as a true four-season cabin. She knew northern Michigan the way locals know it — unhurried, without agenda, making the most of whatever the weather decided to do. That's still the vibe here. Come with nowhere to be and a cooler full of good stuff, and the weekend takes care of itself.
+
+**Book Your Memorial Day Weekend**
+
+Spots for Memorial Day fill up fast. If you're thinking about it, now is the time to lock it in. Head to [grannyshideaway.com/book](https://grannyshideaway.com/book) to check availability and reserve your weekend.
+
+Northern Michigan in late May is worth the drive. It always is.`,
+  },
+  {
     slug: "grandma-viola-story-grannys-hideaway-cabin",
     title: "The Woman Behind the Cabin: Remembering Grandma Viola",
     excerpt:
