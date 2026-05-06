@@ -102,7 +102,7 @@ const WAIVER_SECTIONS = [
   },
   {
     title: "2. RELEASE OF LIABILITY",
-    body: `Guest releases Granny's Hideaway, its owners, members, agents, and assigns from any and all claims, damages, injuries, losses, or expenses arising from Guest's use of the property or surrounding areas, to the fullest extent permitted by Michigan law.`,
+    body: `Guest releases Granny's Hideaway, God is Great LLC, its owners, members, agents, and assigns from any and all claims, damages, injuries, losses, or expenses arising from Guest's use of the property or surrounding areas, to the fullest extent permitted by Michigan law.`,
   },
   {
     title: "3. PROPERTY RULES",
@@ -118,9 +118,10 @@ const WAIVER_SECTIONS = [
   },
   {
     title: "5. DAMAGE & INSURANCE",
-    body: `• Guest is required to purchase damage protection through Safely.com at time of booking
-• Guest is financially responsible for any damage beyond normal wear and tear not covered by Safely.com protection
-• Guest authorizes charges to the payment method on file for damages not covered by Safely.com`,
+    body: `• A $500 refundable damage deposit is collected at time of booking via the payment method on file
+• Deposit is returned in full within 3 business days of checkout, provided the property is left in acceptable condition with no damage beyond normal wear and tear
+• Guest is financially responsible for any damage beyond normal wear and tear exceeding the deposit amount
+• Guest authorizes additional charges to the payment method on file for documented damages not covered by the deposit`,
   },
   {
     title: "6. CANCELLATION POLICY",
@@ -149,7 +150,7 @@ One free date change permitted with 30+ days notice. No date changes permitted w
   },
   {
     title: "9. INDEMNIFICATION",
-    body: `Guest agrees to indemnify, defend, and hold harmless Granny's Hideaway and its owners from any and all claims, suits, losses, damages, costs, and attorney fees arising from Guest's stay, including claims by third parties or additional guests.`,
+    body: `Guest agrees to indemnify, defend, and hold harmless Granny's Hideaway, God is Great LLC, and its owners from any and all claims, suits, losses, damages, costs, and attorney fees arising from Guest's stay, including claims by third parties or additional guests.`,
   },
   {
     title: "10. GOVERNING LAW",
