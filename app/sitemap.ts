@@ -29,5 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "https://grannyshideaway.com/fall-colors-cabin-michigan", lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: "https://grannyshideaway.com/couples-getaway-northern-michigan", lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: "https://grannyshideaway.com/vintage-cabin-rental-michigan", lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: "https://grannyshideaway.com/northern-michigan-vacation-rental", lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
+    { url: "https://grannyshideaway.com/northern-michigan-cottage-rental", lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
   ];
 }

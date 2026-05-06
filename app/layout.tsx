@@ -3,19 +3,22 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Granny's Hideaway | Retro Chalet Rental in Mancelona, Northern Michigan",
+  title: "Granny's Hideaway | Northern Michigan Vacation Rental & Cottage | Mancelona, MI",
   description:
-    "Book Granny's Hideaway — Grandma Viola's retro cabin in Mancelona, MI. $275/night. Your base camp for Gaylord golf, Torch Lake, Mackinac Bridge, snowmobiling, and ORV trails. Now booking from June 15.",
+    "Granny's Hideaway is a Northern Michigan vacation rental and cottage in Mancelona, MI. $275/night, sleeps 7. Your base camp for Gaylord golf, Torch Lake, snowmobiling, and ORV trails. Now booking from June 15.",
   keywords: [
+    "Northern Michigan vacation rental",
+    "Northern Michigan cottage rental",
+    "northern michigan cabin rental",
+    "Mancelona Michigan vacation rental",
     "Lakes of the North cabin rental",
     "LOTN vacation rental",
-    "Antrim County STR",
+    "Antrim County cabin rental",
     "Northern Michigan chalet rental",
-    "Mancelona Michigan cabin rental",
     "retro cabin rental Michigan",
     "Gaylord golf cabin",
     "Torch Lake cabin rental",
-    "Northern Michigan vacation rental",
+    "michigan cottage rental",
   ],
   metadataBase: new URL("https://grannyshideaway.com"),
   alternates: {
