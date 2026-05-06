@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 export const metadata: Metadata = {
   title: "Northern Michigan Cottage Rental | Granny's Hideaway | Mancelona, MI",
   description:
-    "Looking for a Northern Michigan cottage rental? Granny's Hideaway is a vintage 1970s chalet in Mancelona — $275/night, sleeps 7, fully private wooded setting. Book your northern Michigan cottage getaway today.",
+    "Looking for a Northern Michigan cottage rental? Granny's Hideaway is a vintage 1970s chalet in Mancelona — $200/night, sleeps 7, fully private wooded setting. Book your northern Michigan cottage getaway today.",
   keywords: [
     "Northern Michigan cottage rental",
     "northern michigan cottage",
@@ -49,7 +49,7 @@ export default function NorthernMichiganCottageRentalPage() {
             The orange carpet is original. The quilts on the beds were Viola's. The Bit O Honeys waiting on the table when you arrive? That was her thing, and we kept it. What you get here is a Northern Michigan cottage with warmth that was genuinely lived in.
           </p>
           <p style={{ fontSize: "1.1rem", lineHeight: 1.8, color: "#1A1A1A" }}>
-            The cottage sleeps 7 across three bedrooms and sits 25 minutes from Bellaire, 30 minutes from Torch Lake, and 20 minutes from Gaylord. At $275/night, it's one of the best-value Northern Michigan cottage rentals you'll find.
+            The cottage sleeps 7 across three bedrooms and sits 25 minutes from Bellaire, 30 minutes from Torch Lake, and 20 minutes from Gaylord. At $200/night, it's one of the best-value Northern Michigan cottage rentals you'll find.
           </p>
         </div>
       </section>
@@ -111,7 +111,7 @@ export default function NorthernMichiganCottageRentalPage() {
           Book Your Northern Michigan Cottage
         </h2>
         <p className="font-accent" style={{ color: "#FAF3E0", opacity: 0.75, fontSize: "1.1rem", marginBottom: "1.75rem" }}>
-          $275/night + $125 cleaning fee · Sleeps 7 · Now booking June 15+
+          $200/night + $125 cleaning fee · Sleeps 7 · Now booking June 15+
         </p>
         <a href="/book" style={{ display: "inline-block", backgroundColor: "#2A9D8F", color: "#FAF3E0", padding: "0.9rem 2.5rem", borderRadius: "0.5rem", fontFamily: "var(--font-accent)", fontSize: "1.1rem", textDecoration: "none", fontWeight: 600 }}>
           Book Your Stay

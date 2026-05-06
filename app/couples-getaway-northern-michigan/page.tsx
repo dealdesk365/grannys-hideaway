@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 export const metadata: Metadata = {
   title: "Couples Getaway Northern Michigan | Granny's Hideaway Mancelona",
   description:
-    "Plan a couples getaway in Northern Michigan at Granny's Hideaway — a private, vintage 1970s cabin in Mancelona. $275/night, no neighbors, fire pit, and genuine retro charm. Romantic, weird, and perfect.",
+    "Plan a couples getaway in Northern Michigan at Granny's Hideaway — a private, vintage 1970s cabin in Mancelona. $200/night, no neighbors, fire pit, and genuine retro charm. Romantic, weird, and perfect.",
   keywords: [
     "couples getaway Northern Michigan",
     "romantic cabin Northern Michigan",
@@ -115,7 +115,7 @@ export default function CouplesGetawayPage() {
           Book Your Northern Michigan Escape
         </h2>
         <p className="font-accent" style={{ color: "#FAF3E0", opacity: 0.85, fontSize: "1.1rem", marginBottom: "1.75rem" }}>
-          $275/night · Private wooded cabin · Mancelona, MI
+          $200/night · Private wooded cabin · Mancelona, MI
         </p>
         <a href="/book" style={{ display: "inline-block", backgroundColor: "#2A9D8F", color: "#FAF3E0", padding: "0.9rem 2.5rem", borderRadius: "0.5rem", fontFamily: "var(--font-accent)", fontSize: "1.1rem", textDecoration: "none", fontWeight: 600 }}>
           Book Now

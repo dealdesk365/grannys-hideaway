@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 export const metadata: Metadata = {
   title: "Deward Tract Cabin Rental | Granny's Hideaway Near Deward Area Michigan",
   description:
-    "Cabin rental near the Deward Tract in Northern Michigan. Granny's Hideaway in Mancelona is your base for Deward area hiking, ORV, and Boardman River access. Sleeps 7, $275/night.",
+    "Cabin rental near the Deward Tract in Northern Michigan. Granny's Hideaway in Mancelona is your base for Deward area hiking, ORV, and Boardman River access. Sleeps 7, $200/night.",
   keywords: [
     "Deward Tract cabin rental",
     "cabin near Deward Michigan",
@@ -105,7 +105,7 @@ export default function DewardTractCabinPage() {
           Book Your Deward Area Getaway
         </h2>
         <p className="font-accent" style={{ color: "#1A1A1A", opacity: 0.7, fontSize: "1.1rem", marginBottom: "1.75rem" }}>
-          $275/night · Sleeps 7 · Private woods · Mancelona, MI
+          $200/night · Sleeps 7 · Private woods · Mancelona, MI
         </p>
         <a href="/book" style={{ display: "inline-block", backgroundColor: "#2A9D8F", color: "#FAF3E0", padding: "0.9rem 2.5rem", borderRadius: "0.5rem", fontFamily: "var(--font-accent)", fontSize: "1.1rem", textDecoration: "none", fontWeight: 600 }}>
           Book Now

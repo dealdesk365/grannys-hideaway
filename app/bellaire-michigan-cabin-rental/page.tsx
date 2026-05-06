@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 export const metadata: Metadata = {
   title: "Bellaire Michigan Cabin Rental | Granny's Hideaway Near Bellaire MI",
   description:
-    "Cabin rental near Bellaire, Michigan — 25 minutes from Short's Brewing and downtown Bellaire. Granny's Hideaway in Mancelona sleeps 7, private woods, $275/night. Book direct.",
+    "Cabin rental near Bellaire, Michigan — 25 minutes from Short's Brewing and downtown Bellaire. Granny's Hideaway in Mancelona sleeps 7, private woods, $200/night. Book direct.",
   keywords: [
     "Bellaire Michigan cabin rental",
     "cabin near Bellaire MI",
@@ -105,7 +105,7 @@ export default function BellaireMichiganCabinPage() {
           Book Your Bellaire Area Getaway
         </h2>
         <p className="font-accent" style={{ color: "#FAF3E0", opacity: 0.75, fontSize: "1.1rem", marginBottom: "1.75rem" }}>
-          $275/night · Sleeps 7 · 25 min from Bellaire · Book direct
+          $200/night · Sleeps 7 · 25 min from Bellaire · Book direct
         </p>
         <a href="/book" style={{ display: "inline-block", backgroundColor: "#2A9D8F", color: "#FAF3E0", padding: "0.9rem 2.5rem", borderRadius: "0.5rem", fontFamily: "var(--font-accent)", fontSize: "1.1rem", textDecoration: "none", fontWeight: 600 }}>
           Book Now

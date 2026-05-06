@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 export const metadata: Metadata = {
   title: "SxS UTV Cabin Rental Michigan | Granny's Hideaway Near Deward Trails",
   description:
-    "SxS and UTV cabin rental in Michigan near Deward Tract off-road trails. Granny's Hideaway in Mancelona is your base camp for Antrim County ORV riding — $275/night, sleeps 7, full kitchen, fire pit.",
+    "SxS and UTV cabin rental in Michigan near Deward Tract off-road trails. Granny's Hideaway in Mancelona is your base camp for Antrim County ORV riding — $200/night, sleeps 7, full kitchen, fire pit.",
   keywords: [
     "SxS cabin rental Michigan",
     "UTV cabin rental Michigan",
@@ -106,7 +106,7 @@ export default function SxsUtvCabinPage() {
           Book Your Trail Weekend
         </h2>
         <p className="font-accent" style={{ color: "#FAF3E0", opacity: 0.75, fontSize: "1.1rem", marginBottom: "1.75rem" }}>
-          $275/night · Sleeps 7 · Private property · Book direct
+          $200/night · Sleeps 7 · Private property · Book direct
         </p>
         <a href="/book" style={{ display: "inline-block", backgroundColor: "#2A9D8F", color: "#FAF3E0", padding: "0.9rem 2.5rem", borderRadius: "0.5rem", fontFamily: "var(--font-accent)", fontSize: "1.1rem", textDecoration: "none", fontWeight: 600 }}>
           Book Now

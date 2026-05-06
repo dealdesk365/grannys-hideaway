@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 export const metadata: Metadata = {
   title: "Granny's Hideaway | Northern Michigan Vacation Rental & Cottage | Mancelona, MI",
   description:
-    "Granny's Hideaway is a Northern Michigan vacation rental and cottage in Mancelona, MI. $275/night, sleeps 7. Your base camp for Gaylord golf, Torch Lake, snowmobiling, and ORV trails. Now booking from June 15.",
+    "Granny's Hideaway is a Northern Michigan vacation rental and cottage in Mancelona, MI. $200/night, sleeps 7. Your base camp for Gaylord golf, Torch Lake, snowmobiling, and ORV trails. Now booking from June 15.",
   keywords: [
     "Northern Michigan vacation rental",
     "Northern Michigan cottage rental",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Granny's Hideaway | Retro Chalet Rental in Mancelona, Northern Michigan",
     description:
-      "A one-of-a-kind retro chalet in Mancelona, MI. $275/night + $125 cleaning fee. Your base camp for Gaylord golf, Torch Lake, Mackinac Bridge, and more. Now booking from June 15.",
+      "A one-of-a-kind retro chalet in Mancelona, MI. $200/night + $125 cleaning fee. Your base camp for Gaylord golf, Torch Lake, Mackinac Bridge, and more. Now booking from June 15.",
     url: "https://grannyshideaway.com",
     siteName: "Granny's Hideaway",
     locale: "en_US",
@@ -63,7 +63,7 @@ const jsonLd = {
   ],
   numberOfRooms: 3,
   occupancy: { "@type": "QuantitativeValue", maxValue: 9 },
-  priceRange: "$275/night + $125 cleaning fee",
+  priceRange: "$200/night + $125 cleaning fee",
 };
 
 export default function RootLayout({

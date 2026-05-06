@@ -197,7 +197,7 @@ export default function BookPage() {
       })
       .catch(() => {
         // Fall back to defaults
-        setPricingConfig({ nightlyRate: 275, cleaningFee: 125, extraGuestFee: 35, extraGuestThreshold: 7, minNights: 2, customPricing: [] });
+        setPricingConfig({ nightlyRate: 200, cleaningFee: 125, extraGuestFee: 35, extraGuestThreshold: 7, minNights: 2, customPricing: [] });
         setPricingLoading(false);
       });
   }, []);

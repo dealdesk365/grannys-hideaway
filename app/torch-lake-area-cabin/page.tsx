@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 export const metadata: Metadata = {
   title: "Torch Lake Area Cabin Rental | Granny's Hideaway Mancelona Michigan",
   description:
-    "Cabin rental near Torch Lake, Michigan. Granny's Hideaway is 30 minutes from Torch Lake in Mancelona — vintage retro chalet, sleeps 7, $275/night, book direct. Your Torch Lake area base camp.",
+    "Cabin rental near Torch Lake, Michigan. Granny's Hideaway is 30 minutes from Torch Lake in Mancelona — vintage retro chalet, sleeps 7, $200/night, book direct. Your Torch Lake area base camp.",
   keywords: [
     "Torch Lake area cabin rental",
     "cabin near Torch Lake Michigan",

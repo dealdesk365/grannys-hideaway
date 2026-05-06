@@ -113,7 +113,7 @@ export default function AntrimCountyCabinRentalPage() {
           Book Your Antrim County Stay
         </h2>
         <p className="font-accent" style={{ color: "#1A1A1A", opacity: 0.7, fontSize: "1.1rem", marginBottom: "1.75rem" }}>
-          $275/night · Sleeps 7 · Private woods · Book direct, no extra fees
+          $200/night · Sleeps 7 · Private woods · Book direct, no extra fees
         </p>
         <a href="/book" style={{ display: "inline-block", backgroundColor: "#2A9D8F", color: "#FAF3E0", padding: "0.9rem 2.5rem", borderRadius: "0.5rem", fontFamily: "var(--font-accent)", fontSize: "1.1rem", textDecoration: "none", fontWeight: 600 }}>
           Book Now

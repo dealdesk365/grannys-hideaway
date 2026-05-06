@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 export const metadata: Metadata = {
   title: "Northern Michigan Cabin Rental | Granny's Hideaway",
   description:
-    "Book a Northern Michigan cabin rental that's anything but generic. Granny's Hideaway is a vintage 1970s chalet in Mancelona — $275/night, sleeps 7, private wooded setting. Your base camp for all of Northern Michigan.",
+    "Book a Northern Michigan cabin rental that's anything but generic. Granny's Hideaway is a vintage 1970s chalet in Mancelona — $200/night, sleeps 7, private wooded setting. Your base camp for all of Northern Michigan.",
   keywords: [
     "northern Michigan cabin rental",
     "cabin rental Northern Michigan",
@@ -90,7 +90,7 @@ export default function NorthernMichiganCabinRentalPage() {
           Your Northern Michigan Cabin Is Waiting
         </h2>
         <p className="font-accent" style={{ color: "#FAF3E0", opacity: 0.75, fontSize: "1.1rem", marginBottom: "1.75rem" }}>
-          $275/night · Sleeps 7 · Fully private · Mancelona, MI
+          $200/night · Sleeps 7 · Fully private · Mancelona, MI
         </p>
         <a href="/book" style={{ display: "inline-block", backgroundColor: "#2A9D8F", color: "#FAF3E0", padding: "0.9rem 2.5rem", borderRadius: "0.5rem", fontFamily: "var(--font-accent)", fontSize: "1.1rem", textDecoration: "none", fontWeight: 600 }}>
           Book Your Stay

@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 export const metadata: Metadata = {
   title: "Vintage Cabin Rental Michigan | Granny's Hideaway — Retro 1970s Chalet",
   description:
-    "Michigan's most authentically vintage cabin rental. Granny's Hideaway in Mancelona is a real 1970s chalet — original orange carpet, bunny ear TV, Grandma Viola's quilts. Not a reproduction. $275/night.",
+    "Michigan's most authentically vintage cabin rental. Granny's Hideaway in Mancelona is a real 1970s chalet — original orange carpet, bunny ear TV, Grandma Viola's quilts. Not a reproduction. $200/night.",
   keywords: [
     "vintage cabin rental Michigan",
     "retro cabin rental Michigan",
@@ -101,7 +101,7 @@ export default function VintageCabinPage() {
               ["🕰️", "Nothing is a reproduction — every detail is original to the 1970s build"],
               ["🌲", "Private, wooded, no neighbors — the vintage vibe isn't interrupted by the 21st century"],
               ["📸", "Most photogenic cabin in Northern Michigan — every corner is worth a photo"],
-              ["💰", "At $275/night, there is no cheaper way to stay in a genuine piece of Michigan history"],
+              ["💰", "At $200/night, there is no cheaper way to stay in a genuine piece of Michigan history"],
             ].map(([icon, text]) => (
               <div key={text as string} style={{ display: "flex", gap: "1rem", alignItems: "flex-start", backgroundColor: "rgba(0,0,0,0.15)", borderRadius: "0.75rem", padding: "1rem 1.25rem" }}>
                 <span style={{ fontSize: "1.5rem", flexShrink: 0 }}>{icon}</span>
@@ -118,7 +118,7 @@ export default function VintageCabinPage() {
           Step Into the 70s
         </h2>
         <p className="font-accent" style={{ color: "#FAF3E0", opacity: 0.75, fontSize: "1.1rem", marginBottom: "1.75rem" }}>
-          $275/night · Mancelona, Michigan · The real thing
+          $200/night · Mancelona, Michigan · The real thing
         </p>
         <a href="/book" style={{ display: "inline-block", backgroundColor: "#2A9D8F", color: "#FAF3E0", padding: "0.9rem 2.5rem", borderRadius: "0.5rem", fontFamily: "var(--font-accent)", fontSize: "1.1rem", textDecoration: "none", fontWeight: 600 }}>
           Book Granny's Hideaway

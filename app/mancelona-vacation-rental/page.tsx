@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 export const metadata: Metadata = {
   title: "Vacation Rental in Mancelona Michigan | Granny's Hideaway",
   description:
-    "Looking for a vacation rental in Mancelona, Michigan? Granny's Hideaway is a one-of-a-kind retro chalet sleeping 7 — $275/night, private wooded setting, your Northern Michigan base camp.",
+    "Looking for a vacation rental in Mancelona, Michigan? Granny's Hideaway is a one-of-a-kind retro chalet sleeping 7 — $200/night, private wooded setting, your Northern Michigan base camp.",
   keywords: [
     "vacation rental Mancelona Michigan",
     "Mancelona MI cabin rental",
@@ -57,7 +57,7 @@ export default function MancelonVacationRentalPage() {
               ["📍", "Walking distance to Mancelona snowmobile trails — park your sled and sleep in a real bed"],
               ["🏡", "Fully private — no shared walls, no neighbors, just trees"],
               ["🛏️", "Sleeps 7: 2 queens downstairs + 3 twins in the wood-paneled loft"],
-              ["💰", "$275/night flat rate — no resort fees, no nonsense"],
+              ["💰", "$200/night flat rate — no resort fees, no nonsense"],
             ].map(([icon, text]) => (
               <div key={text as string} style={{ display: "flex", gap: "1rem", alignItems: "flex-start", backgroundColor: "rgba(0,0,0,0.15)", borderRadius: "0.75rem", padding: "1rem 1.25rem" }}>
                 <span style={{ fontSize: "1.5rem", flexShrink: 0 }}>{icon}</span>

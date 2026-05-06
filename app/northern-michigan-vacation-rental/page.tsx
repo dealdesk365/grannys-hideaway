@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 export const metadata: Metadata = {
   title: "Northern Michigan Vacation Rental | Granny's Hideaway | Mancelona, MI",
   description:
-    "Book a Northern Michigan vacation rental that feels like home. Granny's Hideaway is a vintage 1970s cottage in Mancelona — $275/night, sleeps 7, fully private. Perfect for family trips, couples, golf getaways, and snowmobile weekends.",
+    "Book a Northern Michigan vacation rental that feels like home. Granny's Hideaway is a vintage 1970s cottage in Mancelona — $200/night, sleeps 7, fully private. Perfect for family trips, couples, golf getaways, and snowmobile weekends.",
   keywords: [
     "Northern Michigan vacation rental",
     "northern michigan vacation rental cabin",
@@ -48,7 +48,7 @@ export default function NorthernMichiganVacationRentalPage() {
             Mancelona puts you 25 minutes from Bellaire, 30 minutes from Torch Lake, 20 minutes from Gaylord, and about an hour from Petoskey and Traverse City. It's the middle of Northern Michigan in the best possible way — close to everything without paying the waterfront premium.
           </p>
           <p style={{ fontSize: "1.1rem", lineHeight: 1.8, color: "#1A1A1A" }}>
-            At $275/night with a $125 cleaning fee, the cabin sleeps 7 comfortably across three bedrooms. Fully private lot, fire pit, full kitchen, washer/dryer — everything a Northern Michigan vacation needs.
+            At $200/night with a $125 cleaning fee, the cabin sleeps 7 comfortably across three bedrooms. Fully private lot, fire pit, full kitchen, washer/dryer — everything a Northern Michigan vacation needs.
           </p>
         </div>
       </section>
@@ -104,7 +104,7 @@ export default function NorthernMichiganVacationRentalPage() {
           Ready to Book Your Northern Michigan Vacation?
         </h2>
         <p className="font-accent" style={{ color: "#FAF3E0", opacity: 0.75, fontSize: "1.1rem", marginBottom: "1.75rem" }}>
-          $275/night · Sleeps 7 · Fully private · Mancelona, MI · Now booking June 15+
+          $200/night · Sleeps 7 · Fully private · Mancelona, MI · Now booking June 15+
         </p>
         <a href="/book" style={{ display: "inline-block", backgroundColor: "#2A9D8F", color: "#FAF3E0", padding: "0.9rem 2.5rem", borderRadius: "0.5rem", fontFamily: "var(--font-accent)", fontSize: "1.1rem", textDecoration: "none", fontWeight: 600 }}>
           Book Your Stay

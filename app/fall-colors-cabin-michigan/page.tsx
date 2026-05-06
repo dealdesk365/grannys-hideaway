@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 export const metadata: Metadata = {
   title: "Fall Colors Cabin Michigan | Granny's Hideaway Northern Michigan",
   description:
-    "Experience Michigan's fall color season from Granny's Hideaway in Mancelona. A vintage retro cabin in Antrim County — peak color country. $275/night, sleeps 7, private woods. Book your fall trip.",
+    "Experience Michigan's fall color season from Granny's Hideaway in Mancelona. A vintage retro cabin in Antrim County — peak color country. $200/night, sleeps 7, private woods. Book your fall trip.",
   keywords: [
     "fall colors cabin Michigan",
     "Michigan fall foliage cabin rental",

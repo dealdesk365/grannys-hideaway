@@ -172,7 +172,7 @@ export default function AdminPage() {
 // ─── Pricing Tab ───────────────────────────────────────────────────────────────
 function PricingTab({ password }: { password: string }) {
   const [form, setForm] = useState<Pricing>({
-    nightly_rate: 275,
+    nightly_rate: 200,
     cleaning_fee: 125,
     extra_guest_fee: 35,
     extra_guest_threshold: 7,
@@ -689,7 +689,7 @@ function PricingCalendarTab({ password }: { password: string }) {
   // Data
   const [blockedDates, setBlockedDates] = useState<BlockedDate[]>([]);
   const [customPricing, setCustomPricing] = useState<CustomPricing[]>([]);
-  const [baseRate, setBaseRate] = useState(275);
+  const [baseRate, setBaseRate] = useState(200);
   const [loading, setLoading] = useState(true);
 
   // Add form
@@ -722,7 +722,7 @@ function PricingCalendarTab({ password }: { password: string }) {
       const pricingData = await pricingRes.json();
       setBlockedDates(Array.isArray(blockedData) ? blockedData : []);
       setCustomPricing(Array.isArray(customData) ? customData : []);
-      setBaseRate(pricingData.nightly_rate ?? 275);
+      setBaseRate(pricingData.nightly_rate ?? 200);
     } catch {
       // ignore
     }

@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 export const metadata: Metadata = {
   title: "Snowmobile Cabin Rental Michigan | Granny's Hideaway Mancelona",
   description:
-    "Snowmobile cabin rental in Michigan near Mancelona trail access. Granny's Hideaway sleeps 7, has fire pit, full kitchen, and washer/dryer. Trail-adjacent, fully private, $275/night.",
+    "Snowmobile cabin rental in Michigan near Mancelona trail access. Granny's Hideaway sleeps 7, has fire pit, full kitchen, and washer/dryer. Trail-adjacent, fully private, $200/night.",
   keywords: [
     "snowmobile cabin rental Michigan",
     "Michigan snowmobile cabin",
