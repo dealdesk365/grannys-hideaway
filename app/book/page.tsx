@@ -120,8 +120,9 @@ const WAIVER_SECTIONS = [
     title: "5. DAMAGE & INSURANCE",
     body: `• A $500 refundable damage deposit is collected at time of booking via the payment method on file
 • Deposit is returned in full within 3 business days of checkout, provided the property is left in acceptable condition with no damage beyond normal wear and tear
-• Guest is financially responsible for any damage beyond normal wear and tear exceeding the deposit amount
-• Guest authorizes additional charges to the payment method on file for documented damages not covered by the deposit`,
+• Guest will be notified within 48 hours of checkout of any documented damage beyond normal wear and tear
+• If damages exceed the $500 deposit, Guest will be contacted with documentation and a repair/replacement estimate
+• Guest agrees to work in good faith to resolve any damage claims, and authorizes charges to the payment method on file if an agreement is reached`,
   },
   {
     title: "6. CANCELLATION POLICY",
