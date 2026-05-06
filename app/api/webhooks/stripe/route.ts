@@ -48,6 +48,8 @@ async function handleCheckoutCompleted(session: Stripe.Checkout.Session) {
     guests,
     guestName,
     waiverSignature,
+    waiverTimestamp,
+    waiverIp,
     nights,
     totalAmount,
     depositAmount,
@@ -76,7 +78,7 @@ async function handleCheckoutCompleted(session: Stripe.Checkout.Session) {
   const guestCount = parseInt(guests ?? "1", 10);
   const totalAmt = parseInt(totalAmount ?? "0", 10);
   const depositAmt = parseInt(depositAmount ?? "0", 10);
-  const damageAmt = parseInt(damageDeposit ?? "200", 10);
+  const damageAmt = parseInt(damageDeposit ?? "500", 10);
   const nightsCount = parseInt(nights ?? "1", 10);
 
   // Save booking
@@ -92,6 +94,8 @@ async function handleCheckoutCompleted(session: Stripe.Checkout.Session) {
     damage_deposit: damageAmt,
     status: "deposit_paid",
     waiver_signature: waiverSignature ?? null,
+    waiver_agreed_at: waiverTimestamp ?? null,
+    waiver_ip: waiverIp ?? null,
   });
 
   if (insertError) {

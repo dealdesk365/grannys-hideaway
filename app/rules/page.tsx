@@ -358,7 +358,7 @@ export default function RulesPage() {
                 🛡️ Guest Damage Protection
               </p>
               <p className="font-accent" style={{ opacity: 0.9, lineHeight: 1.65 }}>
-                A <strong>$200 refundable damage deposit</strong> is collected at booking and
+                A <strong>$500 refundable damage deposit</strong> is collected at booking and
                 returned within 3 business days after checkout — as long as Granny&apos;s place
                 is treated with respect. Accidents happen; destruction doesn&apos;t.
               </p>

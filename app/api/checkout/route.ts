@@ -161,7 +161,7 @@ export async function POST(req: NextRequest) {
         {
           price_data: {
             currency: "usd",
-            unit_amount: 20000, // $200 refundable damage deposit
+            unit_amount: 50000, // $500 refundable damage deposit
             product_data: {
               name: "Refundable Damage Deposit",
               description: "Fully refunded within 3 business days after checkout if no damage.",
@@ -181,7 +181,9 @@ export async function POST(req: NextRequest) {
         nights: String(nights),
         totalAmount: String(totalAmount),
         depositAmount: String(depositAmount),
-        damageDeposit: "200",
+        damageDeposit: "500",
+        waiverTimestamp: new Date().toISOString(),
+        waiverIp: req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? req.headers.get("x-real-ip") ?? "unknown",
       },
     });
 
