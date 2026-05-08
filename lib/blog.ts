@@ -9,6 +9,59 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "deward-tract-northern-michigan",
+    title: "The Deward Tract: Northern Michigan's Forgotten Ghost Town and Hidden Wilderness",
+    excerpt:
+      "About 20 minutes from Granny's Hideaway sits one of northern Michigan's most unusual destinations — a ghost town swallowed by the forest, a prime fly fishing river, and 4,700 acres of wild public land most visitors never find.",
+    date: "May 8, 2026",
+    readTime: "5 min read",
+    content: `Most people driving through Kalkaska County have no idea what's hiding just off the main roads. There are no signs pointing to it, no gift shops, no tour buses. Just a gravel two-track that leads into state forest land and eventually deposits you at the edge of something that used to be a town — and is now just trees, stumps, concrete foundations, and the sound of the Manistee River running cold over sand.
+
+This is the Deward Tract. It's one of the stranger and more compelling places in northern Michigan, and it's about 20 minutes from Granny's Hideaway.
+
+**What Happened at Deward?**
+
+At the turn of the 20th century, northern Michigan's white pine forests were being liquidated as fast as the saws could cut. A lumber baron named David Ward founded a company town here in 1901 — named it after himself, D. Ward, Deward — and built a full operation: a massive sawmill, a railroad depot, a company store, a school, a post office, and houses for several hundred workers and their families. At its peak, around 800 people lived in Deward. It was a real town, not a camp.
+
+By 1912, it was over. The timber ran out. Ward shut everything down, the railroad pulled up the tracks, and the residents scattered. Within a generation, the forest crept back over everything. By the 1930s, Deward had essentially disappeared.
+
+What the forest left behind are ghost town traces that you find as you walk: concrete foundations half-buried in leaf litter, old railroad grade stretches that are still subtly flat and straight through the trees, and — the thing that really gets you — the pine stumps. Massive, ancient-looking stumps scattered through the woods like grave markers. The Deward Tract actually has a designated Pine Stump Preserve protecting these remnants. The stumps are over a century old, and they're enormous — a reminder of what this forest looked like before the saws arrived.
+
+**The Upper Manistee River**
+
+The Deward Tract encompasses 4,720 acres specifically designated to protect the Upper Manistee River corridor. The stretch of river between Deward and Smithville is considered some of the finest fly fishing water in the Lower Peninsula — a Type 2 trout stream with a mix of brook and brown trout in a setting that looks like it's barely changed in a hundred years.
+
+The DNR manages this section as a quality fishery, which means lower pressure and larger fish than you typically find on busier stretches. The Upper Manistee here is small, tight, and technical — it rewards patience and a careful approach more than most streams. Wade in quietly, read the current, and present your fly well, and this river will pay you back. Bring waders; the water is cold and the streambed is sandy and unpredictable in spots.
+
+Access is on foot. The Deward Tract is a special management area, and the river corridor is walk-in only — no ORVs or vehicles in the protected zone. That's part of what keeps it quiet. You have to earn the access a little, and the people you meet on the water are the kind who came specifically for this.
+
+**What a Visit Looks Like**
+
+From Mancelona, you head south on M-66 toward Kalkaska, then pick up Sunset Trail Road heading west. The trailhead and parking area are basic — this isn't a destination that gets a lot of infrastructure investment. That's fine. Bring a map (or download the area to your GPS before you lose cell signal, because you will lose it).
+
+In spring and early summer, the forest floor is wild with ferns and wildflowers. The stumps become visible as you get deeper in. The trail follows the old railroad grade in places — you can feel the straightness of it underfoot, the slight elevation above the surrounding ground. It's easy walking.
+
+At the river, things slow down naturally. The Manistee at this point is maybe 20-30 feet across — not wide, but clear and purposeful. You can see the gravel bottom. You can see the fish holding in the current if you stop and look.
+
+Ghost town hunting in this setting is more feeling than finding. There are no interpretive signs, no marked ruins. You're looking for the subtle wrongness of the landscape — a depression that's too rectangular, a cluster of stumps that's too organized, a stretch of ground that's slightly too flat. Bring a little curiosity and you'll find it.
+
+**Good to Know Before You Go**
+
+Fishing the Deward Tract requires a valid Michigan fishing license (purchase at michigan.gov/dnr or any local outfitter before you leave). Check the current regulations for the Upper Manistee — this stretch has specific rules about methods and limits.
+
+Wear real shoes. The terrain is uneven and the two-tracks can be muddy in spring. Bug spray from mid-May onward — this is northern Michigan forest in a river valley, and the mosquitoes will find you.
+
+There are no facilities. Pack in, pack out.
+
+**Make Granny's Hideaway Your Base**
+
+The Deward Tract is exactly the kind of place you discover when you're staying somewhere local instead of just passing through. From the cabin in Mancelona, you can be standing at the Deward trailhead in 20 minutes — plenty of time to fish the morning rise, explore the ghost town foundations, and still be back for a late breakfast.
+
+If you're the kind of traveler who finds something satisfying about places that don't advertise themselves — places with real history and quiet and genuine wildness — the Deward Tract is worth a half-day of your northern Michigan trip.
+
+Book your stay at [grannyshideaway.com/book](https://grannyshideaway.com/book) and go find it for yourself.`,
+  },
+  {
     slug: "memorial-day-weekend-northern-michigan",
     title: "The Perfect Memorial Day Weekend in Northern Michigan",
     excerpt:
