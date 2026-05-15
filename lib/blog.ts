@@ -9,6 +9,65 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "jordan-river-valley-northern-michigan",
+    title: "Jordan River Valley: Northern Michigan's Most Beautiful Backyard",
+    excerpt:
+      "Just 25 miles from Granny's Hideaway, the Jordan River Valley is one of the most stunning and overlooked natural areas in the Lower Peninsula — a place of deep forest, cold trout water, wild elk, and views that stop you in your tracks.",
+    date: "May 15, 2026",
+    readTime: "5 min read",
+    content: `There's a valley in Antrim County that most people drive past without knowing it's there. No billboards point to it. No resort has claimed it. It doesn't have a social media moment or a trending hashtag. It's just wildly, quietly beautiful — and it's about 25 miles from Granny's Hideaway.
+
+This is the Jordan River Valley.
+
+**What You're Getting Into**
+
+The Jordan River is Michigan's first federally designated Wild and Scenic River — a distinction it earned because of its cold, clear water, its undisturbed corridor of state forest land, and the quality of its trout fishery. The river runs about 18 miles from its headwaters near Deadman's Hill down through Antrim County before emptying into Lake Charlevoix at East Jordan. For most of that length, it flows through state forest with no development on its banks. You can wade in and not see another person for hours.
+
+The valley it carved is dramatic by Michigan standards — steep wooded ridges that rise 200+ feet above the river bottom, with forest so dense it muffles everything. In spring, ferns carpet the floor under the maples and birches. In summer, it stays 10 degrees cooler down by the water than anywhere else in the county. In fall, the whole valley ignites.
+
+**Deadman's Hill Overlook**
+
+Start here. There's a parking area off Deadman's Hill Road, south of Boyne City, and a short walk takes you to the overlook — a panoramic view down into the entire Jordan River Valley that genuinely stops people mid-sentence. You're looking at thousands of acres of unbroken northern Michigan forest spilling down to a thread of silver river below. No buildings, no roads, no power lines. Just the valley.
+
+It's one of the best views in the Lower Peninsula, and most people who've lived in Michigan their whole lives have never been. The walk is easy — maybe a quarter mile from the parking area. Bring anyone on your trip who needs convincing that northern Michigan is special. This overlook closes the argument.
+
+**The Jordan River Pathway**
+
+For hikers, the Jordan River Pathway is an 18-mile loop that follows the river through the valley, climbs back up the ridges, and returns through state forest land. The full loop is a committed day hike or an overnight with a designated rustic campsite at about the midpoint. 
+
+Most visitors do sections of it rather than the whole loop. The river corridor stretch — roughly the middle miles, where the trail runs close to the water — is the most spectacular. It's flat, well-marked, and gives you extended time by the river. Count on muddy sections in spring and early summer; wear real boots.
+
+The pathway is open year-round. Winter snowshoeing here is extraordinary — total quiet, deer tracks in the snow, ice formations along the riverbank. Spring wildflowers come on strong in May. Fall color, as mentioned, is exceptional. There's honestly no bad time.
+
+**Trout Fishing the Jordan**
+
+The Jordan River is one of Michigan's designated Type 4 (Blue Ribbon) trout streams — the highest classification. It holds a naturally reproducing population of brown and brook trout in cold, clean water that's perfect habitat. The DNR manages it carefully; special regulations apply to most of the river, so check current rules before you go at michigan.gov/dnr.
+
+This is technical water. The Jordan is not a wide, easy-to-wade river — it's narrow, brushy in spots, and the trout are spooky. A careful approach, a light touch with the fly, and some patience are what it takes. But catch a 16-inch brown in a river this clear and beautiful and you'll understand why people make long drives just for this.
+
+You'll need a Michigan fishing license (buy online before you leave home). Local outfitters in Boyne City or Bellaire can point you to current hatches and access points. Late May through June is prime time for dry fly fishing as spring bugs come off the water.
+
+**Elk in the Valley**
+
+Northern Michigan has one of the largest free-roaming elk herds east of the Mississippi, and the Jordan River Valley corridor is part of their range. A drive along Alba Highway or the valley roads at dusk — especially in late spring when bulls are shedding velvet and cows have calves — regularly produces sightings. The Michigan DNR's Elk Viewing Guide identifies the best areas and times.
+
+Elk viewing requires patience and quiet. Pull off the road, cut the engine, and wait. The reward when a bull walks out of the treeline is something you don't forget.
+
+**Getting There from Mancelona**
+
+The Jordan River Valley is close enough from Granny's Hideaway to do as a morning trip and be back in time for a late lunch. Head north on M-66 toward Mancelona, then pick up roads heading west toward Alba and Boyne City. Deadman's Hill Road is well-signed from M-32. The whole drive is scenic — you're winding through state forest the entire way.
+
+Download your maps before you go. Cell coverage is genuinely unreliable in the valley bottom. That's part of the appeal.
+
+**Make It a Full Trip**
+
+A northern Michigan cabin stay that doesn't include at least a morning at the Jordan River Valley is leaving something on the table. Hike down to the river from Deadman's Hill, watch the valley wake up in the morning light, fish for an hour, see what elk are moving. Then come back to the cabin and figure out what the afternoon holds.
+
+Granny's Hideaway is the kind of base that makes this easy — close to the valley, fully equipped, with no pressure to fill every hour. Grandma Viola knew what she was doing when she built here.
+
+Book your stay at [grannyshideaway.com/book](https://grannyshideaway.com/book) and go find the valley for yourself.`,
+  },
+  {
     slug: "deward-tract-northern-michigan",
     title: "The Deward Tract: Northern Michigan's Forgotten Ghost Town and Hidden Wilderness",
     excerpt:
