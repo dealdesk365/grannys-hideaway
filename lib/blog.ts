@@ -9,6 +9,56 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "lakes-of-the-north-mancelona-michigan",
+    title: "Lakes of the North: The Backyard Resort Hidden in Mancelona",
+    excerpt:
+      "Right down the road from Granny's Hideaway sits one of northern Michigan's best-kept secrets — a community resort with championship golf, wooded trails, and that classic Up North feeling most travelers never find.",
+    date: "May 22, 2026",
+    readTime: "5 min read",
+    content: `There's something that happens to people when they pull into Mancelona for the first time. They expect a small northern Michigan town, and that's what they get — but what they don't expect is everything tucked in the woods behind it.
+
+About five minutes from Granny's Hideaway, through the pines on the north side of town, is Lakes of the North — a sprawling private community and resort that's been quietly doing its thing since the 1970s. It's got a championship golf course open to the public, miles of trails that turn into groomed snowmobile routes in winter, a private campground, and an activities clubhouse that residents and guests rave about. And almost nobody outside Antrim County knows about it.
+
+If you're staying at Granny's, it's basically your backyard.
+
+**The Golf Course**
+
+Let's start with the big draw. The Lakes of the North Golf Course is an 18-hole, par 72 championship course that stretches 7,000 yards through some of the most beautiful terrain in northern Michigan. The Golf Association of Michigan has rated it among the top three courses in the entire state for most consistent greens — and it's open to the public.
+
+That means you don't have to be a member to tee off here. You just show up, pay a reasonable green fee, and spend the next four hours playing a course that feels like it should cost twice as much. Fairways lined with birch and pine, rolling northern Michigan terrain, and that particular late-afternoon light that turns everything gold.
+
+If your group came north for golf and you've already played Gaylord, Lakes of the North is a great second-day option that flies completely under the radar. Most people drive right past Mancelona on the way to somewhere else. That's their loss.
+
+**More Than a Golf Course**
+
+Golf is the headline, but LOTN has a lot more going on. The community covers thousands of acres and includes multiple lakes, a campground, a private airstrip (yes, really), and an Activities Clubhouse that offers an indoor lap pool, whirlpool, current pool, and waterslide for members and their guests. If you're traveling with kids, or just want somewhere to shake off a sore back after a long day on the trails, it's worth knowing it exists.
+
+The wooded roads and trails winding through the community are lovely on their own — good for a morning walk, a casual bike ride, or just a slow drive with the windows down. In winter, these same routes become groomed snowmobile trails that connect directly to the broader Michigan network. It's one of the reasons sledders book Granny's Hideaway specifically: you're staged right at the trailhead.
+
+**The Feel of the Place**
+
+LOTN has a particular vibe that's hard to describe. It's part resort, part neighborhood, part time capsule. It was developed around the same era that Grandma Viola built Granny's Hideaway — early 1970s — and you can feel that same northern Michigan ethos in both places: the idea that Up North isn't a destination you visit once, it's a place you keep coming back to.
+
+A lot of the people you'll run into here are families who've been making the drive for decades. Cottages passed down from grandparents. Dogs on every porch. Golf carts meandering down the roads. It's that version of Michigan summer — the quiet, wooded, we-don't-need-a-beach-crowd version — that people who grew up here can spot immediately.
+
+Very few outsiders ever find it. That's part of the charm.
+
+**What to Know Before You Go**
+
+A few practical things if you're planning to swing by LOTN during your stay:
+
+- **Golf tee times:** The course is open to the public. Call ahead or check the Lakes of the North website, especially on summer weekends when locals fill the early slots fast.
+- **Getting there:** From Granny's Hideaway, it's about five minutes north. Follow Mancelona Road and watch for the golf course signs. You'll see it.
+- **Campground:** There's a campground on property if extra folks in your group are pulling trailers or towing side-by-sides and need hookups. Good option for larger groups.
+- **Trails:** The wooded community roads are generally friendly for walking and biking. In snowmobile season, check trail conditions before heading out — they can get busy on weekends.
+
+**Come for the Golf, Stay for Everything Else**
+
+Granny's Hideaway is less than a mile from all of this — a vintage 1970s chalet with Viola's hand-sewn quilts on the beds, orange shag carpet underfoot, and a firepit out back that's perfect for ending a long day on the course. There's something about sitting out there after nine holes, watching the fireflies come out over the tree line, that makes you understand why people have been coming to this corner of Michigan for fifty years.
+
+When you're ready to plan your northern Michigan summer, [book your stay at Granny's Hideaway](https://grannyshideaway.com/book) — we'll be here when you arrive.`,
+  },
+  {
     slug: "jordan-river-valley-northern-michigan",
     title: "Jordan River Valley: Northern Michigan's Most Beautiful Backyard",
     excerpt:
