@@ -9,6 +9,63 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "fishing-near-mancelona-michigan",
+    title: "Cast, Catch, Repeat: Summer Fishing Near Mancelona, Michigan",
+    excerpt:
+      "Antrim County is sitting on some of the best freshwater fishing in Michigan — and most people drive right past it. Here's where to wet a line when you're staying near Mancelona.",
+    date: "May 29, 2026",
+    readTime: "5 min read",
+    content: `It's late May, the water's warming up, and somewhere in Antrim County a smallmouth bass is about to ruin your otherwise relaxing morning.
+
+That's the thing about fishing near Mancelona — you don't have to go far before you're into something worth telling people about. This corner of northern Michigan sits inside one of the best freshwater fishing regions in the entire country, surrounded by cold clear lakes, wild trout streams, and the kind of early-morning quiet that makes you wonder why you don't do this every week.
+
+If you're staying at Granny's Hideaway and you've got rods in the truck, here's where to point them.
+
+**Elk Lake — The Big One**
+
+Elk Lake is about 20 minutes from the cabin, and it's one of those places that earns its reputation. At 7,730 acres and a maximum depth of 192 feet, it's a legitimate Great Lakes-style fishery in miniature — clear, cold, deep in the middle, with a species list that reads like a Michigan DNR highlight reel. Brown trout, lake trout, lake whitefish, walleye, muskellunge, smallmouth bass, northern pike, rainbow trout, salmon, yellow perch — it's all in there.
+
+Walleye and smallmouth bass are the top draws for most visiting anglers. Spring walleye come shallow and aggressive after ice-out; by late May and June they're transitioning to deeper structure but still very catchable on jigs and crawlers. Smallmouth in Elk Lake run big. Casting to rocky points and drop-offs in the early morning hours during June is about as good as summer bass fishing gets in Michigan.
+
+Ek Lake also connects via the Elk River to Lake Torch (yes, *that* Torch Lake — the one with the turquoise water that gets photographed from planes) and eventually to Lake Michigan. That chain of lakes creates a dynamic fishery that changes through the season. If you're serious about putting time in here, consider hiring a local guide for a day — they know the structure, the seasonal patterns, and the spots that Google Maps won't show you.
+
+**Lake Bellaire**
+
+Smaller than Elk at 1,775 acres, Lake Bellaire is closer to the village of Bellaire — about 25 minutes from Granny's. It holds a similarly impressive species list: walleye, smallmouth and largemouth bass, northern pike, lake herring, lake whitefish, crappie, perch, and more.
+
+What makes Bellaire worth a morning is the access. There's a public boat launch, and the lake doesn't get the same pressure as some of the more famous northern Michigan fisheries. It's a good choice if you want to get on the water without fighting for space. Early June is particularly good for bass on the weedy shallows near the south end of the lake.
+
+**Clam Lake**
+
+Right in Bellaire, Clam Lake is small — 420 acres — but it's connected to the Intermediate Lake and the broader Chain of Lakes system, which means fish move through it seasonally. Walleye, northern pike, smallmouth and largemouth bass, perch, crappie — good variety for a lake you can reach in half an hour from the cabin. Shore fishing from the public access on the east side is a viable option if you don't have a boat.
+
+**The Jordan River — Trout Country**
+
+If fly fishing is your thing, the Jordan River is the reason you're here. It's Michigan's first federally designated Wild and Scenic River, a Blue Ribbon trout stream managed by the DNR for naturally reproducing brown and brook trout. The water is cold year-round — fed by springs through the Jordan River Valley — and gin-clear in the low flows of summer.
+
+Late May through June is prime time for the Jordan. Sulfur hatches and other spring mayflies bring fish up to the surface, and a well-presented dry fly in the evening hours will raise fish in ways that feel almost unfair. Almost.
+
+This is technical water — narrow, brushy, with spooky trout and special regulations on most of the river. Check current DNR rules at michigan.gov/dnr before you go. Waders and felt-soled boots are worth the trunk space.
+
+**A Few Practical Notes**
+
+Before you launch the boat or wade in:
+
+- **Michigan fishing license** — required for anyone 17 and older. Buy online at michigan.gov/dnr before you leave home. Takes five minutes.
+- **Trout stamp** — if you're targeting trout or salmon, you'll need this in addition to your base license.
+- **Local bait and tackle** — Mancelona and Bellaire both have shops that can set you up with live bait, current local intel, and up-to-date conditions. Worth a stop before you head out.
+- **Launch fees** — some public accesses charge a small daily fee. Bring a few bucks.
+- **Leave by 10 AM** — on summer weekends, the popular launches get busy. Early risers get the good spots and the quiet water.
+
+**The Best Part**
+
+You come back from a morning on the water, and Granny's Hideaway is right there waiting. There's a firepit for the evening, Grandma Viola's quilts on the beds, and that particular northern Michigan afternoon light that makes everything look like a postcard. The orange shag carpet has seen a lot of fishing boots over the years. It doesn't mind.
+
+The cabin was built in the early 1970s — the same decade a lot of these fishing traditions got started in this corner of the state. Some of the best things up here haven't changed much since then. That's kind of the point.
+
+When you're ready to plan your fishing trip north, [book your stay at Granny's Hideaway](https://grannyshideaway.com/book). We'll be here when you arrive.`,
+  },
+  {
     slug: "lakes-of-the-north-mancelona-michigan",
     title: "Lakes of the North: The Backyard Resort Hidden in Mancelona",
     excerpt:
