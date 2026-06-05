@@ -9,6 +9,70 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "swimming-holes-beaches-near-mancelona-michigan",
+    title: "Where to Swim in Northern Michigan: Best Beaches Near Mancelona",
+    excerpt:
+      "Antrim County has some of the clearest, most beautiful water in the Midwest — and you don't have to fight for a parking spot to find it. Here's where to swim near Granny's Hideaway.",
+    date: "June 5, 2026",
+    readTime: "5 min read",
+    content: `June has a way of settling the debate. The water's warm enough, the days are long, and there's no good reason to be indoors. If you're staying at Granny's Hideaway this summer, you're about 20 minutes from some of the most stunning freshwater swimming in the entire Midwest — and most of it is completely uncrowded.
+
+Antrim County doesn't have the name recognition of Sleeping Bear or Petoskey, and that's exactly why it's worth knowing about. Here's where to go when you want to get in the water.
+
+**Lake Bellaire — Dam Beach**
+
+Dam Beach on Lake Bellaire is the kind of spot that makes you want to stop, look around, and confirm that this is real life. The water is clear — not "pretty clear for a lake" clear, but legitimately crystalline, the kind of clarity you associate with mountain streams. Lake Bellaire sits at the southern end of the Chain of Lakes and stays clean because of it.
+
+The beach itself is sandy, there's a public parking area, and the drop-off is gentle enough that kids can wade while adults swim out. On a weekday morning in June, you might have it almost to yourself. Even on a warm summer Saturday, it doesn't attract the packed-blanket chaos of a popular Great Lakes beach. The village of Bellaire is right there if you want to grab lunch afterward — it's a ten-minute walk to a handful of good spots.
+
+From Granny's Hideaway, figure about 25 minutes south. Worth every minute.
+
+**Antrim Creek Natural Area**
+
+If your definition of swimming includes "creek swimming in a cedar swamp with a cold spring feeding it," the Antrim Creek Natural Area near Bellaire is your place. It's more of an adventure swim than a beach day — the Antrim Creek flows cold and clear through a forested natural area before emptying into Lake Bellaire — but on a hot July afternoon, cold running water through the woods is its own kind of perfect.
+
+The natural area also has trails if you want to hike in rather than just park and wade. The combo of woods, water, and birdlife makes it a great half-day if you've got some explorers in the group.
+
+**Elk Lake**
+
+Elk Lake is massive — over 7,700 acres — and connects to Torch Lake via the Elk River channel. Most people come here to fish (and the fishing is excellent), but Elk Lake has public access points with good swimming, and the water quality matches its reputation. Visibility runs deep in the summer months.
+
+The public boat launch on the west side of the lake gives you access to the shoreline. Early summer mornings, before the ski boats arrive, it's one of the quieter swims you'll find in the area. The water stays cold well into June, which is either a selling point or a dealbreaker depending on your cold-water tolerance.
+
+Elk Lake is about 25 minutes from the cabin.
+
+**Torch Lake — The Sandbar Scene**
+
+If you want the full northern Michigan summer experience, you already know about Torch Lake. The turquoise water, the sandbar, the boats anchored out in the middle — it's genuinely one of the most beautiful lakes in the country, and it's earned that reputation honestly.
+
+Torch Lake is about 35 minutes from Granny's. The public access at Alden on the south end gives you a swimming beach and a view that doesn't look real. On a sunny summer day, the water hits a shade of blue-green that looks photoshopped. It isn't. The sandbar in the middle of the lake is a summer gathering spot accessible by kayak, paddleboard, or boat — if you rent a pontoon for the day, that's the move.
+
+Just know that Torch Lake gets *busy* in peak summer. Go early, or hit it on a weekday.
+
+**Fisherman's Island State Park**
+
+A bit farther — about 50 minutes west near Charlevoix — Fisherman's Island State Park is one of the most underrated state parks in Michigan. It sits on the Lake Michigan shoreline with miles of undeveloped beach, ancient cobblestone shores, and a shoreline that looks like it belongs in a nature documentary.
+
+This one requires more of a day trip commitment, but if your group has one sun-and-beach afternoon in the plans, Fisherman's Island is the move. The water is clear and relatively calm on the protected sections of beach. There are great campsites too, if anyone in your crew is thinking about extending the trip.
+
+**A Few Tips for Summer Swimming in Antrim County**
+
+Before you pack the towels:
+
+- **Water temps in early June** — the smaller inland lakes warm up first. Elk Lake and Lake Bellaire are swimmable by mid-June on most years. Torch Lake runs cold longer because of its depth. Lake Michigan stays cold well into July in this part of the state.
+- **Weekday mornings** — that's when you get the quiet. By noon on a summer Saturday, the popular spots get crowded fast.
+- **Bring a kayak or paddleboard** — several lakes near the cabin have launch points. Floating out into the middle of a quiet Antrim County lake on a calm summer morning is hard to beat.
+- **Sunscreen** — the northern Michigan sun is more intense than people expect at this latitude, especially on the water.
+
+**The Cabin's Right There When You Get Back**
+
+Grandma Viola built Granny's Hideaway in the early 1970s — same era a lot of these lakes and access points became the tradition they are today. After a long day in the water, there's something genuinely satisfying about coming back to a cabin that has its own history, its own quilts on the beds, and a firepit waiting for the evening.
+
+You're not staying in a generic vacation box. You're staying somewhere that remembers what summers up here used to feel like.
+
+Ready to plan your trip? [Book your stay at Granny's Hideaway](https://grannyshideaway.com/book) — and pack the towels.`,
+  },
+  {
     slug: "fishing-near-mancelona-michigan",
     title: "Cast, Catch, Repeat: Summer Fishing Near Mancelona, Michigan",
     excerpt:
