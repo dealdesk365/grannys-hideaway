@@ -9,6 +9,58 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "hiking-trails-near-mancelona-michigan",
+    title: "Best Hiking Trails Near Mancelona, Michigan (For Every Kind of Explorer)",
+    excerpt:
+      "Northern Michigan has some of the most rewarding hiking in the Midwest — and you don't have to drive hours to find it. Here are the trails worth putting on your list when you're staying near Mancelona.",
+    date: "June 12, 2026",
+    readTime: "5 min read",
+    content: `June in Northern Michigan means long days, green canopy, and trails that are quiet enough that you might have them mostly to yourself. Mancelona sits right in the middle of some genuinely excellent hiking country — Antrim County has the kind of woods and waterways that make you want to slow down and walk through them.
+
+Whether you're a day hike person, a backcountry camper, or just someone who wants a scenic walk before dinner, here are the trails worth knowing about when you're staying at Granny's Hideaway.
+
+**Glacial Hills Pathway**
+
+The Glacial Hills Pathway is the sleeper hit of Antrim County hiking. Tucked in the forest east of Kalkaska, this system covers over 30 miles of marked trails — but you can easily do a 3–5 mile loop and feel like you got your money's worth. The terrain is classic Northern Michigan: rolling glacial hills (hence the name), mixed hardwood and conifer forest, and the kind of quiet that you notice because it's so complete.
+
+The trailhead is about 15 miles from Mancelona, which makes it an easy morning outing. Go early in June and the canopy is at peak green. Bring water, good shoes, and no expectations beyond a really good walk in the woods. The trails are well-marked and maintained — you're not navigating by feel — but they're also not manicured resort paths. This is real forest hiking.
+
+Good for: All skill levels, half-day trips, mountain biking if you're bringing wheels.
+
+**Jordan River Pathway**
+
+The Jordan River Pathway is the hike that earns bragging rights. An 18-mile loop through the Jordan Valley, it passes through state forest land, drops into a cedar swamp, traces the upper Jordan River, and climbs to the overlook at Deadman's Hill — a viewpoint that will genuinely stop you in your tracks.
+
+You can do the whole thing as a two-day backpacking trip (there's a rustic campsite mid-loop), or you can drive straight to Deadman's Hill and hike just the overlook section — a couple miles round trip with payoff that rivals anything you'll find in this region. The view from Deadman's Hill across the Jordan Valley is one of the legitimate wonders of Northern Michigan. It's free, not on most tourist maps, and about 30 minutes from the cabin.
+
+Good for: Serious hikers, backpackers, anyone who wants that genuine "wow" moment in the woods.
+
+**Pinney Bridge Pathway**
+
+If the full Jordan River Pathway sounds like a lot, the Pinney Bridge area gives you the riverfront experience at a gentler pace. This shorter pathway hugs the upper Jordan River through lowland forest, and it's one of the prettier riverside walks in the county. The Jordan here is narrow, cold, and clear — a blue-ribbon trout stream holding brook trout in water so pristine it barely looks real.
+
+In June, the streamside vegetation is lush and the wildflowers are out. This isn't a strenuous hike — more of a slow wander. Great for families or anyone who wants to cover ground without working for it.
+
+**Antrim Creek Natural Area**
+
+Near Bellaire, the Antrim Creek Natural Area follows Antrim Creek through a cedar swamp before emptying into Lake Bellaire. It's more of a nature walk than a hike — the distance is short — but the ecosystem is interesting and the creek is beautiful in summer. Worth pairing with a stop in Bellaire afterward. The Bellaire Brewing Company is about five minutes down the road and earns its reputation.
+
+**A Few Honest Notes Before You Head Out**
+
+Northern Michigan trails can be more rugged than they look on paper. A few things that'll serve you well:
+
+- **Bug spray** — June is prime mosquito season, especially near water. Bring it, use it.
+- **Water** — more than you think. Even on a 5-mile hike, the humidity and sun add up.
+- **Ticks** — they exist here. Do a check after any time in tall grass or brush.
+- **Good footwear** — trails get muddy in early summer. Trail runners or hikers beat sandals every time.
+
+**Back at the Cabin When You're Done**
+
+Grandma Viola's place has a firepit and a covered porch that were basically designed for post-hike evenings. Come back tired, make dinner, sit outside, and listen to the frogs. That's the rhythm up here — and it's hard to beat.
+
+If you're planning a summer trip around trail time, [book your stay at Granny's Hideaway](https://grannyshideaway.com/book). The trails are right out the door — figuratively speaking — and the cabin is waiting when you get back.`,
+  },
+  {
     slug: "swimming-holes-beaches-near-mancelona-michigan",
     title: "Where to Swim in Northern Michigan: Best Beaches Near Mancelona",
     excerpt:
