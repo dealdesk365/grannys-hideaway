@@ -9,6 +9,62 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "swimming-holes-beaches-near-mancelona-michigan",
+    title: "Best Swimming Holes & Beaches Near Mancelona, Michigan",
+    excerpt:
+      "Northern Michigan has some of the clearest, most gorgeous lakes in the country — and most of them are within a short drive of Mancelona. Here's where to swim, splash, and cool off this summer.",
+    date: "June 19, 2026",
+    readTime: "5 min read",
+    content: `Summer in Northern Michigan hits different. The days are long, the air smells like pine and warm grass, and the lakes — oh, the lakes — are some of the clearest water you'll find anywhere in the Midwest. When you're staying at Granny's Hideaway near Mancelona, you're in the middle of some genuinely spectacular swimming country.
+
+Here are the spots worth putting on your list.
+
+**Torch Lake: The Caribbean of the North**
+
+Torch Lake gets mentioned a lot, and it earns every bit of it. At 18 miles long and over 300 feet deep, it's the longest inland lake in Michigan — and that famous turquoise-blue color isn't a filter. On a clear summer day, Torch Lake looks like someone relocated the Caribbean to Antrim County.
+
+The sandbar at the north end of the lake is a summer institution. Boats anchor out, people wade in waist-deep crystal water, and it turns into a floating block party on weekends. If that's not your scene, the quieter stretches along the east shore are every bit as beautiful — just find a public access and wade in. Torch Lake is about 25 minutes from the cabin, and it absolutely lives up to the hype.
+
+**Elk Lake: The Low-Key Gem**
+
+Torch gets the press, but plenty of Northern Michigan regulars will tell you Elk Lake is the better swimming lake. It's smaller, calmer, and far less crowded — and it's connected to Torch Lake via the Torch River, which makes it feel like a secret back room to a very good party.
+
+The public beach at Elk Rapids State Harbor is a great entry point. The town of Elk Rapids itself is worth an afternoon — small, charming, a few good places to eat, and right on the water. About 30 minutes from Mancelona.
+
+**Intermediate Lake: Right in Your Backyard**
+
+Intermediate Lake is one of those Antrim County treasures that doesn't come up in the travel guides as often as it should. It sits between Torch Lake and Elk Lake as part of the connected chain, and it has that same clear northern water with a much quieter vibe. The village of Bellaire is right on the lake — easy to combine a swim with a stop at Short's Brewing or a scoop of ice cream on the main strip.
+
+This one's only about 20 minutes from the cabin, which makes it an easy afternoon without a lot of planning.
+
+**Jordan River: For Those Who Like Their Water Cold**
+
+The Jordan River isn't a lake — it's a blue-ribbon trout stream that runs cold and clear through some of the wildest forest in Antrim County. It's too shallow for real swimming, but wading in the Jordan on a hot July afternoon is one of those Northern Michigan experiences that doesn't translate to photos. The water temperature barely moves all summer, fed by springs and cold groundwater. Your feet will be numb in two minutes. It's wonderful.
+
+The Pinney Bridge access off Alba Road puts you right at the river, surrounded by cedar swamp and lowland forest. Bring sandals you don't mind getting wet and plan to stay awhile. This is less about swimming and more about standing in cold, beautiful water while the rest of the world disappears.
+
+**Lake Bellaire: Town Beach Vibes**
+
+If you want a proper sandy beach with parking, facilities, and the classic Northern Michigan town-beach experience, Lake Bellaire's public beach in Bellaire delivers. It's a family-friendly spot with gradual sandy entry, calm water, and that easy, unpretentious feeling of a small-town lakefront. Good for kids, good for people who want to actually lay on the sand for a while.
+
+**Grass Lake and Other Hidden Spots**
+
+Antrim County is dotted with smaller lakes that don't make the tourist maps — Grass Lake, Lake Skegemog, Alba Pond — and most of them have public access points that see maybe a handful of cars on any given day. If you enjoy having a lake almost entirely to yourself, it's worth driving down a few dirt roads and seeing what you find. Ask a local at the gas station in Mancelona and they'll probably point you somewhere good.
+
+**A Few Practical Notes**
+
+Michigan's inland lakes can have unexpected drop-offs, especially in the chain lakes. If you're swimming with kids, check the bottom depth before letting them run in. Most public access points have signage, but the chain lakes get deep fast once you're past the sandbar.
+
+Water shoes are a good idea anywhere you're not at a maintained beach. Northern Michigan lake bottoms range from beautiful fine sand to sharp rock and zebra mussel shells — the latter will ruin your afternoon in about five seconds.
+
+Peak weekends (Fourth of July, Labor Day) can get legitimately crowded at Torch Lake, especially the sandbar. Go early or visit during the week. On a Tuesday morning in July, you can have stretches of that turquoise water almost completely to yourself.
+
+**Ready to Plan Your Summer Escape?**
+
+Granny's Hideaway is your home base for all of it. Vintage cabin, real Northern Michigan character, and ten minutes to some of the best water in the state. Book your stay at [grannyshideaway.com/book](https://grannyshideaway.com/book) and come find out what summer up here actually feels like.
+`,
+  },
+  {
     slug: "hiking-trails-near-mancelona-michigan",
     title: "Best Hiking Trails Near Mancelona, Michigan (For Every Kind of Explorer)",
     excerpt:
