@@ -9,6 +9,67 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "fourth-of-july-northern-michigan",
+    title: "Fourth of July in Northern Michigan: Where to Watch Fireworks & How to Make the Most of the Weekend",
+    excerpt:
+      "There's nowhere quite like Northern Michigan on the Fourth of July — small-town parades, fireworks over the lake, and the kind of summer weekend that sticks with you. Here's how to spend it right.",
+    date: "July 3, 2026",
+    readTime: "5 min read",
+    content: `The Fourth of July hits different up north. There's no traffic-choked city street, no fighting for a patch of grass in a crowded park. Up here it's small-town parades, fireworks reflecting off a lake, a cooler full of cold drinks, and the kind of long summer evening that feels like it was designed for exactly this.
+
+If you've been thinking about a Northern Michigan getaway, the Fourth of July weekend is one of the best times to do it. Here's what to know.
+
+**Fireworks Near Mancelona: Where to Go**
+
+Antrim County and the surrounding area have several great fireworks shows within easy driving distance of Mancelona. A few worth knowing about:
+
+*Bellaire* puts on a solid show over Lake Bellaire — the reflection on the water makes it feel bigger than it is. The village is small and the crowd is manageable, which makes for a genuinely relaxed evening. Grab dinner at Short's Brewing beforehand and stake out a spot on the lakeshore before dark. About 20 minutes from the cabin.
+
+*Elk Rapids* does fireworks over Grand Traverse Bay, which is a step up in the backdrop department. The town has a beach, a marina, and enough of a summer crowd to feel festive without feeling overwhelming. About 35 minutes away.
+
+*Charlevoix* is the big show in the region — launched over Lake Michigan and Round Lake simultaneously, it's legitimately spectacular. The crowds are larger, parking takes planning, but if you want the full Northern Michigan July 4th experience, Charlevoix delivers. About 45 minutes from Mancelona.
+
+*Gaylord* hosts an annual fireworks show that draws a big crowd from the inland communities. Closer to home at about 30 minutes, and a good option if you want to avoid the lakefront traffic.
+
+Check local schedules before you go — dates can shift slightly year to year. Most shows happen July 4th, but some communities do Saturday or Sunday evening instead.
+
+**What to Do During the Day**
+
+The Fourth of July weekend in Northern Michigan is basically a greatest hits of everything the region does well.
+
+*Get on the water.* Torch Lake, Elk Lake, Intermediate Lake, Lake Bellaire — they're all gorgeous, they're all nearby, and the holiday weekend sandbar scene at Torch Lake is one of those quintessentially Northern Michigan things you have to experience at least once. The turquoise water, the boats anchored up, people wading around with drinks in hand — it's a party, but a polite one.
+
+*Drive the back roads.* Antrim County has some beautiful rural roads this time of year — farms, forests, roadside stands with sweet corn and early blueberries. There's something grounding about driving through the countryside with the windows down on the Fourth of July. No specific destination required.
+
+*Find a small-town parade.* Several communities in the area host morning parades on the Fourth — old trucks, local groups, kids on bikes with streamers, candy thrown from floats. It's the kind of Americana that reminds you why small towns are worth preserving. Elk Rapids and Bellaire are both worth checking.
+
+*Fish.* If your group includes anglers, early July is excellent for bass, pike, and panfish on most of the inland lakes. The Jordan River is running clear and cold, and the trout don't care what holiday it is.
+
+**The Cabin Advantage**
+
+One of the underrated things about staying at a cabin over a holiday weekend is that you have a home base. No schedule, no checkout pressure, no restaurant reservation drama. Granny's Hideaway is set up for exactly this kind of weekend — grill on the deck, cooler stocked, nowhere to be until you feel like it.
+
+Viola built this place in the early 1970s as a retreat, a place to slow down. The orange carpet and the bunny ear TV and the quilts she made herself — none of that changes for a holiday weekend. You're still in the same cabin that's been offering a break from everything for fifty-plus years. That's the point.
+
+The cabin sleeps a small group comfortably and is just a few minutes from Mancelona proper. You're central to everything — lakes, trails, towns, fireworks — without being in the middle of the tourist congestion.
+
+**A Few Practical Notes**
+
+July 4th weekend is the busiest stretch of the Northern Michigan summer. A couple of things worth knowing:
+
+- Book early. Restaurants, especially the good ones in Bellaire and Elk Rapids, can fill up fast on the holiday itself. Either make a reservation or plan to eat early.
+- Fireworks traffic on the main lakefront roads can stack up after the shows. Leave a little early or wait it out — most of the time the roads clear within 30–45 minutes.
+- The fireworks shows are worth seeing from the water if you have access to a boat or kayak. Floating in the dark with the show overhead is a completely different experience.
+- July is high season. If you're hoping to grab a last-minute spot at the sandbar or a picnic table at a popular park, plan to arrive early in the day.
+
+**Come Spend the Weekend**
+
+There's a version of this holiday that involves sitting in traffic, fighting for parking, and counting down to the fireworks from a hot sidewalk. And then there's this — a vintage cabin in the Northern Michigan woods, a lake ten minutes away, a cold drink, and nothing but time.
+
+Check availability and book your stay at [grannyshideaway.com/book](https://grannyshideaway.com/book). The Fourth of July weekend books up fast — don't wait too long.
+`,
+  },
+  {
     slug: "swimming-holes-beaches-near-mancelona-michigan",
     title: "Best Swimming Holes & Beaches Near Mancelona, Michigan",
     excerpt:
