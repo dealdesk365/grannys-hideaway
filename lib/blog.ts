@@ -9,6 +9,59 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "antrim-county-chain-of-lakes",
+    title: "Antrim County's Chain of Lakes: Seven Connected Lakes Worth Exploring This Summer",
+    excerpt:
+      "Seven lakes, all connected. You can boat or paddle from Jordan Lake all the way to Torch Lake without ever leaving the water. Here's your guide to one of Northern Michigan's best-kept secrets.",
+    date: "July 10, 2026",
+    readTime: "5 min read",
+    content: `If you've been to Northern Michigan, you've probably heard of Torch Lake. Maybe you've seen the turquoise water photos and filed it away as "someday." But here's the thing most people don't know: Torch Lake is just one stop on a chain of seven connected lakes that runs right through the heart of Antrim County — and the whole chain is worth your time.
+
+Stay at a cabin near Mancelona, and you're sitting roughly in the middle of all of it.
+
+**What Is the Antrim County Chain of Lakes?**
+
+Antrim County's Chain of Lakes is exactly what it sounds like: a series of lakes connected by rivers, channels, and portages that you can travel by boat or canoe from one end to the other. The chain runs roughly north to south through the county, linking smaller inland lakes to the big ones you might already know.
+
+The lakes in the chain include Jordan Lake, Hanson Lake, Intermediate Lake, Ellsworth Lake, Lake Bellaire, Clam Lake, and Torch Lake. Together they represent some of the clearest, coldest, most beautiful inland water in the entire state.
+
+Each lake has its own personality. Some are quiet and tucked away, ringed with trees and not a lot of boat traffic. Others — looking at you, Torch Lake on a summer Saturday — are full-on parties with music and anchored pontoons and the whole Northern Michigan scene. The beauty of the chain is that you can pick your vibe.
+
+**Torch Lake: Yes, It's Worth the Hype**
+
+If you've never been, Torch Lake's color is genuinely startling. It looks Caribbean — that particular shade of blue-green that makes you do a double-take and wonder if you've somehow ended up somewhere tropical. The lake is 18 miles long and one of the deepest inland lakes in Michigan, which is what gives it that color.
+
+The sandbar at the north end of the lake is the spot on summer weekends. Boats anchor up, people wade around with drinks, there's usually music — it's festive and relaxed in the way that Northern Michigan does better than anywhere. About 25 minutes from Mancelona.
+
+**Lake Bellaire: The Quieter Gem**
+
+If Torch Lake is the headliner, Lake Bellaire is the deep cut worth knowing. It's smaller, a little quieter, and the village of Bellaire sits right on the water. Short's Brewing Company is here — one of the best craft breweries in Michigan, full stop — and the lakefront has a calm, unhurried quality that's genuinely restorative.
+
+Grabbing a beer at Short's and watching the boats come in off Lake Bellaire is one of those afternoons that makes you understand why people move up here. About 20 minutes from the cabin.
+
+**Intermediate Lake: Bass Country**
+
+Intermediate Lake sits between Bellaire and Torch and it's a local favorite for fishing. Bass, pike, walleye, lake trout — the lake holds a solid mix of species, and the fishing pressure is noticeably lighter than on the bigger, more tourist-trafficked lakes. If your group includes anyone who wants to fish instead of sandbar, Intermediate Lake is a great option.
+
+**The Jordan River Connection**
+
+At the northern end of the chain, the Jordan River feeds into Jordan Lake and eventually the system. The Jordan is a state and national wild and scenic river — clear, cold, and beautiful — and the valley it runs through is one of the most scenic places in Michigan. The Deadman's Hill overlook gives you a view of the whole watershed that's hard to put into words. It's about 20 minutes from Mancelona, and worth every minute of the drive.
+
+**Getting On the Water**
+
+You don't need your own boat to enjoy the chain. Several outfitters in the area rent canoes, kayaks, and pontoons. The Jordan River Outfitters in East Jordan has been putting people on the water for years and knows the system well. Bellaire has boat rentals too. If you have your own watercraft, there are public launches on most of the lakes.
+
+For those who want to experience the full chain by water, a multi-day paddling trip is genuinely doable — camp overnight, take your time, cover a few lakes per day. It's one of those bucket-list Michigan adventures that more people should know about.
+
+**From the Cabin**
+
+Granny's Hideaway puts you within easy striking distance of the whole chain. Torch Lake is about 25 minutes. Bellaire is 20. The Jordan River valley is 20 minutes in the other direction. You could, in theory, visit a different lake every day of a week-long stay and still not run out of new water to explore.
+
+That's the thing about Antrim County — people think Northern Michigan is just a few famous spots, but there's a whole web of lakes, rivers, and forests that most visitors never find. Stay somewhere central — like Mancelona — and you can work through it properly.
+
+If you're ready to start planning, Granny's Hideaway is available to book now at [grannyshideaway.com/book](https://grannyshideaway.com/book). Whether you want a quiet week of lake-hopping or a loud weekend on the Torch Lake sandbar, you've got a home base waiting.`,
+  },
+  {
     slug: "fourth-of-july-northern-michigan",
     title: "Fourth of July in Northern Michigan: Where to Watch Fireworks & How to Make the Most of the Weekend",
     excerpt:
