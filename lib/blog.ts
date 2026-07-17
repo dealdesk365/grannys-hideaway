@@ -9,6 +9,62 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "northern-michigan-blueberry-picking",
+    title: "Blueberry Season in Northern Michigan: Where to Pick and Why July Is the Best Month to Visit",
+    excerpt:
+      "Mid-July through August is blueberry season in Northern Michigan — and if you've never picked them fresh in Antrim County, you're missing one of summer's genuine pleasures.",
+    date: "July 17, 2026",
+    readTime: "5 min read",
+    content: `Mid-July in Northern Michigan means one thing above everything else: blueberries.
+
+Michigan is one of the top blueberry-producing states in the country, and the northern Lower Peninsula — including Antrim County and the surrounding fruit belt — turns out extraordinary blueberries from mid-July through August. You can pick them yourself at local U-pick farms, grab bags at roadside stands, wander through the farmers markets on a Saturday morning, or find wild patches scattered through the state forest if you know where to look.
+
+If you're staying at Granny's Hideaway in Mancelona right now, you are, without exaggerating, in the middle of some of the best blueberry country in the state.
+
+**Why Northern Michigan Blueberries Are Worth the Fuss**
+
+Blueberries grown in this region benefit from the same conditions that make northern Michigan so good for fruit farming in general — sandy, well-drained soils, cool nights, warm days, and that moisture influence from the surrounding Great Lakes. The result is berries with real flavor: bright, tart, sweet, not that mushy-bland grocery store variety that sits in a plastic clamshell for two weeks before it reaches your kitchen.
+
+Eating blueberries in northern Michigan in July is a different experience than eating them anywhere else at any other time. That's not nostalgia talking. It's just how it works.
+
+**U-Pick Farms Near Mancelona**
+
+U-pick is the best way to do blueberries. You get more than you could buy for the same money, you're outside on a beautiful northern Michigan morning, and there is something deeply satisfying about filling a bucket with your own hands.
+
+Antrim County and the surrounding region have several U-pick blueberry operations that open through the summer. Friske Farm Market near Ellsworth — about 25 minutes northwest of Mancelona — is one of the best-known farm stands in the area and has been a local institution for decades. They grow blueberries and carry a rotating selection of seasonal Michigan fruit, jams, baked goods, and cider through the year.
+
+For current U-pick availability and hours, it's worth calling ahead — berry season timing shifts slightly year to year based on the weather, and some farms fill up quickly on summer weekends. A quick search for "U-pick blueberries Antrim County" before you leave home will pull up current options and hours.
+
+**Farmers Markets: The Saturday Morning Version**
+
+If you'd rather browse than pick, the Saturday morning farmers market circuit is excellent in this part of northern Michigan. The Bellaire Farmers Market and the Elk Rapids market both operate through the summer and regularly feature local berry vendors, baked goods made with seasonal fruit, honey, jam, and produce from small farms across the county.
+
+Pair a Saturday morning market run with breakfast at a local spot and you've got a pretty ideal start to a northern Michigan day.
+
+**Wild Blueberries in the State Forest**
+
+This is the local knowledge part. Northern Michigan's state forest land — and there's a lot of it surrounding Mancelona — holds patches of wild blueberries in sunny, sandy clearings and along two-track edges. They're smaller than cultivated blueberries, and there aren't enough of them to fill a bucket, but popping a handful of genuinely wild blueberries while walking a trail on a July afternoon is one of those experiences that doesn't really translate to a photo.
+
+The Jordan River State Forest, the Mackinaw State Forest parcels near Mancelona, and some of the open stretches along the snowmobile and ORV trail systems are good places to start looking. Walk slowly, stay off the main paths, and look for low shrubs in the sunny patches. Timing is everything — the berries are ripe and perfect for maybe two or three weeks, then they're gone.
+
+**What to Do With Them**
+
+Obvious answer: eat them. On cereal, on pancakes, straight from the bucket. But if you come back to the cabin with more berries than you expected (this always happens at U-pick), a few ideas:
+
+- Blueberry pancakes with real maple syrup for Sunday morning
+- Blueberry crisp in the cabin oven — easy, basically impossible to mess up
+- Freeze a bag to bring home (they freeze beautifully — spread in a single layer first)
+- Jam, if you're feeling ambitious and the cabin has the supplies
+
+Grandma Viola would have had opinions about all of this. She was the kind of person who knew exactly what to do with a bucket of summer fruit.
+
+**July Is the Right Time**
+
+There is a particular version of a northern Michigan summer week that involves picking blueberries on a Tuesday morning, paddling a lake in the afternoon, and eating whatever you made for dinner on the cabin porch while the fireflies come out. That week is entirely possible right now.
+
+If you're ready to plan it, [grannyshideaway.com/book](https://grannyshideaway.com/book) is where you start. July and August go fast — but there's still time to find your week.`,
+  },
+  {
     slug: "antrim-county-chain-of-lakes",
     title: "Antrim County's Chain of Lakes: Seven Connected Lakes Worth Exploring This Summer",
     excerpt:
