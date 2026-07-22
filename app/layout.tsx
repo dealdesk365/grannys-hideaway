@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Granny's Hideaway | Northern Michigan Vacation Rental & Cottage | Mancelona, MI",
@@ -32,6 +33,13 @@ export const metadata: Metadata = {
     siteName: "Granny's Hideaway",
     locale: "en_US",
     type: "website",
+    images: [{ url: '/opengraph-image.png', width: 1200, height: 630, alt: "Granny's Hideaway | Northern Michigan Vacation Rental" }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Granny's Hideaway | Northern Michigan Vacation Rental",
+    description: "A one-of-a-kind retro chalet in Mancelona, MI. $200/night. Your Northern Michigan base camp.",
+    images: ['/opengraph-image.png'],
   },
   robots: {
     index: true,
@@ -82,6 +90,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         {children}
+        <Analytics />
       </body>
     </html>
   );
