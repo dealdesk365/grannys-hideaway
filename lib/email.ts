@@ -314,20 +314,49 @@ export async function sendCheckinCode(data: {
   }
 }
 
+function buildICS(data: BookingEmailData): string {
+  const now = new Date().toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
+  const checkInDt = data.checkIn.replace(/-/g, '') + 'T160000'
+  const checkOutDt = data.checkOut.replace(/-/g, '') + 'T110000'
+  const uid = `grannys-${data.stripeSessionId}@grannyshideaway.com`
+  return [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//Grannys Hideaway//Booking//EN',
+    'CALSCALE:GREGORIAN',
+    'METHOD:PUBLISH',
+    'BEGIN:VEVENT',
+    `UID:${uid}`,
+    `DTSTAMP:${now}`,
+    `DTSTART;TZID=America/Detroit:${checkInDt}`,
+    `DTEND;TZID=America/Detroit:${checkOutDt}`,
+    `SUMMARY:BOOKED — ${data.guestName} (${data.guests} guests)`,
+    `DESCRIPTION:Deposit paid: $${data.depositPaid}\\nBalance due: $${data.balanceDue} by ${data.balanceDueDate}\\nTotal: $${data.totalAmount}\\nDamage deposit: $${data.damageDeposit}`,
+    'LOCATION:9856 Wyndwood Dr\, Mancelona\, MI 49659',
+    'END:VEVENT',
+    'END:VCALENDAR',
+  ].join('\r\n')
+}
+
 export async function sendBookingConfirmation(data: BookingEmailData): Promise<void> {
   const subject = `Booking Confirmed — Granny's Hideaway · ${formatDate(data.checkIn)}`;
-  const ownerSubject = `New Booking: ${data.guestName} · ${data.checkIn} – ${data.checkOut}`;
+  const ownerSubject = `🏠 New Booking: ${data.guestName} · ${data.checkIn} – ${data.checkOut}`;
 
   const resend = getResend();
+  const icsContent = buildICS(data);
   const sends: Promise<unknown>[] = [];
 
-  // Email to owner
+  // Email to owner with .ics calendar attachment
   sends.push(
     resend.emails.send({
       from: FROM,
       to: [OWNER_EMAIL],
       subject: ownerSubject,
       html: buildOwnerEmail(data),
+      attachments: [{
+        filename: `grannys-booking-${data.checkIn}.ics`,
+        content: Buffer.from(icsContent).toString('base64'),
+      }],
     })
   );
 
