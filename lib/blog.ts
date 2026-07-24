@@ -9,6 +9,65 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "stargazing-dark-skies-northern-michigan",
+    title: "Stargazing in Northern Michigan: Why the Dark Skies Above Antrim County Are Worth Staying Up For",
+    excerpt:
+      "Step outside Granny's Hideaway after dark and look up — northern Michigan's skies still have real darkness in them, and summer nights are the best time to use it.",
+    date: "July 24, 2026",
+    readTime: "5 min read",
+    content: `Step outside after dark at Granny's Hideaway and look up. If it's a clear night with no moon — and in northern Michigan, clear nights come often — what you see might surprise you.
+
+The Milky Way. An actual band of light across the sky, not a faint smear, but the real thing. Stars in numbers that city people forget exist. The kind of sky that makes you stand in the driveway longer than you planned.
+
+Northern Michigan still has real dark skies. Not everywhere, and not forever — but for now, Antrim County sits far enough from the light domes of Grand Rapids, Detroit, and even Traverse City that on a clear moonless night, the darkness is genuine. If you haven't looked up in a while, this is a good summer to do it.
+
+**Why Northern Michigan Is Good for This**
+
+Light pollution follows population density. The northern Lower Peninsula is mostly state forest, small towns, farmland, and two-track roads — which means, from a night sky perspective, it's one of the better places in the Midwest to be. Mancelona sits in the middle of Antrim County, surrounded by the Mackinaw State Forest and the Jordan River State Forest, and on a dark-sky map it lands in a genuinely dark range — measurably better than anything within an hour of a major city.
+
+Several state forest areas in the region are considered excellent for sky access, and Antrim County benefits from low commercial development on all sides. You're not going to get certified dark-sky preserve conditions out the cabin door, but on a good night you don't need a certificate. You just need to go outside and wait for your eyes to adjust.
+
+**The Best Time to Go Out**
+
+Late July through August is peak stargazing season in northern Michigan for a few reasons.
+
+The nights are warm enough to stand outside comfortably — or lie in the grass — for a long stretch. Most summer nights here are drier and clearer than you'd expect, especially after the heat breaks.
+
+The Milky Way core is most visible in summer, when Earth's orientation puts us looking toward the center of the galaxy. That bright, hazy band you see arching across the sky — the one that takes a second to convince yourself you're actually seeing — is at its most visible from July through September.
+
+And then there are the Perseids. The Perseid meteor shower peaks every year around August 10–13, and it's consistently the most active and reliable shower of the year. At peak, you can see 50–100 meteors per hour from a dark location. Occasional fireballs, streaks every few minutes, the whole show. From a cabin in Antrim County on a cloudless August night with the moon below the horizon, the Perseids are genuinely spectacular.
+
+If you're planning an August stay, check the Perseid peak dates before you book. It's worth timing your trip around it.
+
+**What to Do, Practically**
+
+You don't need a telescope, though one helps. Binoculars are excellent for scanning the Milky Way band and picking out star clusters and nebulae. Most of the best summer objects — the Hercules Cluster, the Ring Nebula, the Andromeda Galaxy — are visible to the naked eye from a dark location, and genuinely impressive through even a modest pair of binoculars.
+
+A few things that'll improve the experience:
+
+**Give your eyes time.** Full dark adaptation takes 20–30 minutes. Don't check your phone in that window. The difference between adapted and unadapted eyes is the difference between seeing 200 stars and seeing 2,000.
+
+**Use a red light.** Red doesn't kill night vision the way white light does. A red headlamp keeps you functional without resetting your adaptation every time you need to move around.
+
+**Check the moon phase.** A full moon washes out fainter stars the same way a streetlight does. New moon nights are the best. Check the lunar calendar before your trip — a few days either side of new moon are ideal.
+
+**Get away from outdoor lights.** The cabin porch is a great start, but even a short walk down a dark road makes a noticeable difference. The two-track roads through the Mackinaw State Forest surrounding Mancelona are genuinely dark on a clear night — turn off the headlights for a minute and let your eyes open up.
+
+**The Deadman's Hill Option**
+
+For the best sky viewing in the area, the overlook at Deadman's Hill in the Jordan River Valley — about 25 minutes from Mancelona — is worth the drive. You're elevated, there's an open 180-degree view, and state forest surrounds you on every side. Pull in, cut the engine, and give your eyes 20 minutes. On a good August night, the Milky Way is overhead and the Perseids are streaking through it every few minutes.
+
+It's the kind of experience that stays with you.
+
+**From the Cabin**
+
+Grandma Viola built Granny's Hideaway in the early 1970s, when the night sky over Antrim County was even darker than it is now. There's something worth sitting with in that — this cabin has been under these stars for fifty years. People have been walking out that back door and looking up since before most of us were born.
+
+The firepit out back is the natural gathering point for a late evening. Get the fire going early, let it burn down to coals, and then sit there in the dark and wait. Gradually, the stars come in. The conversation slows down. Someone points. You don't want to go inside.
+
+If you're ready to plan a northern Michigan summer trip — especially with the Perseids on your radar — [book your stay at Granny's Hideaway](https://grannyshideaway.com/book). August fills up faster than people expect. Don't wait until the week before.`,
+  },
+  {
     slug: "northern-michigan-blueberry-picking",
     title: "Blueberry Season in Northern Michigan: Where to Pick and Why July Is the Best Month to Visit",
     excerpt:
