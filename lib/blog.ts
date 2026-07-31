@@ -9,6 +9,69 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "petoskey-stones-northern-michigan",
+    title: "Petoskey Stones: How to Find Michigan's State Stone on Your Northern Michigan Trip",
+    excerpt:
+      "Every Michigander has one somewhere — on a windowsill, in a coat pocket, passed down from a grandparent. Hunting for Petoskey stones is a northern Michigan summer tradition, and you're about 45 minutes from the best beaches.",
+    date: "July 31, 2026",
+    readTime: "6 min read",
+    content: `Petoskey stones. Every Michigander has one somewhere — on a windowsill, in a glass bowl by the front door, on a bookshelf. They get handed down, they show up at garage sales wrapped in newspaper, they live in coat pockets for years. If you grew up in Michigan, you probably found yours on a Lake Michigan beach sometime in childhood, and you've kept it ever since.
+
+For visitors to northern Michigan, hunting for a Petoskey stone is one of those activities that sounds like a novelty and ends up being genuinely absorbing. You stop and search. You wade into the water. You pick up a hundred smooth rocks that aren't it before you find one that is — and then you spend the rest of your vacation looking.
+
+Granny's Hideaway is about 45 minutes from the best Petoskey stone beaches in the region. Here's what you need to know.
+
+**What Is a Petoskey Stone?**
+
+A Petoskey stone is a fossilized coral — specifically, a piece of *Hexagonaria percarinata*, a colonial coral that lived in a shallow tropical sea that covered what is now Michigan about 350 million years ago. When the stone is wet or polished, a characteristic hexagonal pattern emerges: a honeycomb grid of individual coral polyp cells, each with a small dark center and a six-sided wall. It looks almost architectural. Almost designed.
+
+Michigan made it the official state stone in 1965. If you're going to have a state stone, might as well have one that looks like an artifact from the Devonian period.
+
+The stones erode out of limestone bedrock along the northern Lake Michigan shoreline, especially around Petoskey, Charlevoix, and the stretch of coast near Traverse City. Glacial action rounded them, wave action sorted them, and the water polishes them just enough to reveal the pattern when wet. They're specific to this part of Michigan — you won't find them on most Lake Michigan beaches further south.
+
+**Where to Look Near Granny's Hideaway**
+
+From Mancelona, you're about 45 minutes from the heart of Petoskey stone country. A few spots worth knowing:
+
+*Petoskey State Park* is the obvious starting point. The day-use beach on Little Traverse Bay is one of the most reliably productive Petoskey stone beaches on the lake. It draws crowds in peak summer — weekday mornings are significantly better — but the stone-finding is legitimate. Walk the waterline, stay bent over, look at anything that's dripping.
+
+*Fisherman's Island State Park* near Charlevoix is a local favorite. The beach here is longer, less developed, and a bit less trafficked than Petoskey State Park. Several miles of undeveloped Lake Michigan shoreline, cobble beaches in spots, and honest stone-hunting. This one rewards some walking.
+
+*Young State Park* near Boyne City sits on Lake Charlevoix rather than Lake Michigan — but Lake Charlevoix connects to Lake Michigan, and Petoskey stones do wash up here. It's the closest option at about 35 minutes from the cabin, and a good place to get your eye trained before heading to the lakefront.
+
+*Magnus Park beach in Petoskey* — If you want to pair the hunt with lunch in downtown Petoskey, the beach at Magnus Park along Little Traverse Bay is right on the waterfront. Beautiful setting, easy parking, and stone-hunting that's decent. Don't expect solitude on a summer afternoon, but the harbor views are worth the company.
+
+**How to Actually Find One**
+
+Here's the honest guide — because Petoskey stones are easier to find once you know what you're looking for.
+
+*The wet rock test.* Petoskey stones look like plain gray limestone when dry — you'll walk past hundreds of them. When wet, the hexagonal coral pattern becomes clearly visible. Wade into the water, pick up gray, slightly rounded stones in the 2–4 inch range, and look while they're still dripping. If you see the pattern, you've got one.
+
+*Work the waterline.* Waves keep the rocks wet and constantly resorting. The most productive strip is right at the edge of the water — wet enough to reveal the pattern, actively stirred enough that new rocks are always turning up.
+
+*Know the shape and color.* Petoskey stones are rounded and smooth from water action. They're typically medium gray when dry, slightly blue-gray when wet, and usually somewhere between a golf ball and a baseball in size — though small ones are common and large ones (softball-size or bigger) show up occasionally.
+
+*Don't confuse them with Charlevoix stones.* Charlevoix stones are a different fossilized coral — smaller cells, less clearly defined pattern — also found in the same areas. They're beautiful and worth picking up too. But the classic Petoskey honeycomb is hard to mistake once you've seen it.
+
+**What to Do With Them Back at the Cabin**
+
+The best field polish for a Petoskey stone is still just water. Keep it wet in your pocket and the pattern stays visible all day. Once it dries, the pattern fades — a little frustrating until you know that's just how it works.
+
+For a permanent polished finish, a rock tumbler is the classic approach. Several cycles with progressively finer grit and your stones come out fully polished, pattern locked in, ready for the windowsill. Beginner tumblers are available at most hobby shops and aren't expensive. If you're doing this trip with kids, a tumbler makes a genuinely good souvenir of a different kind — the process is as satisfying as the result.
+
+For a faster on-site option: a small piece of 400-grit wet/dry sandpaper works for hand-polishing in the field. Get the stone wet, sand lightly, rinse, repeat. Meditative in a way that a northern Michigan afternoon seems specifically designed for.
+
+**The Larger Experience**
+
+There's a reason Petoskey stone hunting has been a northern Michigan tradition for generations. It turns a beach walk into a purpose. It gives kids something to hunt for. It slows you down and makes you pay attention to what's underfoot — and that turns out to be its own kind of rest.
+
+You might spend three hours on a Lake Michigan beach not watching the horizon, not sitting in a chair, but bent over the waterline like a kid who found something fascinating — and feeling completely fine about it. That's the thing. It works on adults too.
+
+Grandma Viola almost certainly had a Petoskey stone or two. Almost everyone who spent real time up here did. The same beach, the same 350-million-year-old coral, the same quiet satisfaction when the pattern emerges from a wet rock in your palm — some traditions in northern Michigan don't need updating.
+
+Come find yours. [Book your stay at Granny's Hideaway](https://grannyshideaway.com/book) and add the stone hunt to your northern Michigan itinerary. Torch Lake in the morning, a Lake Michigan beach in the afternoon, and something ancient and hexagonal in your pocket by sunset.`,
+  },
+  {
     slug: "stargazing-dark-skies-northern-michigan",
     title: "Stargazing in Northern Michigan: Why the Dark Skies Above Antrim County Are Worth Staying Up For",
     excerpt:
