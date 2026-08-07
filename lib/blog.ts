@@ -9,6 +9,61 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "elk-watching-gaylord-michigan",
+    title: "Elk Watching Near Gaylord, Michigan: An August Evening Worth Planning Your Trip Around",
+    excerpt:
+      "Michigan has one of the largest free-roaming elk herds east of the Mississippi — and it lives about 30 minutes from Granny's Hideaway. August is one of the best times to see them.",
+    date: "August 7, 2026",
+    readTime: "6 min read",
+    content: `One of the most unexpected surprises for Northern Michigan visitors — especially those staying in the Mancelona area — is finding out that one of the largest free-roaming elk herds east of the Mississippi River lives about 30 minutes away.
+
+Michigan's elk herd. Not something most people know about until they find themselves squinting at a massive bull standing in a hay field at dusk, wondering if what they're seeing is actually real.
+
+Here's what to know before you go.
+
+**About Michigan's Elk Herd**
+
+Michigan's elk were once native to the Lower Peninsula but were hunted to local extinction by the early 1800s. In 1918, seven Rocky Mountain elk were released near Wolverine, Michigan — and from those seven animals, a herd now numbering around 1,000 head has established itself across several hundred square miles of Otsego, Montmorency, Cheboygan, and Presque Isle counties.
+
+The heart of that herd is centered around Pigeon River Country State Forest, roughly 30–35 minutes from Granny's Hideaway. The DNR calls it the largest free-roaming elk herd east of the Mississippi. That's not promotional language — it's just true, and it makes this corner of Michigan genuinely unlike most places in the eastern United States.
+
+A thousand elk, roaming the same country as the snowmobile trails and the trout streams and the deer blinds. Worth knowing about.
+
+**Why August Is the Right Time**
+
+Elk are visible year-round, but late summer — August and early September in particular — is a reliably excellent window for several reasons.
+
+The elk are feeding heavily before the rut (breeding season) kicks in, which means they're out in open fields more consistently, especially during morning and evening hours. Bulls are carrying full antler velvet — the soft, blood-rich covering that protects growing antlers through the summer. A bull in full velvet is something to see: massive, dark, a little prehistoric, carrying several feet of antler wrapped in what looks like brown fur.
+
+By September, the velvet strips away and the rut begins — which brings its own spectacle of bugling and bull behavior. But August is often easier, calmer, and less trafficked than the peak rut weekends, which draw significant crowds of their own. If your goal is a quiet morning drive with genuine wildlife and no circus around it, August is your month.
+
+**Where to Go**
+
+*The Elk Loop* — The DNR and Gaylord area tourism offices promote a designated elk viewing route in the region. Starting from Gaylord, the loop passes through Vanderbilt and threads through the edges of Pigeon River Country State Forest. It's a good starting framework if you're new to the area.
+
+*Sturgeon Valley Road between Gaylord and Vanderbilt* — This stretch passes through prime elk habitat and is one of the more reliable corridors for roadside elk sightings in the evening. Pull off on the shoulder and glass the field edges. It's not a guarantee, but your odds are real.
+
+*Pigeon River Country State Forest* — The forest headquarters off Sturgeon Valley Road is worth a stop for maps and current intel from DNR staff. The forest road network gives you access to deep habitat — and occasionally puts you at the edge of a meadow where 30 or 40 elk are just standing there, doing elk things, completely indifferent to you.
+
+*Ask locals.* Seriously. The gas station in Vanderbilt. The bait shop near Gaylord. A diner counter. Locals know where the elk were last week, which is the closest you'll get to a guarantee. Northern Michigan people are generous with this kind of information.
+
+**How to Do It Right**
+
+Bring binoculars — or a spotting scope if you have one. Elk are big animals, but you often spot them first at 300–400 yards across an open field, and the detail at that distance without magnification is frustrating. The velvet antlers are worth seeing up close.
+
+Go at dawn or dusk. Elk activity peaks in low light, and setting your alarm for 6 AM on an August morning and driving a quiet two-lane road through Pigeon River country is its own reward — mist on the fields, no traffic, a blue heron lifting off the edge of a wetland. The elk are a bonus; the morning holds up either way.
+
+Stay in your vehicle or stay very still if you're outside it. Elk are large and can be unpredictable, especially during the rut. A bull elk in full territorial mode is a situation to observe from a distance, not walk toward. Three hundred yards is a respectful viewing distance; closer is for the telephoto lens.
+
+**A Real Northern Michigan Day**
+
+Granny's Hideaway puts you in exactly the right geography for this. Elk loop at dawn, coffee and breakfast in Gaylord, afternoon at one of the area's inland lakes, back at the cabin by evening. Viola built this place as a base — somewhere to return to after a day of Northern Michigan doing what Northern Michigan does.
+
+The elk herd is one of those things this region holds quietly and completely. A thousand animals, descended from seven, roaming country that also holds brook trout and ORV trails and some of the best snowmobiling in the Midwest. You won't find this in many other places east of the Rockies.
+
+[Book your stay at Granny's Hideaway](https://grannyshideaway.com/book) and add the elk loop to your August itinerary. First light, a bull in velvet across a foggy Michigan field — that one sticks with you.`,
+  },
+  {
     slug: "petoskey-stones-northern-michigan",
     title: "Petoskey Stones: How to Find Michigan's State Stone on Your Northern Michigan Trip",
     excerpt:
