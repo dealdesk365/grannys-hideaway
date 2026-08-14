@@ -9,6 +9,72 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "labor-day-weekend-northern-michigan",
+    title: "Labor Day Weekend in Northern Michigan: Make the Most of Summer's Last Hurrah",
+    excerpt:
+      "Labor Day weekend is the unofficial curtain call of northern Michigan summer — and it's one of the best weekends of the year to be up here. Here's how to spend it right near Mancelona.",
+    date: "August 14, 2026",
+    readTime: "6 min read",
+    content: `Labor Day weekend has a particular feel in northern Michigan. The light starts to angle differently in late August, the nights cool down fast, the summer crowds thin out just enough — and the people who do make it up here for that last long weekend know something the rest of the world is still figuring out.
+
+This is it. The final stretch of the best season in one of the best corners of Michigan. Here's what to do with it.
+
+**Why Labor Day Weekend Is Special Up Here**
+
+By early September, the families with school schedules have headed home. The peak-of-summer traffic that clogs M-66 and stacks up at the Torch Lake sandbar in July is noticeably lighter. The water is still warm — actually at its warmest of the year, holding onto six weeks of summer heat — but the shoreline is quieter.
+
+Late summer wildflowers are out. The goldenrod has gone gold. Blueberry season is winding down, but what's left is perfect. The elk herd near Gaylord is building toward fall, the bulls beginning to strip their antler velvet in preparation for the rut. And the trees are just starting to think about what comes next — a leaf here, an edge of color there. It's not fall yet. It's the week before fall, which is its own gorgeous thing.
+
+Come for the water. Stay for the weekend. Leave before the season does.
+
+**Get On the Water One More Time**
+
+The inland lakes of Antrim County — Torch, Elk, Bellaire, Intermediate — are at peak temperature in late August and early September. Air temps have backed off enough that swimming feels like a choice rather than a necessity, which somehow makes it better.
+
+The Torch Lake sandbar will have a crowd Saturday afternoon — it always does on Labor Day weekend — but Sunday morning, or anywhere on Friday, you can have remarkable stretches of that turquoise water almost to yourself. If you have access to a kayak or paddleboard, Labor Day weekend on the Chain of Lakes is genuinely special. The mornings are quiet and clear, the light is soft, and you can paddle from Lake Bellaire through Intermediate Lake without seeing another soul for long stretches.
+
+For the anglers: early September is the beginning of one of the better fishing windows of the year. Bass are active and feeding aggressively before fall. Perch fishing picks up. The Jordan River is running clear and the brown trout are there. Bring a rod.
+
+**The Deward Tract: A Hidden Day Trip**
+
+For something a little different, the Deward Tract is worth an afternoon — and almost nobody from outside the region knows about it. Deward is a ghost town about 30 minutes south of Mancelona, deep in the Kalkaska County forest. In the early 1900s it was a booming lumber camp with hundreds of residents, a school, a hotel. By 1912 the timber was gone and the town was abandoned.
+
+Today the site sits in a quiet clearing along the Manistee River, accessible by two-track. There are no dramatic ruins — just a grassy field where a town used to be, surrounded by second-growth forest, with the Manistee River running cold and clear nearby. People come to fish (excellent trout water), walk the old town footprint, or just sit by the river in the silence.
+
+It's one of those northern Michigan places that rewards people who like to go looking. On a Labor Day morning when you want something peaceful before the afternoon starts, it's a ten-out-of-ten choice.
+
+**Drive the Back Roads**
+
+This is the underrated Labor Day activity: get in the car with no plan and drive. Two-lane roads through forest, past farm stands with late-season sweet corn and the last of the tomatoes. A roadside blueberry stand if you're lucky. Old barns, little towns, the occasional herd of cows with opinions about your schedule.
+
+M-66 north from Mancelona toward Boyne Falls. Alba Road west toward Elmira. The road through the Jordan River Valley down to East Jordan. None of these are in any tourism brochure. All of them are beautiful in the last warmth of August.
+
+**Plan an Evening Worth Remembering**
+
+*Short's Brewing in Bellaire* is one of the best craft breweries in Michigan, and the Bellaire taproom on a late summer evening is a genuinely good time. Go early enough to get a table, plan to stay longer than you expected. About 20 minutes from the cabin.
+
+*A firepit night at the cabin.* Granny's Hideaway has a firepit, and a Labor Day bonfire is a tradition worth having. The nights are cool enough now that a fire feels right rather than just festive. Make it a long one. School starts soon. The summer deserves a proper send-off.
+
+*Stargazing.* The Perseids have passed, but September skies over Antrim County are still excellent. Get outside after 10 PM and look up. The Milky Way is still there, and the clarity of a cool autumn-edged night is noticeably better than the haze of peak summer. Grandma Viola built this place in a time when nobody had to think about light pollution up here. Step outside after dark and you'll understand why she chose this place.
+
+**A Few Things to Know Before You Go**
+
+Labor Day weekend is the second-busiest stretch of the northern Michigan summer. A few practical notes:
+
+- **Book early.** Restaurants in Bellaire and Elk Rapids fill up on the holiday weekend, especially Saturday evening. Make a reservation or arrive early.
+- **The lakes are warm but the mornings are cool.** Pack a layer. Evenings in early September up here can drop into the fifties, and that's not a complaint — it's the reason a firepit exists.
+- **Fireworks.** Several Antrim County communities do small Labor Day fireworks shows. Elk Rapids typically does one over Grand Traverse Bay on the Saturday of the holiday weekend — 30 minutes from the cabin and worth the drive.
+- **This is the last good window before fall traffic picks up.** Leaf peepers arrive in force through October. Labor Day is genuinely one of the last uncrowded weekends of the outdoor season.
+
+**The Summer Deserves a Proper Ending**
+
+Grandma Viola built Granny's Hideaway as a place to exhale. Not a resort, not a theme. Just a cabin in the northern Michigan woods that remembers what summers up here used to feel like — orange carpet and bunny ear TV and quilts she made herself and a firepit that gets used well into September.
+
+Labor Day weekend books up faster than people expect. If you've been meaning to come up north this summer, this is the weekend — and the window is narrow.
+
+[Book your stay at Granny's Hideaway](https://grannyshideaway.com/book) and make the last weekend of summer count. It goes fast.`,
+  },
+  {
     slug: "elk-watching-gaylord-michigan",
     title: "Elk Watching Near Gaylord, Michigan: An August Evening Worth Planning Your Trip Around",
     excerpt:
