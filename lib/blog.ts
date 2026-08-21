@@ -9,6 +9,75 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "deward-tract-northern-michigan",
+    title: "Deward: Northern Michigan's Forgotten Ghost Town and the River That Kept Going",
+    excerpt:
+      "Thirty minutes south of Mancelona, buried in the state forest, is one of the most interesting places in Northern Michigan — a ghost town on the Manistee River that almost nobody knows about.",
+    date: "August 21, 2026",
+    readTime: "6 min read",
+    content: `There is a spot about 30 minutes south of Mancelona where the forest closes in around you, the two-track gets a little rough, and you come out into a quiet grassy clearing beside the Manistee River. There's nothing there. No buildings, no signs, no town. Just a field, a river, and the forest pressing in on every side.
+
+That clearing used to be a city.
+
+Deward, Michigan. Population 500-some, circa 1903. By 1912, it was gone.
+
+**The Boom and the Vanishing**
+
+In the early 1900s, the northern Lower Peninsula was in the last gasp of the white pine lumber era. Most of the big timber had already been cut, but a Chicago lumber baron named David Ward — D. Ward, Deward, get it — saw opportunity in the Manistee River headwaters and moved in with everything he had.
+
+At its peak, Deward was a full company town. A large sawmill on the Manistee, a company store, boarding houses, a school, a post office, and several hundred workers and their families. Logs floated down the river to the mill. Lumber went out by rail on a private line Ward built. For about a decade, it was a functioning, if rough-edged, Michigan town.
+
+Then the timber ran out. Ward pulled his operation, the rail line disappeared, and within a few years Deward was empty. The forest moved back in. The river kept going.
+
+Today, the Deward Tract is managed by the DNR as state forest land — over 4,000 acres of second-growth forest around the ghost town site. There are no dramatic ruins. A few old foundation depressions if you know where to look. Mostly just the clearing, the silence, and the Manistee.
+
+**The Manistee River Is the Real Star**
+
+The Manistee River at Deward is about as good as trout fishing gets in Michigan's Lower Peninsula. The headwaters here are cold, spring-fed, and clear — classic northern Michigan trout habitat — and this stretch sees a fraction of the pressure that the more accessible stretches downstream take all summer.
+
+Brook trout and brown trout hold in this upper section. The river is narrow here, maybe 20–30 feet across in most places, with undercut banks and the kind of deep pools that experienced anglers recognize on sight. Fly fishing is the traditional method — this stretch has a fly-fishing-only designation for part of the season — but light spinning tackle works in the more open runs.
+
+Late August is a particularly good window. The summer heat has backed off enough that fish are active and feeding again after the warm-water lull of mid-July. And fishing pressure at Deward — never heavy — drops further as summer ends and the weekend crowds head home. You can have long stretches of genuinely excellent trout water almost entirely to yourself.
+
+Bring waders or be ready to get your boots wet. The river crossing adds to the experience.
+
+**How to Spend a Day at Deward**
+
+There isn't a formal visitor center. There isn't much infrastructure at all, which is part of what makes it so good. Here's how to use the day.
+
+Get there in the morning. Take CR-612 south from Mancelona toward Kalkaska, then pick up the forest roads toward the Deward Tract. The route is findable on Google Maps or a Michigan DNR recreation map — search "Deward Tract" and you'll get the clearing. Give yourself about 30–35 minutes from the cabin.
+
+Walk the ghost town site. The clearing is the town. Stand in the middle of it and try to reconstruct what was here — the mill on the river, the boarding houses, the smoke, the noise. Now listen to what's actually there: wind in the trees, the river, maybe a raven. The contrast between what was and what is now is the whole experience. It doesn't need interpretation.
+
+Fish the Manistee. Even if you don't have a rod, walking upstream along the river through the cedars is worthwhile. This is old, quiet forest — the kind that grew back slowly after the clearcut and now has sixty-plus years on it. The river cuts through it with complete indifference to human history.
+
+Eat your lunch in the clearing. There are no picnic tables, but the grass is fine and the setting is peaceful. This is a bring-your-own-provisions kind of place.
+
+Head back through the back roads. CR-612 winds through genuine northern Michigan countryside — small farms, forest patches, the occasional deer. Take the long way back to Mancelona through Kalkaska if you want a coffee or a quick stop in town.
+
+**Why This One Doesn't Show Up in the Brochures**
+
+Deward doesn't have a visitor center or a gift shop or an interpretive sign trail. There's no entrance fee and no Instagram overlook. It exists in that category of northern Michigan places that rewards people who go looking — the ones who read old county histories, follow two-tracks, and aren't bothered by the absence of amenities.
+
+Grandma Viola's generation knew places like this. You'd go because a cousin mentioned it once, or because you followed a fishing tip, or because you just kept driving down a forest road to see where it led. That's still how Deward works. It hasn't changed in that regard.
+
+**A Practical Note or Two**
+
+The access roads into the Deward Tract are unpaved forest two-tracks. A normal passenger car makes it fine in dry conditions — this isn't backcountry four-wheeling — but high clearance helps after rain. Check the weather before you head out.
+
+Bring insect repellent, especially near the river and in the cedar lowlands. Late August mosquito pressure has dropped from the summer peak, but you're still in the woods next to moving water.
+
+Michigan DNR recreation maps include the Deward Tract with road access marked. Download one before you leave — cell service gets spotty in the forest interior.
+
+**The Same Place It's Always Been**
+
+There's something clarifying about a place that was booming a hundred years ago and is now completely quiet. The lumber went away. The town went away. The river didn't go anywhere. It was there before the mill, and it's there now — running clear and cold over a gravel bottom, holding trout in the shadows of undercut banks, indifferent to everything that happened on the surface above it.
+
+Grandma Viola built Granny's Hideaway in the same era the second-growth forest at Deward was coming into its own — fifty years on now, tall enough to feel old, wild enough to feel like wilderness. The cabin and the clearing share that quality. They've both been quietly becoming themselves for a long time.
+
+If that's the kind of afternoon you're after, [book your stay at Granny's Hideaway](https://grannyshideaway.com/book). The Deward Tract is about 30 minutes south. Pack a lunch, bring a rod if you have one, and plan to stay longer than you expected.`,
+  },
+  {
     slug: "labor-day-weekend-northern-michigan",
     title: "Labor Day Weekend in Northern Michigan: Make the Most of Summer's Last Hurrah",
     excerpt:
