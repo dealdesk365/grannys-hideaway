@@ -9,6 +9,69 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "jordan-river-valley-northern-michigan",
+    title: "The Jordan River Valley: Northern Michigan's Most Beautiful Drive (And Why You Should Stop and Walk It)",
+    excerpt:
+      "Twenty minutes from Granny's Hideaway, the Jordan River Valley holds one of the most scenic landscapes in the state — a wild, spring-fed river, a sweeping overlook, and miles of state forest that's quiet enough to feel like yours.",
+    date: "August 28, 2026",
+    readTime: "6 min read",
+    content: `The Jordan River Valley is one of those Northern Michigan places that locals mention casually, like it's obvious, and visitors discover and immediately understand why people never really leave up here.
+
+It's about 20 minutes south of Granny's Hideaway, tucked into Antrim and Charlevoix counties — and it holds the kind of wild, unhurried Michigan landscape that's getting rarer every year. A cold, clear river. Miles of state forest. An overlook that stops you mid-sentence. And almost no crowds, even in late summer.
+
+**The View from Deadman's Hill**
+
+The most dramatic way to encounter the Jordan River Valley for the first time is from above. Deadman's Hill Road off US-131 leads to an overlook that gives you a wide, sweeping view of the entire valley — the river threading through a floodplain of alder and cedar, forested ridges rising on both sides, the sky above going as far as you can see.
+
+On a clear August morning, the valley floor catches mist until nearly 9 AM, and watching it burn off against the deep green of the forest is the kind of thing you didn't know you needed until you're standing there with your coffee getting cold in your hand.
+
+Deadman's Hill is free, requires about 30 minutes from the cabin, and asks nothing of you except to show up and look. Do it anyway.
+
+**The Jordan River: Michigan's First Wild and Scenic River**
+
+The Jordan River was Michigan's first designated Natural River — a state designation that protects it from development and keeps its banks genuinely wild. It's also one of the finest brown and brook trout streams in the Lower Peninsula, and it earns that reputation every season.
+
+The river is spring-fed, which means it stays cold all summer — somewhere around 50–55°F even when the air is in the 80s. Trout like cold water. So do people who've been on their feet all day. Both communities are well-served here.
+
+The upper Jordan is narrow — 20 to 40 feet across in most places — with deep undercut banks, occasional logjams, and the kind of pools that experienced fly fishers recognize immediately. It's technical water that rewards patience. The lower stretches widen and slow a little, with gravel bars and more room to wade. Both are worth your time, and both are beautiful in ways that have nothing to do with fish.
+
+If you fish, bring a 5-weight rod and a Michigan trout license. Regulations vary by stretch — some sections are flies only, some are catch-and-release — so check the current DNR regs before you head out. Late August and September are genuinely good windows here: as the dog days back off and water temperatures ease, the fish get active again after the mid-summer lull.
+
+If you don't fish, wade in anyway. The cold water is its own reward.
+
+**The Jordan River Pathway: Walk Through It**
+
+The Jordan River Pathway is an 18-mile loop through the heart of the valley, designated as one of Michigan's premier backpacking routes. You don't need to do the whole thing — most people don't — but even a partial hike gives you streamside forest, cedar swamps, and long stretches of real quiet.
+
+The Pinney Bridge access on Alba Road is a good starting point for a shorter walk. From there you can follow the river through lowland forest for a couple of miles before turning back. The trail stays near the water, which means you're never far from the sound of the Jordan moving over gravel.
+
+For those who do want the full loop, there's a rustic backcountry campsite at the midpoint. Backpackers can complete it comfortably in two days. The payoff on the return — coming back over the ridge and looking down at the valley you just walked through — is one of those moments.
+
+**Late August Is the Right Time**
+
+The Jordan Valley in late summer has a particular quality. The canopy is full and dark green. The river is running low and clear, which makes it easier to wade and easier to spot fish moving. The summer crowds — never heavy here to begin with — have thinned. The evenings are starting to cool down in a way that feels like a promise.
+
+In another few weeks, the maple ridges above the valley will begin their turn. By mid-October the Jordan Valley is one of the most vivid fall color spots in the state, drawing photographers and leaf peepers from across Michigan and beyond. But right now, in late August, it's at that quiet, unhurried best — green and cool and mostly yours. Come before the crowds do.
+
+**Combine It with a Day Out**
+
+The Jordan Valley pairs naturally with a few nearby stops worth knowing.
+
+East Jordan sits about 15 minutes past the valley entrance and has a small-town main street with a diner, a bakery, and views of Lake Charlevoix that are worth the five-minute detour. Bellaire — about 20 minutes away — is home to Short's Brewing Company, one of Michigan's best craft breweries, and an easy and entirely justified lunch stop.
+
+If you want to stretch the day into the evening, the drive back north through Alba and into Mancelona passes through some of the most rural, unphotographed, genuinely beautiful countryside in Antrim County. Slow down. No itinerary required.
+
+**From the Cabin**
+
+Granny's Hideaway is exactly the kind of base camp the Jordan Valley calls for. Twenty minutes of driving, a morning on the river or the trail, lunch in East Jordan or Bellaire, back to the cabin by mid-afternoon. Firepit in the evening. Viola's quilts on the couch. Repeat tomorrow if you feel like it.
+
+Grandma Viola built this place in the early 1970s when northern Michigan was even quieter than it is now. She knew where she was. The Jordan River Valley was out there then, doing the same thing it does today — running cold and clear through the forest, indifferent to everything that happened on the surface above it.
+
+Some places don't need improving. They just need finding.
+
+[Book your stay at Granny's Hideaway](https://grannyshideaway.com/book) and go walk the Jordan Valley. It's one of those days that doesn't need much planning — just a decision to go.`,
+  },
+  {
     slug: "deward-tract-northern-michigan",
     title: "Deward: Northern Michigan's Forgotten Ghost Town and the River That Kept Going",
     excerpt:

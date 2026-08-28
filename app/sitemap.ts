@@ -26,7 +26,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "https://grannyshideaway.com/blog/labor-day-weekend-northern-michigan", lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: "https://grannyshideaway.com/blog/hiking-trails-near-mancelona-michigan", lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: "https://grannyshideaway.com/blog/fishing-near-mancelona-michigan", lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
-    { url: "https://grannyshideaway.com/blog/jordan-river-valley-northern-michigan", lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: "https://grannyshideaway.com/blog/deward-tract-northern-michigan", lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: "https://grannyshideaway.com/deward-tract-cabin-rental", lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: "https://grannyshideaway.com/torch-lake-area-cabin", lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
