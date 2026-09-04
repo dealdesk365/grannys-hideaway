@@ -9,6 +9,59 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "fall-hunting-near-mancelona-michigan",
+    title: "Fall Hunting in Northern Michigan: Why Mancelona Is the Perfect Base Camp",
+    excerpt:
+      "Archery season opens October 1st and firearms season follows in November — and Antrim County puts you in the middle of some of the best deer hunting in the Lower Peninsula. Here's why Granny's Hideaway makes the perfect hunting camp.",
+    date: "September 4, 2026",
+    readTime: "6 min read",
+    content: `The shift happens right around Labor Day. The days start to shorten. The air gets a bite to it in the mornings. And somewhere out in the northern Michigan hardwoods, the deer are beginning to change their patterns — moving more, scraping the velvet, getting ready for what comes next.
+
+Fall hunting season in this part of Michigan is a serious, deeply-rooted tradition — as old as the cabin Grandma Viola built in the early 1970s, and considerably older than that. Antrim County and the surrounding region hold some of the best public hunting land in the Lower Peninsula: hardwood ridges, cedar swamps, state forest that deer have been using for generations. If you're planning a fall hunt, Granny's Hideaway is worth a close look as your base camp.
+
+**The Season Timeline**
+
+Michigan's fall hunting calendar runs from early October through the end of the year, with different seasons layering on top of each other. The major ones for this region:
+
+*Archery deer season* opens October 1st and runs through January 1st, pausing briefly around the firearms season window. If you want to be in a treestand over a scrape on opening morning — and you do — you need to book now. October 1st is less than four weeks away.
+
+*Firearm deer season* opens November 15th, the most anticipated two weeks in Michigan's outdoors calendar. Opening weekend of firearms is practically a state holiday in this part of the state. Generations of families have it on the calendar. If you want a cabin for firearms opener, expect competition — the good ones fill up fast.
+
+*Fall turkey season* runs through portions of October in Antrim County. A tom turkey in the northern Michigan hardwoods is a legitimate trophy, and hunting pressure on public land is light enough that a careful hunter has a real shot.
+
+*Small game* — ruffed grouse, woodcock, squirrel — seasons overlap with deer and are one of the genuinely underrated hunts in this part of the state. The Mackinaw State Forest around Mancelona holds good grouse numbers in the right years, and chasing them through the aspen runs in October, dog or no dog, is one of those experiences that doesn't translate until you've done it.
+
+**The Public Land Situation**
+
+Mancelona sits in the middle of a genuinely strong public land picture. The Mackinaw State Forest covers significant acreage across Antrim County, with state forest land accessible to licensed hunters in every direction from town. Mixed hardwood on the ridges — oak, maple, beech — gives way to conifer swamps in the lowlands, and that transition zone is textbook deer habitat: browse, bedding cover, and natural pinch points that don't require a topographic genius to find.
+
+The Deward Tract, about 30 minutes south near the Manistee River headwaters, adds another 4,000-plus acres of state forest land. Hunting pressure here is lighter than many more accessible public land units, deer numbers are solid, and the remote feel is real — this is the kind of spot where you park the truck, walk in a half mile, and don't see another hunter all day.
+
+For those who prefer private land, Antrim County has a working agricultural landscape — farms, orchards, hayfields — and landowner relationships are still built the old way up here: knock on a door, introduce yourself, ask respectfully, and come back after the season with a thank-you. It works. People are generous with access when you show up right.
+
+**What the Cabin Offers Hunters**
+
+Granny's Hideaway isn't a hunting lodge — and that's actually the point. You get a warm, real cabin to come back to after a cold morning on stand. A kitchen to cook your own meals. Room to hang gear and let wet clothes dry. The firepit out back for the evening, after a day in the woods, when the debriefing happens and the stories get slightly better with each telling.
+
+The cabin is minutes from Mancelona, which means quick access to local sporting goods for last-minute supplies, gas for the truck, and a diner counter where you can ask the guy next to you where he's been seeing deer. That's still the most reliable scouting intelligence in northern Michigan. Nothing on Google Maps comes close.
+
+Viola built this place in the early 1970s — a decade when deer camps in northern Michigan were an institution, and hunting trips north were something whole families built their fall calendars around. That cabin-camp feeling is still here. Come in, warm up, cook the backstrap, stay another day.
+
+**Licensing and What to Know**
+
+Michigan hunting licenses and deer tags are available online through michigan.gov/dnr — buy them before you leave home. You'll need a base license and a deer combo tag for the species and season you're targeting. Fall turkey requires a separate license and tag.
+
+Check current DNR regulations for Antrim County specifically — unit designations, any antler restrictions, and exact season dates can shift slightly from year to year. The DNR Hunting Digest is free, available online, and worth a full read before you pack the truck.
+
+Blaze orange is required during firearm deer season and any overlapping seasons. Pack it. Don't be the person who shows up at the trailhead without it.
+
+**The Window Is Short**
+
+October 1st is close. November 15th follows. If fall hunting is anywhere on your radar this year, the time to move is now — not in October when the good dates are gone.
+
+[Book your stay at Granny's Hideaway](https://grannyshideaway.com/book) and get your camp set up before the season opens. The hardwoods are about to do their thing.`,
+  },
+  {
     slug: "jordan-river-valley-northern-michigan",
     title: "The Jordan River Valley: Northern Michigan's Most Beautiful Drive (And Why You Should Stop and Walk It)",
     excerpt:
