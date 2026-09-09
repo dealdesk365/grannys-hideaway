@@ -1,11 +1,17 @@
 export default function Banner() {
   return (
     <div
-      style={{ backgroundColor: "#2A9D8F" }}
-      className="w-full py-3 px-4 flex items-center justify-center text-center z-50"
+      style={{ backgroundColor: "#8B2500" }}
+      className="w-full py-4 px-4 flex items-center justify-center text-center z-50"
     >
       <p className="text-white font-accent text-base sm:text-lg tracking-wide">
-        🌲 <strong>Now Booking — Summer 2026</strong> — Reserve your dates today! 🌲
+        🏡 <strong>This Website Is For Sale</strong> — Fully built vacation rental site, ready to go. Interested?{" "}
+        <a
+          href="mailto:dealdesk365@gmail.com"
+          className="underline font-bold hover:opacity-80 transition"
+        >
+          dealdesk365@gmail.com
+        </a>
       </p>
     </div>
   );
